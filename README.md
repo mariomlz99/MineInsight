@@ -1,13 +1,14 @@
 # **MineInsight: A Multi-spectral Dataset for Humanitarian Demining Robotics in Off-Road Environments**
 
 <p align="center">
-  <img src="logos/rma_logo.png" alt="RMA_Logo" height="80">
-  <img src="logos/ras_lab_logo.png" alt="RAS_Logo" height="60">
+  <img src="logos/rma_logo.png" alt="RMA_Logo" height="80"> 
+  <img src="logos/ras_lab_logo.png" alt="RAS_Logo" height="60"> 
   <img src="logos/4dpl_logo_2.jpeg" alt="4DPL_Logo" height="80">  
+</p>
+<p align="center">
   <img src="logos/kul_logo.png" alt="KUL_Logo" height="60"> 
   <img src="logos/acro_logo.jpg" alt="ACRO_Logo" height="60">
 </p>
-
 <p align="center">
   <b>
     <a href="https://scholar.google.com/citations?hl=en&user=3fDazuEAAAAJ">Mario Malizia</a>¹, 

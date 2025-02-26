@@ -1,10 +1,10 @@
 # **MineInsight: A Multi-spectral Dataset for Humanitarian Demining Robotics in Off-Road Environments**
 
-<p align="center">
+<!-- <p align="center">
   <img src="logos/closed_rectangle_mineinsight.png" alt="MIneInsight_logo" height="90">
 </p>
 
-## **Affiliations**
+## **Affiliations** -->
 <p align="center">
   <img src="logos/rma_logo.png" alt="RMA_Logo" height="90"> 
   <img src="logos/kul_logo.png" alt="KUL_Logo" height="70"> 

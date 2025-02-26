@@ -12,7 +12,7 @@
   <img src="logos/acro_logo.jpg" alt="ACRO_Logo" height="80"> -->
 </p>
 
-**Authors:**  
+<!-- **Authors:**   -->
 <p align="center">
   <b>
     <a href="https://scholar.google.com/citations?hl=en&user=3fDazuEAAAAJ">Mario Malizia</a>¹, 

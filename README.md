@@ -1,13 +1,23 @@
 # **MineInsight: A Multi-spectral Dataset for Humanitarian Demining Robotics in Off-Road Environments**
 
 <p align="center">
-  <img src="logos/rma_logo.png" alt="RMA_Logo" height="80"> 
-  <img src="logos/ras_lab_logo.png" alt="RAS_Logo" height="60"> 
-  <img src="logos/4dpl_logo_2.jpeg" alt="4DPL_Logo" height="80">  
+  <a href="https://www.rma.ac.be/en">
+    <img src="logos/rma_logo.png" alt="RMA_Logo" height="80">
+  </a>
+  <a href="https://mecatron.rma.ac.be/">
+    <img src="logos/ras_lab_logo.png" alt="RAS_Logo" height="70">
+  </a>
+  <a href="https://rma-4dpl.github.io/">
+    <img src="logos/4dpl_logo_2.jpeg" alt="4DPL_Logo" height="80">
+  </a>
 </p>
 <p align="center">
-  <img src="logos/kul_logo.png" alt="KUL_Logo" height="60"> 
-  <img src="logos/acro_logo.jpg" alt="ACRO_Logo" height="60">
+  <a href="https://www.kuleuven.be/english/kuleuven/">
+    <img src="logos/kul_logo.png" alt="KUL_Logo" height="60">
+  </a>
+  <a href="https://iiw.kuleuven.be/onderzoek/acro">
+    <img src="logos/acro_logo.jpg" alt="ACRO_Logo" height="60">
+  </a>
 </p>
 <p align="center">
   <b>

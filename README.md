@@ -1,18 +1,13 @@
 # **MineInsight: A Multi-spectral Dataset for Humanitarian Demining Robotics in Off-Road Environments**
 
-<!-- <p align="center">
-  <img src="logos/closed_rectangle_mineinsight.png" alt="MIneInsight_logo" height="90">
-</p>
-
-## **Affiliations** -->
 <p align="center">
-  <img src="logos/rma_logo.png" alt="RMA_Logo" height="90"> 
+  <img src="logos/rma_logo.png" alt="RMA_Logo" height="90">
+  <img src="logos/ras_lab_logo.png" alt="RAS_Logo" height="80">
+  <img src="logos/4dpl_logo.png.png" alt="4DPL_Logo" height="80">  
   <img src="logos/kul_logo.png" alt="KUL_Logo" height="70"> 
-  <!-- <img src="logos/ras_lab_logo.png" alt="RAS_Logo" height="80"> 
-  <img src="logos/acro_logo.jpg" alt="ACRO_Logo" height="80"> -->
+  <img src="logos/acro_logo.jpg" alt="ACRO_Logo" height="80">
 </p>
 
-<!-- **Authors:**   -->
 <p align="center">
   <b>
     <a href="https://scholar.google.com/citations?hl=en&user=3fDazuEAAAAJ">Mario Malizia</a>¹, 
@@ -29,9 +24,6 @@
   </b>
 </p>
 
-¹ Royal Military Academy of Belgium,  
-² KU Leuven  
+¹ Royal Military Academy of Belgium,  ² KU Leuven  
 
 📄 [Website](https://your-dataset-site.com) | 📜 [Paper](https://arxiv.org/abs/xxxxx) | 📂 [GitHub](https://github.com/your-repo)
-
----

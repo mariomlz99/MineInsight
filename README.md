@@ -6,8 +6,9 @@
 
 ## **Affiliations**
 <p align="center">
-  <img src="your-university-logo.png" alt="University Logo" height="80"> 
-  <img src="your-collaborator-logo.png" alt="Collaborator Logo" height="80"> 
+  <img src="logos/rma_logo.png" alt="RMA_Logo" height="80"> 
+  <img src="logos/kul_logo.png" alt="KUL_Logo" height="80"> 
+  <img src="logos/acro_logo.png" alt="ACRO_Logo" height="80"> 
 </p>
 
 **Authors:**  

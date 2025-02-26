@@ -13,13 +13,16 @@
 </p>
 
 **Authors:**  
-[Author 1](https://scholar.google.com/citations?user=XXXXX)¹,  
-[Author 2](https://scholar.google.com/citations?user=XXXXX)²,  
-[Author 3](https://scholar.google.com/citations?user=XXXXX)²,  
-[Author 4](https://scholar.google.com/citations?user=XXXXX)¹  
+[Mario Malizia](https://scholar.google.com/citations?hl=en&user=3fDazuEAAAAJ)¹,  
+[Charles Hamesse](https://scholar.google.com/citations?hl=en&user=19a7OPUAAAAJ)²,  
+[Ken Hasselmann](https://scholar.google.com/citations?hl=en&user=iyEhyh4AAAAJ)²,  
+[Geert De Cubber](https://scholar.google.com/citations?hl=en&user=wYXEEZ0AAAAJ)¹,
+[Nikolaos Tsiogkas](https://scholar.google.com/citations?hl=en&user=3VTZcT4AAAAJ)¹,
+[Eric Demeester](https://scholar.google.com/citations?user=QKw1XxAAAAAJ&hl=en)¹,
+[Rob Haelterman](https://scholar.google.com/citations?user=OQJ8ctsAAAAJ&hl=en)¹,
 
-¹ Your University,  
-² Your Collaborator Institution  
+¹ Royal Military Academy of Belgium,  
+² KU Leuven  
 
 📄 [Website](https://your-dataset-site.com) | 📜 [Paper](https://arxiv.org/abs/xxxxx) | 📂 [GitHub](https://github.com/your-repo)
 

@@ -64,8 +64,28 @@ MineInsight follows best practices from established robotic datasets and provide
 ---
 ## Experimental Setup
 
-| <img src="repo_images/experimental_setup.png" alt="Experimental Setup" width="70%"> | **Platform and robotic arm**  <br> [🔹 Clearpath Husky A200 UGV](https://clearpathrobotics.com/husky/)  <br> [🔹 Universal Robots UR5e Robotic Arm](https://www.universal-robots.com/products/ur5e/) <br><br> <span style="color:red;"><b>Platform sensor suite</b></span>  <br> [🔹 Livox Mid-360 LiDAR](https://www.livoxtech.com/mid-360)  <br> [🔹 Sevensense Core Research Module](https://github.com/sevensense-robotics/core_research_manual)  <br> [🔹 Microstrain 3DM-GV7-AR IMU](https://www.microstrain.com/inertial-sensors/3dm-gv7-ar)  <br><br> <span style="color:#003366;"><b>Robotic arm sensor suite</b></span>  <br> [🔹 Teledyne FLIR Boson 640](https://www.flir.com/products/boson/?model=20640A095&vertical=lwir&segment=oem)  <br> [🔹 Alvium 1800 U-130 VSWIR](https://www.alliedvision.com/en/products/alvium-configurator/alvium-1800-u/130-vswir/)  <br> [🔹 Alvium 1800 U-240](https://www.alliedvision.com/en/products/alvium-configurator/alvium-1800-u/240/)  <br> [🔹 Livox AVIA](https://www.livoxtech.com/avia) |
-|:---------------------------------------------:|:----------------------------------------------:|
+This section follows the terminology and conventions outlined in the accompanying paper. 
+For a more detailed understanding of the methodology and experimental design, please refer to the paper.
+<p align="left">
+  <img src="repo_images/experimental_setup.png" alt="Experimental Setup" width="60%" style="float: left; margin-right: 20px;">
+</p>
+
+### Platform and robotic arm
+🔹 [Clearpath Husky A200 UGV](https://clearpathrobotics.com/husky/)  
+🔹 [Universal Robots UR5e Robotic Arm](https://www.universal-robots.com/products/ur5e/)  
+
+### <span style="color:red;">Platform sensor suite</span>
+🔹 [Livox Mid-360 LiDAR](https://www.livoxtech.com/mid-360)  
+🔹 [Sevensense Core Research Module](https://github.com/sevensense-robotics/core_research_manual)  
+🔹 [Microstrain 3DM-GV7-AR IMU](https://www.microstrain.com/inertial-sensors/3dm-gv7-ar)  
+
+### <span style="color:#003366;">Robotic arm sensor suite</span>
+🔹 [Teledyne FLIR Boson 640](https://www.flir.com/products/boson/?model=20640A095&vertical=lwir&segment=oem)  
+🔹 [Alvium 1800 U-130 VSWIR](https://www.alliedvision.com/en/products/alvium-configurator/alvium-1800-u/130-vswir/)  
+🔹 [Alvium 1800 U-240](https://www.alliedvision.com/en/products/alvium-configurator/alvium-1800-u/240/)  
+🔹 [Livox AVIA](https://www.livoxtech.com/avia)  
+
+
 
 
 

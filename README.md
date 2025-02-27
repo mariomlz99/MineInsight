@@ -57,7 +57,7 @@ MineInsight follows best practices from established robotic datasets and provide
 <br> 
 <!-- Line-breaker di pulizia tra il testo e l'immagine-->
 
-<p align="center">
+<p align="center" style="font-size:12px;">
   <img src="repo_images/full_dataset_picture_with_names.png" alt="dataset_presentation_pic" >
 </p>
 
@@ -89,14 +89,15 @@ The figure represents the tracks along with their targets' distribution.
 For each track, a **detailed inventory PDF** is available, providing the full list of targets along with their respective details.  
 You can find them in the **`tracks_inventory`** folder of this repository:
 
-📄 [Track 1 Inventory](tracks_inventory/track_1_targets.pdf)  
-📄 [Track 2 Inventory](tracks_inventory/track_2_targets.pdf)  
-📄 [Track 3 Inventory](tracks_inventory/track_3_targets.pdf)
+<p align="center">
+  📄 <a href="tracks_inventory/track_1_targets.pdf">Track 1 Inventory</a> &nbsp;|&nbsp; 
+  📄 <a href="tracks_inventory/track_2_targets.pdf">Track 2 Inventory</a> &nbsp;|&nbsp; 
+  📄 <a href="tracks_inventory/track_3_targets.pdf">Track 3 Inventory</a>
+</p>
 
 Each PDF catalogs each item with:
 
-- **ID:** Unique identifier for each target;
+- **ID:** Unique identifier for each target;  
 - **Name:** Official name of the target;  
-- **Image:** A visual reference of the object;  
-- **[CAT-UXO](https://www.cat-uxo.com/) link** : Detailed explanation of the target (available only for landmines).
-
+- **Image:** A visual reference of the object for recognition;  
+- **[CAT-UXO link](https://www.cat-uxo.com/)**: Detailed explanation of the target (available only for landmines).  

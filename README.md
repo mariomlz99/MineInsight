@@ -42,7 +42,7 @@
 </p>
 
 ---
-## Motivation
+# Motivation
 
 Landmines remain a persistent threat in conflict-affected regions, posing risks to civilians and impeding post-war recovery. Traditional demining methods are often slow, hazardous, and costly, necessitating the development of robotic solutions for safer and more efficient landmine detection. 
 
@@ -62,29 +62,29 @@ MineInsight follows best practices from established robotic datasets and provide
 </p>
 
 ---
-## Experimental Setup
+# Experimental Setup
 This section follows the terminology and conventions outlined in the accompanying paper.  
 For a more detailed understanding of the methodology and experimental design, please refer to the paper.
 
-### Sensors overview
+## Sensors overview
 | <img src="repo_images/experimental_setup.png" alt="Experimental Setup" align="left" width="50%"> | **Platform and robotic arm**  <br> [🔹 Clearpath Husky A200 UGV](https://clearpathrobotics.com/husky/)  <br> [🔹 Universal Robots UR5e Robotic Arm](https://www.universal-robots.com/products/ur5e/) <br><br> <span style="color:red;"><b>Platform sensor suite</b></span>  <br> [🔹 Livox Mid-360 LiDAR](https://www.livoxtech.com/mid-360)  <br> [🔹 Sevensense Core Research Module](https://github.com/sevensense-robotics/core_research_manual)  <br> [🔹 Microstrain 3DM-GV7-AR IMU](https://www.microstrain.com/inertial-sensors/3dm-gv7-ar)  <br><br> <span style="color:#003366;"><b>Robotic arm sensor suite</b></span>  <br> [🔹 Teledyne FLIR Boson 640](https://www.flir.com/products/boson/?model=20640A095&vertical=lwir&segment=oem)  <br> [🔹 Alvium 1800 U-130 VSWIR](https://www.alliedvision.com/en/products/alvium-configurator/alvium-1800-u/130-vswir/)  <br> [🔹 Alvium 1800 U-240](https://www.alliedvision.com/en/products/alvium-configurator/alvium-1800-u/240/)  <br> [🔹 Livox AVIA](https://www.livoxtech.com/avia) |
 |:---------------------------------------------:|:----------------------------------------------:|
-### Sensors setup
+## Sensors setup
 
  *[Mario] IMAGE WITH TF POSITIONIGN TO BE ADDED :) *
 
 ---
-## Environments and sequences
+# Environments and sequences
 The dataset was collected across **3 distinct tracks**, each designed to represent a demining scenario with varying terrain and environmental conditions. 
 These tracks contain a diverse set of targets, positioned to challenge algorithms development.
-The figure represents the tracks along with their targets' distribution.
+The figures represents a top-view pointcloud distribution of the targets along the track.
 
 <p align="center">
-  <img src="repo_images/tracks_with_targets.png" alt="dataset_tracks_presentation" >
+  <img src="repo_images/tracks_pointcloud_topview.png" alt="dataset_tracks_presentation" >
 </p>
 
 ---
-## Targets
+# Targets
 
 For each track, a **detailed inventory PDF** is available, providing the full list of targets along with their respective details.  
 You can find them in the **`tracks_inventory`** folder of this repository:
@@ -101,3 +101,69 @@ Each PDF catalogs each item with:
 - **Name:** Official name of the target;  
 - **Image:** A visual reference of the object for recognition;  
 - **[CAT-UXO link](https://www.cat-uxo.com/)**: Detailed explanation of the target (available only for landmines).  
+
+---
+# Calibration
+
+[Mario] aggiungi
+
+---
+# Data
+
+We release **2 sequences per track**, resulting in a total of **6 sequences**.  
+The dataset is available in **three different formats**:
+
+- 🗄 **ROS 2 Bags**
+- 🗄 **ROS 2 Bags with Livox Custom Msg** 
+- 🖼 **Images + Target Location Annotations**  
+
+---
+
+## ROS2 Bags Structure
+
+Each **ROS2 Bag**, includes:
+
+| Topic | Message Type | Description |
+|-------------------------------|-----------------------------------|-----------------------------------------------------------|
+| /allied_swir/image_raw/compressed | sensor_msgs/msg/CompressedImage | SWIR camera raw image |
+| /allied_swir/image_raw/rectified/compressed | sensor_msgs/msg/CompressedImage | SWIR camera rectified image |
+| /alphasense/cam_0/image_raw/compressed | sensor_msgs/msg/CompressedImage | Sevensense Core Greyscale camera 0 raw image |
+| /alphasense/cam_0/image_raw/rectified/compressed | sensor_msgs/msg/CompressedImage | Sevensense Core Greyscale camera 0 rectified image |
+| /alphasense/cam_1/image_raw/compressed | sensor_msgs/msg/CompressedImage | Sevensense Core Greyscale camera 1 raw image |
+| /alphasense/cam_1/image_raw/rectified/compressed | sensor_msgs/msg/CompressedImage | Sevensense Core Greyscale camera 1 rectified image |
+| /alphasense/cam_2/image_raw/compressed | sensor_msgs/msg/CompressedImage | Sevensense Core Greyscale camera 2 raw image |
+| /alphasense/cam_2/image_raw/rectified/compressed | sensor_msgs/msg/CompressedImage | Sevensense Core Greyscale camera 2 rectified image |
+| /alphasense/cam_3/image_raw/compressed | sensor_msgs/msg/CompressedImage | Sevensense Core Greyscale camera 3 raw image |
+| /alphasense/cam_3/image_raw/rectified/compressed | sensor_msgs/msg/CompressedImage | Sevensense Core Greyscale camera 3 rectified image |
+| /alphasense/cam_4/image_raw/compressed | sensor_msgs/msg/CompressedImage | Sevensense Core Greyscale camera 4 raw image |
+| /alphasense/cam_4/image_raw/rectified/compressed | sensor_msgs/msg/CompressedImage | Sevensense Core Greyscale camera 4 rectified image |
+| /alphasense/imu | sensor_msgs/msg/Imu | IMU data from Sevensense Core |
+| /avia/livox/imu | sensor_msgs/msg/Imu | IMU data from Livox AVIA LiDAR |
+| /avia/livox/lidar/pointcloud2 | sensor_msgs/msg/PointCloud2 | Point cloud data from Livox AVIA LiDAR |
+| /flir/thermal/compressed | sensor_msgs/msg/CompressedImage | LWIR camera raw image |
+| /flir/thermal/rectified/compressed | sensor_msgs/msg/CompressedImage | LWIR camera rectified image |
+| /flir/thermal/colorized/compressed | sensor_msgs/msg/CompressedImage | LWIR camera raw image with colorized overlay |
+| /flir/thermal/rectified/colorized/compressed | sensor_msgs/msg/CompressedImage | LWIR camera rectified image with colorized overlay |
+| /microstrain/imu | sensor_msgs/msg/Imu | IMU data from Microstrain (internal) |
+| /mid360/livox/imu | sensor_msgs/msg/Imu | IMU data from Livox Mid-360 LiDAR |
+| /mid360/livox/lidar/pointcloud2 | sensor_msgs/msg/PointCloud2 | Point cloud data from Livox Mid-360 LiDAR |
+| /odometry/filtered | nav_msgs/msg/Odometry | Filtered odometry data (ROS2 localization, fusion output ) |
+| /odometry/wheel | nav_msgs/msg/Odometry | Wheel odometry data from UGV wheel encoder |
+| /tf | tf2_msgs/msg/TFMessage | Real-time transformations between coordinate frames |
+| /tf_static | tf2_msgs/msg/TFMessage | Static transformations |
+
+If you are downloading a **ROS 2 Bag with Livox Custom Msg**, you will find the following additional topics:
+
+| Topic | Message Type | Description |
+|------------------------------|--------------------------------|------------------------------------------------|
+| /avia/livox/lidar | livox_interfaces/msg/CustomMsg | Raw point cloud data from **Livox AVIA LiDAR** in custom Livox format |
+| /mid360/livox/lidar | livox_ros_driver2/msg/CustomMsg | Raw point cloud data from **Livox Mid-360 LiDAR** in custom Livox format |
+
+**Note:**
+These messages include **timestamps** for each point in the point cloud scan.  
+To correctly **decode and use** these messages, install the official Livox drivers:  
+
+- **Livox AVIA** (🔗 [livox_ros2_driver](https://github.com/Livox-SDK/livox_ros2_driver))  
+- **Livox Mid-360** (🔗 [livox_ros_driver2](https://github.com/Livox-SDK/livox_ros_driver2))  
+
+For installation instructions, refer to the documentation in the respective repositories.

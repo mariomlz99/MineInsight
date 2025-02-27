@@ -85,5 +85,18 @@ The figure represents the tracks along with their targets' distribution.
 
 ---
 ## Targets
-We placed a combination of antipersonnel and antitank inert landmines and common items that might be found in natural environments across three tracks to construct a diverse dataset.
-Please, refer to .... for a folder including the list of all the targets.
+
+For each track, a **detailed inventory PDF** is available, providing the full list of targets along with their respective details.  
+You can find them in the **`tracks_inventory`** folder of this repository:
+
+📄 [Track 1 Inventory](tracks_inventory/track_1_targets.pdf)  
+📄 [Track 2 Inventory](tracks_inventory/track_2_targets.pdf)  
+📄 [Track 3 Inventory](tracks_inventory/track_3_targets.pdf)
+
+Each PDF catalogs each item with:
+
+- **ID:** Unique identifier for each target;
+- **Name:** Official name of the target;  
+- **Image:** A visual reference of the object;  
+- **[CAT-UXO](https://www.cat-uxo.com/) link** : Detailed explanation of the target (available only for landmines).
+

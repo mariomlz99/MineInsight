@@ -67,7 +67,7 @@ MineInsight follows best practices from established robotic datasets and provide
 This section follows the terminology and conventions outlined in the accompanying paper. 
 For a more detailed understanding of the methodology and experimental design, please refer to the paper.
 <p align="left">
-  <img src="repo_images/experimental_setup.png" alt="Experimental Setup" width="60%" style="float: left; margin-right: 20px;">
+  <img src="repo_images/experimental_setup.png" alt="Experimental Setup" width="30%" style="float: left; margin-right: 20px;">
 </p>
 
 ### Platform and robotic arm

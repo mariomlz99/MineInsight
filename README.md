@@ -1,4 +1,4 @@
-# **MineInsight: A Multi-spectral Dataset for Humanitarian Demining Robotics in Off-Road Environments**
+# MineInsight: A Multi-spectral Dataset for Humanitarian Demining Robotics in Off-Road Environments
 
 <p align="center">
   <a href="https://www.rma.ac.be/en">
@@ -42,13 +42,12 @@
 </p>
 
 ---
-## ***Motivation
+## Motivation
 
 Landmines remain a persistent threat in conflict-affected regions, posing risks to civilians and impeding post-war recovery. Traditional demining methods are often slow, hazardous, and costly, necessitating the development of robotic solutions for safer and more efficient landmine detection. 
 
 <b>MineInsight</b> is a publicly available multi-sensor, multi-spectral dataset designed to support advancements in robotic demining and off-road navigation. It features a diverse collection of sensor data, including visible (RGB, monochrome), short-wave infrared (SWIR), long-wave infrared (LWIR), and LiDAR scans. The dataset includes dual-view sensor scans from both a UGV and its robotic arm, providing multiple viewpoints to mitigate occlusions and improve detection accuracy. 
 
 With over <b>38,000 RGB frames</b>, <b>53,000 SWIR frames</b>, and <b>108,000 LWIR frames</b> recorded in both daylight and nighttime conditions, MineInsight aims to serve as a benchmark for developing and evaluating detection algorithms. We also offers an estimation of object localization, supporting researchers in algorithm validation and performance benchmarking. 
-
 
 ---

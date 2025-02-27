@@ -85,3 +85,5 @@ The figure represents the tracks along with their targets' distribution.
 
 ---
 ## Targets
+We placed a combination of antipersonnel and antitank inert landmines and common items that might be found in natural environments across three tracks to construct a diverse dataset.
+Please, refer to .... for a folder including the list of all the targets.

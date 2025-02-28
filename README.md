@@ -156,8 +156,8 @@ If you are downloading a **ROS 2 Bag with Livox Custom Msg**, you will find the 
 
 | Topic | Message Type | Description |
 |------------------------------|--------------------------------|------------------------------------------------|
-| /avia/livox/lidar | livox_interfaces/msg/CustomMsg | Raw point cloud data from **Livox AVIA LiDAR** in custom Livox format |
-| /mid360/livox/lidar | livox_ros_driver2/msg/CustomMsg | Raw point cloud data from **Livox Mid-360 LiDAR** in custom Livox format |
+| /avia/livox/lidar | livox_interfaces/msg/CustomMsg | Raw point cloud data from Livox AVIA LiDAR in custom Livox format |
+| /mid360/livox/lidar | livox_ros_driver2/msg/CustomMsg | Raw point cloud data from Livox Mid-360 LiDAR in custom Livox format |
 
 **Note:**
 These messages include **timestamps** for each point in the point cloud scan.  

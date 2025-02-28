@@ -117,11 +117,11 @@ The dataset is available in **three different formats**:
 - 🗄 **ROS 2 Bags with Livox Custom Msg** 
 - 🖼 **Images + Target Location Annotations**  
 
----
 
-## ROS2 Bags Structure
 
-Each **ROS2 Bag**, includes:
+## ROS 2 Bags Structure
+
+Each **ROS 2 Bag**, includes:
 
 | Topic | Message Type | Description |
 |-------------------------------|-----------------------------------|-----------------------------------------------------------|
@@ -147,7 +147,7 @@ Each **ROS2 Bag**, includes:
 | /microstrain/imu | sensor_msgs/msg/Imu | IMU data from Microstrain (internal) |
 | /mid360/livox/imu | sensor_msgs/msg/Imu | IMU data from Livox Mid-360 LiDAR |
 | /mid360/livox/lidar/pointcloud2 | sensor_msgs/msg/PointCloud2 | Point cloud data from Livox Mid-360 LiDAR |
-| /odometry/filtered | nav_msgs/msg/Odometry | Filtered odometry data (ROS2 localization, fusion output ) |
+| /odometry/filtered | nav_msgs/msg/Odometry | Filtered odometry data (ROS 2 localization, fusion output ) |
 | /odometry/wheel | nav_msgs/msg/Odometry | Wheel odometry data from UGV wheel encoder |
 | /tf | tf2_msgs/msg/TFMessage | Real-time transformations between coordinate frames |
 | /tf_static | tf2_msgs/msg/TFMessage | Static transformations |
@@ -167,3 +167,38 @@ To correctly **decode and use** these messages, install the official Livox drive
 - **Livox Mid-360** (🔗 [livox_ros_driver2](https://github.com/Livox-SDK/livox_ros_driver2))  
 
 For installation instructions, refer to the documentation in the respective repositories.
+
+## ROS 2 Bags Downloads
+
+You can download the datasets from the links below:
+
+### **📌 Track 1**
+🔹 **Sequence 1**:  
+   - 🗂️ [ROS 2 Bag (Standard)](https://cloud.cylab.be/s/K2r4cdB3gJGdmKS)  
+   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/WKgpJ5FbT68Z8BE)  
+
+🔹 **Sequence 2**:  
+   - 🗂️ [ROS 2 Bag (Standard)](https://cloud.cylab.be/s/bDFSDiEiZiSgEQ8)  
+   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/zLj9cAPEtXKHiwm)  
+
+---
+
+### **📌 Track 2**
+🔹 **Sequence 1**:  
+   - 🗂️ [ROS 2 Bag (Standard)](https://cloud.cylab.be/s/QMcps9zEwonBSw5)  
+   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/RmfDRxFAcoCb73a)  
+
+🔹 **Sequence 2**:  
+   - 🗂️ [ROS 2 Bag (Standard)](https://cloud.cylab.be/s/yTb7XRPYk2bT958)  
+   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/EWXLWWkJH9c3oKX)  
+
+---
+
+### **📌 Track 3**
+🔹 **Sequence 1**:  
+   - 🗂️ [ROS 2 Bag (Standard)](https://cloud.cylab.be/s/jxJ62mq8EErewLN)  
+   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/j98Abz57Nf39RB7)  
+
+🔹 **Sequence 2**:  
+   - 🗂️ [ROS 2 Bag (Standard)](https://cloud.cylab.be/s/qoQReDy3RCJBL8c)  
+   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/J9G54g52NZXyYW5)  

@@ -214,7 +214,7 @@ You can download each folder containing the images from the links below:
 | **Track / Seq** | **RGB** | **SWIR** | **LWIR** |
 |---------------------|-----------|------------|------------|
 | **Track 1 - Seq 1** | [track_1_s1_rgb](https://cloud.cylab.be/s/z2dRbj8ZAw7nPrQ) [3.8 GB]| [track_1_s1_swir](https://cloud.cylab.be/s/mLd8p9QwixTzbJF) [1.2 GB]| [track_1_s1_lwir](https://cloud.cylab.be/s/5A4sq8Bjn8pmwe8) [671.0 MB]|
-| **Track 1 - Seq 2** | [track_1_s2_rgb](#) | [track_1_s2_swir](#) | [track_1_s2_lwir](#) |
+| **Track 1 - Seq 2** | [track_1_s2_rgb](https://cloud.cylab.be/s/JSFsP6MjLeXtPyT) [12.7 GB]| [track_1_s2_swir](https://cloud.cylab.be/s/r59srt8DZqktee8) [4.2 GB]| [track_1_s2_lwir](https://cloud.cylab.be/s/oiAx9Ke4kKarxgx) [3.1 GB]|
 | **Track 2 - Seq 1** | [track_2_s1_rgb](https://cloud.cylab.be/s/ceoNXCjjsjm6GGc) [2.8 GB]| [track_2_s1_swir](https://cloud.cylab.be/s/2B2Ny5dHfJtiaAJ) [872.5 MB]| [track_2_s1_lwir](https://cloud.cylab.be/s/EeJk4HZHnZLry2M) [521.3 MB]|
 | **Track 2 - Seq 2** | [track_2_s2_rgb](https://cloud.cylab.be/s/7jnJEiMCBKx7Wbe) [15.8 GB]| [track_2_s2_swir](https://cloud.cylab.be/s/ernwP2FQeLdsDZ5) [2.9 GB]| [track_2_s2_lwir](https://cloud.cylab.be/s/tRJ9QEMgpf4KWPa) [2.3 GB]|
 | **Track 3 - Seq 1** | <p align="center">❌</p> | [track_3_s1_swir](https://cloud.cylab.be/s/7ki4axDPAZ9ebWi) [630.3 MB]| [track_3_s1_lwir](https://cloud.cylab.be/s/djQQfs6QCDgBdr6) [568.3 MB]|

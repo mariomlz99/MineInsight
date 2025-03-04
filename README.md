@@ -276,11 +276,11 @@ The **YOLOv5 / YOLOv8 format** is used for annotations of the targets position i
 ```
 <class_id> <x_center> <y_center> <width> <height>
 ```
-Each ID corresponds to an object, and the **full ID description** can be found in the YAML file here:  
-📄 **[Link to YAML File]** _(to be added later)_
+Each ID corresponds to an object, and the **full ID description** can be found in the YAML file:  
+[`targets_list.yaml`](target_location_ros2_bags/tracks_targets_list/targets_list.yaml)
 
 ## 🔹Target location using ROS 2 Bags:
-The code stored inside [link to folder] allows you to localize targets in images by reprojecting 3D point cloud data onto image frames.
+The code inside [`target_location_ros2_bags`](target_location_ros2_bags) allows you to localize targets in images by reprojecting 3D point cloud data onto image frames.
 It supports RGB, SWIR, and LWIR cameras, automatically handling bounding boxes, timestamps, and target labeling.
 
 ### Folder structure:
@@ -301,7 +301,7 @@ It supports RGB, SWIR, and LWIR cameras, automatically handling bounding boxes, 
 1) Set up the environment (Ensure ROS 2 and dependencies are installed):
 
 ```
-source /opt/ros/foxy/setup.bash
+source /opt/ros/$DISTRO/setup.bash
 pip install numpy pandas opencv-python pyyaml scipy
 ```
 2) Modify the configuration (Check param/params.yaml for bag path, CSV file, and camera topic you want to process).

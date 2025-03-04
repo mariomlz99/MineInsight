@@ -49,7 +49,7 @@
 - [1️) Motivation](#1-motivation)
 - [2️) Experimental Setup](#2-experimental-setup)
   - [🔹 Sensors Overview](#sensors-overview)
-  - [🔹 Sensors Setup](#sensors-setup)
+  - [🔹 Sensors Positioning](#sensors-positioning)
 - [3️) Environments and Sequences](#3-environments-and-sequences)
 - [4️) Targets](#4-targets)
 - [5️) Calibration](#5-calibration)
@@ -107,7 +107,7 @@ For a more detailed understanding of the methodology and experimental design, pl
 
 <br>
 
-## Sensors setup
+## Sensors Positioning
 
  *[Mario] IMAGE WITH TF POSITIONIGN TO BE ADDED :) *
 

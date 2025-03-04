@@ -47,7 +47,6 @@
 <!-- Cleaning line breakers -->
 
 # Motivation
----
 
 Landmines remain a persistent threat in conflict-affected regions, posing risks to civilians and impeding post-war recovery. Traditional demining methods are often slow, hazardous, and costly, necessitating the development of robotic solutions for safer and more efficient landmine detection. 
 
@@ -68,7 +67,6 @@ MineInsight follows best practices from established robotic datasets and provide
 
 
 # Experimental Setup
----
 
 This section follows the terminology and conventions outlined in the accompanying paper.  
 For a more detailed understanding of the methodology and experimental design, please refer to the paper.
@@ -92,7 +90,7 @@ For a more detailed understanding of the methodology and experimental design, pl
 
 
 # Environments and sequences
----
+
 
 The dataset was collected across **3 distinct tracks**, each designed to represent a demining scenario with varying terrain and environmental conditions. 
 These tracks contain a diverse set of targets, positioned to challenge algorithms development.
@@ -123,13 +121,13 @@ Each PDF catalogs each item with:
 
 
 # Calibration
----
+
 
 [Mario] aggiungi
 
 
 # Data
----
+
 
 We release **2 sequences per track**, resulting in a total of **6 sequences**.  
 The data is available in **three different formats**:
@@ -253,7 +251,7 @@ Where:
 
 
 # Target Location Annotations
----
+
 
 Each target location is estimated for each sequence of each track (refer to the paper for this estimation).
 The estimation of the target locations can be found according to the data you are using:
@@ -315,15 +313,15 @@ python3 ros2_bag_targets_display.py
 ```
 
 # Acknowledgments  
----
+
 The authors thank **Alessandra Miuccio** and **Timothée Fréville** for their support in the **hardware and software design**.  
 They also thank **Sanne Van Hees** and **Jorick Van Kwikenborne** for their assistance in **organizing the measurement campaign**.
 
 # Citation
----
+
 
 # License
----
+
 This work is licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**.  
 You are free to **share** and **adapt** this work **for non-commercial purposes**, as long as you **credit the authors** and **apply the same license** to any derivative works.
 
@@ -332,4 +330,4 @@ For full details, see:
 
 
 # Related Work
----
+

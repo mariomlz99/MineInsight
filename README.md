@@ -206,14 +206,14 @@ You can download the datasets from the links below:
 
 You can download each folder containing images and target locations from the links below:
 
-| **Track / Sequence** | **RGB** | **SWIR** | **LWIR** |
+| **Track / Seq** | **RGB** | **SWIR** | **LWIR** |
 |---------------------|-----------|------------|------------|
-| **Track 1 - Sequence 1** | [track_1_s1_rgb](https://cloud.cylab.be/s/z2dRbj8ZAw7nPrQ) [3.8 GB]| [track_1_s1_swir](https://cloud.cylab.be/s/mLd8p9QwixTzbJF) [1.2 GB]| [track_1_s1_lwir](https://cloud.cylab.be/s/5A4sq8Bjn8pmwe8) [671.0 MB]|
-| **Track 1 - Sequence 2** | [track_1_s2_rgb](#) | [track_1_s2_swir](#) | [track_1_s2_lwir](#) |
-| **Track 2 - Sequence 1** | [track_2_s1_rgb](https://cloud.cylab.be/s/ceoNXCjjsjm6GGc) [2.8 GB| [track_2_s1_swir](https://cloud.cylab.be/s/2B2Ny5dHfJtiaAJ) [872.5 MB]| [track_2_s1_lwir](https://cloud.cylab.be/s/EeJk4HZHnZLry2M) [521.3 MB]|
-| **Track 2 - Sequence 2** | [track_2_s2_rgb](#) | [track_2_s2_swir](#) | [track_2_s2_lwir](#) |
-| **Track 3 - Sequence 1** | ❌ | [track_3_s1_swir](https://cloud.cylab.be/s/7ki4axDPAZ9ebWi) [630.3 MB]| [track_3_s1_lwir](https://cloud.cylab.be/s/djQQfs6QCDgBdr6) [568.3 MB]|
-| **Track 3 - Sequence 2** | ❌ | [track_3_s2_swir](#) | [track_3_s2_lwir](#) |
+| **Track 1 - Seq 1** | [track_1_s1_rgb](https://cloud.cylab.be/s/z2dRbj8ZAw7nPrQ) [3.8 GB]| [track_1_s1_swir](https://cloud.cylab.be/s/mLd8p9QwixTzbJF) [1.2 GB]| [track_1_s1_lwir](https://cloud.cylab.be/s/5A4sq8Bjn8pmwe8) [671.0 MB]|
+| **Track 1 - Seq 2** | [track_1_s2_rgb](#) | [track_1_s2_swir](#) | [track_1_s2_lwir](#) |
+| **Track 2 - Seq 1** | [track_2_s1_rgb](https://cloud.cylab.be/s/ceoNXCjjsjm6GGc) [2.8 GB| [track_2_s1_swir](https://cloud.cylab.be/s/2B2Ny5dHfJtiaAJ) [872.5 MB]| [track_2_s1_lwir](https://cloud.cylab.be/s/EeJk4HZHnZLry2M) [521.3 MB]|
+| **Track 2 - Seq 2** | [track_2_s2_rgb](#) | [track_2_s2_swir](#) | [track_2_s2_lwir](#) |
+| **Track 3 - Seq 1** | ❌ | [track_3_s1_swir](https://cloud.cylab.be/s/7ki4axDPAZ9ebWi) [630.3 MB]| [track_3_s1_lwir](https://cloud.cylab.be/s/djQQfs6QCDgBdr6) [568.3 MB]|
+| **Track 3 - Seq 2** | ❌ | [track_3_s2_swir](#) | [track_3_s2_lwir](#) |
 
 Each folder (.zip) follows the naming convention:
 

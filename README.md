@@ -177,7 +177,7 @@ For installation instructions, refer to the documentation in the respective repo
 
 You can download the datasets from the links below:
 
-### - **📌 Track 1**
+### - **Track 1**
 🔹 **Sequence 1**:  
    - 🗂️ [ROS 2 Bag (Standard)](https://cloud.cylab.be/s/K2r4cdB3gJGdmKS) [19.1 GB]
    - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/WKgpJ5FbT68Z8BE) [19.6 GB]  
@@ -187,7 +187,7 @@ You can download the datasets from the links below:
    - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/zLj9cAPEtXKHiwm) [77.9 GB]  
 
 
-### - **📌 Track 2**
+### - **Track 2**
 🔹 **Sequence 1**:  
    - 🗂️ [ROS 2 Bag (Standard)](https://cloud.cylab.be/s/QMcps9zEwonBSw5) [15.1 GB] 
    - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/RmfDRxFAcoCb73a) [15.5 GB]  
@@ -197,7 +197,7 @@ You can download the datasets from the links below:
    - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/EWXLWWkJH9c3oKX) [71 GB]  
 
 
-### - **📌 Track 3**
+### - **Track 3**
 🔹 **Sequence 1**:  
    - 🗂️ [ROS 2 Bag (Standard)](https://cloud.cylab.be/s/jxJ62mq8EErewLN) [5.5 GB]  
    - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/j98Abz57Nf39RB7) [5.9 GB]  
@@ -243,8 +243,8 @@ The target locations are already included in the folder downloaded in the previo
 
 
 Each folder contains:  
-- **📷 Images** → Stored in `.jpg` format  
-- **📝 Annotations** → Corresponding `.txt` files  
+- **Images** → Stored in `.jpg` format  
+- **Annotations** → Corresponding `.txt` files  
 
 The generic naming convention for each jpg/txt is:
 

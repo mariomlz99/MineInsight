@@ -123,6 +123,9 @@ The data is available in **three different formats**:
 
 Each **ROS 2 Bag**, includes:
 
+<details>
+  <summary>Click here to view all the topics with a detailed explaination</summary>
+
 | Topic | Message Type | Description |
 |-------------------------------|-----------------------------------|-----------------------------------------------------------|
 | /allied_swir/image_raw/compressed | sensor_msgs/msg/CompressedImage | SWIR camera raw image |
@@ -151,6 +154,8 @@ Each **ROS 2 Bag**, includes:
 | /odometry/wheel | nav_msgs/msg/Odometry | Wheel odometry data from UGV wheel encoder |
 | /tf | tf2_msgs/msg/TFMessage | Real-time transformations between coordinate frames |
 | /tf_static | tf2_msgs/msg/TFMessage | Static transformations |
+
+</details>
 
 If you are downloading a **ROS 2 Bag with Livox Custom Msg**, you will find the following additional topics:
 

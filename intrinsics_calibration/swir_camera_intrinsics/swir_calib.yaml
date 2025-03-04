@@ -1,0 +1,23 @@
+%YAML 1.2
+---
+camera_matrix:
+  cols: 3
+  data: [3078.043639241139, 0, 627.1375778600271, 0, 3083.741728843918, 578.7346325629533, 0, 0, 1]
+  rows: 3
+camera_name: camera1
+distortion_coefficients:
+  cols: 4
+  data: [-0.1723165141550967, 1.423355914525777, 0.005533321479315532, -0.003328092804687567]
+  rows: 1
+distortion_model: plumb_bob
+focal_length_meters: 0
+image_height: 1032
+image_width: 1296
+projection_matrix:
+  cols: 4
+  data: [3078.043639241139, 0, 627.1375778600271, 0, 0, 3083.741728843918, 578.7346325629533, 0, 0, 0, 1, 0]
+  rows: 3
+rectification_matrix:
+  cols: 3
+  data: [1, 0, 0, 0, 1, 0, 0, 0, 1]
+  rows: 3

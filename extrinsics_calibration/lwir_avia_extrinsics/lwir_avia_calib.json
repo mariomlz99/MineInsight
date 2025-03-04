@@ -1,0 +1,39 @@
+{
+  "camera": {
+    "camera_model": "plumb_bob",
+    "distortion_coeffs": [
+      -0.3776646137482854,
+      0.1726218077523293,
+      0.002303487600812234,
+      1.124629961205205e-05,
+      -0.04114619495633207
+    ],
+    "intrinsics": [
+      404.7034880114493,
+      402.7571865364442,
+      323.9706970965376,
+      249.9187182242488
+    ]
+  },
+  "meta": {
+    "bag_names": [
+      "rosbag2_2024_11_26-10_25_04_0.db3"
+    ],
+    "camera_info_topic": "",
+    "data_path": "/home/mari0/Desktop/DATASET_PARAMETERS_CALIBRATION/EXTRINSICS/THERMAL_BAGS_FOR_EXTRINSICS_CALIB/rosbag2_2024_11_26-10_25_04",
+    "image_topic": "/flir/thermal/colorized/compressed",
+    "intensity_channel": "intensity",
+    "points_topic": "/avia/livox/lidar/pointcloud2"
+  },
+  "results": {
+    "init_T_lidar_camera": [
+      -0.006516396068036556,
+      0.04582987353205681,
+      0.0822889655828476,
+      -0.4953281710026088,
+      0.4858570694525033,
+      -0.4937541714032792,
+      0.5242134461724411
+    ]
+  }
+}

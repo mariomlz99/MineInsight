@@ -1,0 +1,38 @@
+{
+  "camera": {
+    "camera_model": "fisheye",
+    "distortion_coeffs": [
+      -0.03213375526494386,
+      -0.033597845272730145,
+      0.0521456703601681,
+      -0.021288346415731556
+    ],
+    "intrinsics": [
+      1073.7858181210856,
+      1073.0469093965526,
+      936.3346852627311,
+      541.0409993855149
+    ]
+  },
+  "meta": {
+    "bag_names": [
+      "rosbag2_2024_11_11-20_34_14_0.db3"
+    ],
+    "camera_info_topic": "",
+    "data_path": "/home/mari0/Desktop/DATASET_PARAMETERS_CALIBRATION/EXTRINSICS/RGB_BAGS_FOR_EXTRINSICS_CALIB/STATIC_IN_LAB/rosbag2_2024_11_11-20_34_14",
+    "image_topic": "/allied_rgb/image_raw/compressed",
+    "intensity_channel": "intensity",
+    "points_topic": "/avia/livox/lidar/pointcloud2"
+  },
+  "results": {
+    "init_T_lidar_camera": [
+      0.0024192954879254103,
+      0.0440404899418354,
+      0.05314840376377106,
+      -0.505923642419187,
+      0.495989728486824,
+      -0.4809000703465311,
+      0.5164984058558588
+    ]
+  }
+}

@@ -66,10 +66,10 @@ MineInsight follows best practices from established robotic datasets and provide
 This section follows the terminology and conventions outlined in the accompanying paper.  
 For a more detailed understanding of the methodology and experimental design, please refer to the paper.
 
-## Sensors overview
+## -) Sensors overview
 | <img src="repo_images/experimental_setup.png" alt="Experimental Setup" align="left" width="50%"> | **Platform and robotic arm**  <br> [🔹 Clearpath Husky A200 UGV](https://clearpathrobotics.com/husky/)  <br> [🔹 Universal Robots UR5e Robotic Arm](https://www.universal-robots.com/products/ur5e/) <br><br> <span style="color:red;"><b>Platform sensor suite</b></span>  <br> [🔹 Livox Mid-360 LiDAR](https://www.livoxtech.com/mid-360)  <br> [🔹 Sevensense Core Research Module](https://github.com/sevensense-robotics/core_research_manual)  <br> [🔹 Microstrain 3DM-GV7-AR IMU](https://www.microstrain.com/inertial-sensors/3dm-gv7-ar)  <br><br> <span style="color:#003366;"><b>Robotic arm sensor suite</b></span>  <br> [🔹 Teledyne FLIR Boson 640](https://www.flir.com/products/boson/?model=20640A095&vertical=lwir&segment=oem)  <br> [🔹 Alvium 1800 U-130 VSWIR](https://www.alliedvision.com/en/products/alvium-configurator/alvium-1800-u/130-vswir/)  <br> [🔹 Alvium 1800 U-240](https://www.alliedvision.com/en/products/alvium-configurator/alvium-1800-u/240/)  <br> [🔹 Livox AVIA](https://www.livoxtech.com/avia) |
 |:---------------------------------------------:|:----------------------------------------------:|
-## Sensors setup
+## -) Sensors setup
 
  *[Mario] IMAGE WITH TF POSITIONIGN TO BE ADDED :) *
 
@@ -119,7 +119,7 @@ The data is available in **three different formats**:
 
 
 
-## ROS 2 Bags Structure
+## -) ROS 2 Bags Structure
 
 Each **ROS 2 Bag**, includes:
 
@@ -168,11 +168,11 @@ To correctly **decode and use** these messages, install the official Livox drive
 
 For installation instructions, refer to the documentation in the respective repositories.
 
-## ROS 2 Bags Downloads
+## -) ROS 2 Bags Downloads
 
 You can download the datasets from the links below:
 
-### **📌 Track 1**
+### - **📌 Track 1**
 🔹 **Sequence 1**:  
    - 🗂️ [ROS 2 Bag (Standard)](https://cloud.cylab.be/s/K2r4cdB3gJGdmKS) [19.1 GB]
    - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/WKgpJ5FbT68Z8BE) [19.6 GB]  
@@ -182,7 +182,7 @@ You can download the datasets from the links below:
    - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/zLj9cAPEtXKHiwm) [77.9 GB]  
 
 
-### **📌 Track 2**
+### - **📌 Track 2**
 🔹 **Sequence 1**:  
    - 🗂️ [ROS 2 Bag (Standard)](https://cloud.cylab.be/s/QMcps9zEwonBSw5) [15.1 GB] 
    - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/RmfDRxFAcoCb73a) [15.5 GB]  
@@ -192,7 +192,7 @@ You can download the datasets from the links below:
    - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/EWXLWWkJH9c3oKX) [71 GB]  
 
 
-### **📌 Track 3**
+### - **📌 Track 3**
 🔹 **Sequence 1**:  
    - 🗂️ [ROS 2 Bag (Standard)](https://cloud.cylab.be/s/jxJ62mq8EErewLN) [5.5 GB]  
    - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/j98Abz57Nf39RB7) [5.9 GB]  
@@ -202,7 +202,7 @@ You can download the datasets from the links below:
    - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/J9G54g52NZXyYW5) [26 GB]  
 
 
-## Raw Images
+## -) Raw Images
 
 You can download each folder containing the images from the links below:
 
@@ -232,7 +232,7 @@ Where:
 Each target location is estimated for each sequence of each track (refer to the paper for this estimation).
 The estimation of the target locations can be found according to the data you are using:
 
-## Target location using Raw Images:
+## -) Target location using Raw Images:
 
 The target locations are already included in the folder downloaded in the previous sections [add hyperlink].
 

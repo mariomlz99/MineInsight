@@ -115,7 +115,7 @@ The data is available in **three different formats**:
 
 - 🗄 **ROS 2 Bags**
 - 🗄 **ROS 2 Bags with Livox Custom Msg** 
-- 🖼 **Images + Target Location Annotations**  
+- 🖼 **Raw Images**  
 
 
 
@@ -202,9 +202,9 @@ You can download the datasets from the links below:
    - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/J9G54g52NZXyYW5) [26 GB]  
 
 
-## Images + Target Location Annotations
+## Raw Images
 
-You can download each folder containing images and target locations from the links below:
+You can download each folder containing the images from the links below:
 
 | **Track / Seq** | **RGB** | **SWIR** | **LWIR** |
 |---------------------|-----------|------------|------------|
@@ -225,6 +225,18 @@ Where:
 - **(ns)** → Sequence number (**1, 2**)  
 - **camera** → Image type (**rgb, swir, or lwir**)  
 
+---
+
+# Target Location Annotations
+
+Each target location is estimated for each sequence of each track (refer to the paper for this estimation).
+The estimation of the target locations can be found according to the data you are using:
+
+## Target location using Raw Images:
+
+The target locations are already included in the folder downloaded in the previous sections [add hyperlink].
+
+
 Each folder contains:  
 - **📷 Images** → Stored in `.jpg` format  
 - **📝 Annotations** → Corresponding `.txt` files  
@@ -238,7 +250,3 @@ track_(nt)_s(ns)_camera_timestampsec_timestampnanosec (.jpg / .txt)
 The **YOLO bounding box format** is used for annotations of the targets position in the .txt files.  
 Each ID corresponds to an object, and the **full ID description** can be found in the YAML file here:  
 📄 **[Link to YAML File]** _(to be added later)_
-
----
-
-# Target Location Annotations

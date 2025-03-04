@@ -68,25 +68,13 @@ For a more detailed understanding of the methodology and experimental design, pl
 
 ## 🔹 Sensors Overview
 
-<p align="center">
-  <img src="repo_images/experimental_setup.png" alt="Experimental Setup" width="35%" align="left">
-</p>
+<p align="center"> <img src="repo_images/experimental_setup.png" alt="Experimental Setup" width="50%"> </p>
 
 
-### **Platform and Robotic Arm**
-🔹 [Clearpath Husky A200 UGV](https://clearpathrobotics.com/husky/)  
-🔹 [Universal Robots UR5e Robotic Arm](https://www.universal-robots.com/products/ur5e/)  
+| **Platform and Robotic Arm** | **Platform Sensor Suite** | **Robotic Arm Sensor Suite** |
+|-----------------------------|----------------------------|------------------------------|
+| 🔹 [Clearpath Husky A200 UGV](https://clearpathrobotics.com/husky/)  <br> 🔹 [Universal Robots UR5e Robotic Arm](https://www.universal-robots.com/products/ur5e/)  | 🔹 [Livox Mid-360 LiDAR](https://www.livoxtech.com/mid-360)  <br> 🔹 [Sevensense Core Research Module](https://github.com/sevensense-robotics/core_research_manual)  <br> 🔹 [Microstrain 3DM-GV7-AR IMU](https://www.microstrain.com/inertial-sensors/3dm-gv7-ar)  | 🔹 [Teledyne FLIR Boson 640](https://www.flir.com/products/boson/?model=20640A095&vertical=lwir&segment=oem)  <br> 🔹 [Alvium 1800 U-130 VSWIR](https://www.alliedvision.com/en/products/alvium-configurator/alvium-1800-u/130-vswir/)  <br> 🔹 [Alvium 1800 U-240](https://www.alliedvision.com/en/products/alvium-configurator/alvium-1800-u/240/)  <br> 🔹 [Livox AVIA](https://www.livoxtech.com/avia)  |
 
-### **Platform Sensor Suite**
-🔹 [Livox Mid-360 LiDAR](https://www.livoxtech.com/mid-360)  
-🔹 [Sevensense Core Research Module](https://github.com/sevensense-robotics/core_research_manual)  
-🔹 [Microstrain 3DM-GV7-AR IMU](https://www.microstrain.com/inertial-sensors/3dm-gv7-ar)  
-
-### **Robotic Arm Sensor Suite**
-🔹 [Teledyne FLIR Boson 640](https://www.flir.com/products/boson/?model=20640A095&vertical=lwir&segment=oem)  
-🔹 [Alvium 1800 U-130 VSWIR](https://www.alliedvision.com/en/products/alvium-configurator/alvium-1800-u/130-vswir/)  
-🔹 [Alvium 1800 U-240](https://www.alliedvision.com/en/products/alvium-configurator/alvium-1800-u/240/)  
-🔹 [Livox AVIA](https://www.livoxtech.com/avia)  
 
 
 <br>

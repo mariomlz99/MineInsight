@@ -1,12 +1,13 @@
 # ROS2 Bag file path:
-bag_file_path: "/media/mari0/T91/DATASET_PUBLISHABLE_WITH_LIVOX_CUSTOM/TRACK_2/track_2_sequence_1"
+# bag_file_path: "/media/mari0/T91/DATASET_PUBLISHABLE_WITH_LIVOX_CUSTOM/TRACK_2/track_2_sequence_1"
+bag_file_path: "/path/to/your/bag/file"
 
 # Targets location CSV path:_
 csv_file_path: "target_locations_csv/targets_track2_s1.csv"
 
 # Camera topic to process:
-# camera_topic: "/allied_rgb/image_raw/rectified/compressed"
-camera_topic: "/allied_swir/image_raw/rectified/compressed"
+camera_topic: "/allied_rgb/image_raw/rectified/compressed"
+# camera_topic: "/allied_swir/image_raw/rectified/compressed"
 # camera_topic: "/flir/thermal/rectified/compressed"
 
 # ROTATE IMG  - ONLY FOR SWIR (since natively the image is upside down)
@@ -16,41 +17,41 @@ rotate_image_180: true
 ######## CAMERA PARAMETERS ############
 #######################################
 
-# # RGB
-# # Intrinsic parameters of the camera ( Distortion is removed, since the camera is already rectified)
-# intrinsics:
-#   fx: 1073.7858181210856
-#   fy: 1073.0469093965526  
-#   cx: 936.3346852627311   
-#   cy: 541.0409993855149   
-# extrinsics:
-#   translation:
-#     tx: 0.0024192954879254103  
-#     ty: 0.0440404899418354  
-#     tz: 0.05314840376377106  
-#   rotation:
-#     rw: 0.5164984058558588 
-#     rx: -0.505923642419187
-#     ry: 0.495989728486824
-#     rz: -0.4809000703465311
-
-# SWIR
+# RGB
 # Intrinsic parameters of the camera ( Distortion is removed, since the camera is already rectified)
 intrinsics:
-  fx: 3078.043639241139 
-  fy: 3083.741728843918  
-  cx: 627.1375778600271  
-  cy: 578.7346325629533  
+  fx: 1073.7858181210856
+  fy: 1073.0469093965526  
+  cx: 936.3346852627311   
+  cy: 541.0409993855149   
 extrinsics:
   translation:
-    tx: 0.12619361281394958  
-    ty: -0.050657857209444046
-    tz: 0.06080497056245804  
+    tx: 0.0024192954879254103  
+    ty: 0.0440404899418354  
+    tz: 0.05314840376377106  
   rotation:
-    rw: 0.4911611175230539
-    rx: 0.5064148977036337
-    ry: 0.488476185290352
-    rz: 0.5135131408691751
+    rw: 0.5164984058558588 
+    rx: -0.505923642419187
+    ry: 0.495989728486824
+    rz: -0.4809000703465311
+
+# # SWIR
+# # Intrinsic parameters of the camera ( Distortion is removed, since the camera is already rectified)
+# intrinsics:
+#   fx: 3078.043639241139 
+#   fy: 3083.741728843918  
+#   cx: 627.1375778600271  
+#   cy: 578.7346325629533  
+# extrinsics:
+#   translation:
+#     tx: 0.12619361281394958  
+#     ty: -0.050657857209444046
+#     tz: 0.06080497056245804  
+#   rotation:
+#     rw: 0.4911611175230539
+#     rx: 0.5064148977036337
+#     ry: 0.488476185290352
+#     rz: 0.5135131408691751
 
 # # THERMAL
 # # Intrinsic parameters of the camera ( Distortion is removed, since the camera is already rectified)

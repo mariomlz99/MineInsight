@@ -112,7 +112,7 @@ For a more detailed understanding of the methodology and experimental design, pl
  *[Mario] IMAGE WITH TF POSITIONIGN TO BE ADDED :) *
 
 
-# [3] Environments and sequences
+# [3] Environments and Sequences
 
 
 The dataset was collected across **3 distinct tracks**, each designed to represent a demining scenario with varying terrain and environmental conditions. 
@@ -301,7 +301,7 @@ Where:
 Each target location is estimated for each sequence of each track (refer to the paper for this estimation).
 The estimation of the target locations can be found according to the data you are using:
 
-## Target location using Raw Images:
+## Target Location Using Raw Images:
 
 The target locations are already included in the folder downloaded in the previous sections [add hyperlink].
 
@@ -324,11 +324,11 @@ The **YOLOv5 / YOLOv8 format** is used for annotations of the targets position i
 Each ID corresponds to an object, and the **full ID description** can be found in the YAML file:  
 [`targets_list.yaml`](target_location_ros2_bags/tracks_targets_list/targets_list.yaml)
 
-## Target location using ROS 2 Bags:
+## Target Location Using ROS 2 Bags:
 The code inside [`target_location_ros2_bags`](target_location_ros2_bags) allows you to localize targets in images by reprojecting 3D point cloud data onto image frames.
 It supports RGB, SWIR, and LWIR cameras, automatically handling bounding boxes, timestamps, and target labeling.
 
-### Folder structure:
+### Folder Structure:
 
 ```
 📂 target_location_ros2_bags/

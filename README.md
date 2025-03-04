@@ -49,7 +49,7 @@
 - `1️)` [Motivation](#1-motivation)
 - `2️)` [Experimental Setup](#2-experimental-setup)
   - [Sensors Overview](#sensors-overview)
-  - [Sensors Positioning](#sensors-positioning)
+  - [Sensors Coordinate Systems](#sensors-coordinate-systems)
 - `3️)` [Environments and Sequences](#3-environments-and-sequences)
 - `4️)` [Targets](#4-targets)
 - `5️)` [Calibration](#5-calibration)
@@ -96,7 +96,7 @@ For a more detailed understanding of the methodology and experimental design, pl
 
 ## Sensors Overview
 
-<p align="center"> <img src="repo_images/experimental_setup.png" alt="Experimental Setup" width="50%"> </p>
+<p align="center"> <img src="repo_images/experimental_setup.png" alt="Experimental Setup" width="80%"> </p>
 
 
 | **Platform and Robotic Arm** | **Platform Sensor Suite** | **Robotic Arm Sensor Suite** |
@@ -104,12 +104,23 @@ For a more detailed understanding of the methodology and experimental design, pl
 | [Clearpath Husky A200 UGV](https://clearpathrobotics.com/husky/)  <br> [Universal Robots UR5e Robotic Arm](https://www.universal-robots.com/products/ur5e/)  | [Livox Mid-360 LiDAR](https://www.livoxtech.com/mid-360)  <br>[Sevensense Core Research Module](https://github.com/sevensense-robotics/core_research_manual)  <br> [Microstrain 3DM-GV7-AR IMU](https://www.microstrain.com/inertial-sensors/3dm-gv7-ar)  | [Teledyne FLIR Boson 640](https://www.flir.com/products/boson/?model=20640A095&vertical=lwir&segment=oem)  <br> [Alvium 1800 U-130 VSWIR](https://www.alliedvision.com/en/products/alvium-configurator/alvium-1800-u/130-vswir/)  <br> [Alvium 1800 U-240](https://www.alliedvision.com/en/products/alvium-configurator/alvium-1800-u/240/)  <br> [Livox AVIA](https://www.livoxtech.com/avia)  |
 
 
-
 <br>
 
-## Sensors Positioning
+## Sensors Coordinate Systems
 
- *[Mario] IMAGE WITH TF POSITIONIGN TO BE ADDED :) *
+The coordinate systems of all sensors in our platform are illustrated in the figure below.
+
+> **Note:** The positions of the axis systems in the figure are approximate.  
+> This visualization provides insight into the relative orientations between sensors,  
+> whether in the **robotic arm sensor suite** or the **platform sensor suite**.
+
+For the full transformation chain, refer to the following **ROS 2 topics** in the dataset:
+- **`/tf_static`** → Contains static transformations between sensors.
+- **`/tf`** → Contains dynamic transformations recorded during operation.
+
+<p align="center">
+  <img src="repo_images/sensors_references_figure.png" alt="Sensors Coordinate Systems" width="100%">
+</p>
 
 
 # [3] Environments and Sequences

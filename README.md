@@ -212,8 +212,8 @@ You can download each folder containing images and target locations from the lin
 | **Track 1 - Seq 2** | [track_1_s2_rgb](#) | [track_1_s2_swir](#) | [track_1_s2_lwir](#) |
 | **Track 2 - Seq 1** | [track_2_s1_rgb](https://cloud.cylab.be/s/ceoNXCjjsjm6GGc) [2.8 GB]| [track_2_s1_swir](https://cloud.cylab.be/s/2B2Ny5dHfJtiaAJ) [872.5 MB]| [track_2_s1_lwir](https://cloud.cylab.be/s/EeJk4HZHnZLry2M) [521.3 MB]|
 | **Track 2 - Seq 2** | [track_2_s2_rgb](https://cloud.cylab.be/s/7jnJEiMCBKx7Wbe) [15.8 GB]| [track_2_s2_swir](https://cloud.cylab.be/s/ernwP2FQeLdsDZ5) [2.9 GB]| [track_2_s2_lwir](https://cloud.cylab.be/s/tRJ9QEMgpf4KWPa) [2.3 GB]|
-| **Track 3 - Seq 1** | ❌ | [track_3_s1_swir](https://cloud.cylab.be/s/7ki4axDPAZ9ebWi) [630.3 MB]| [track_3_s1_lwir](https://cloud.cylab.be/s/djQQfs6QCDgBdr6) [568.3 MB]|
-| **Track 3 - Seq 2** | ❌ | [track_3_s2_swir](https://cloud.cylab.be/s/33rpTt4pbGrirsi) [2.6 GB]| [track_3_s2_lwir](https://cloud.cylab.be/s/obeexpcziiayyKG) [2.0 GB]|
+| **Track 3 - Seq 1** | <p align="center">❌</p> | [track_3_s1_swir](https://cloud.cylab.be/s/7ki4axDPAZ9ebWi) [630.3 MB]| [track_3_s1_lwir](https://cloud.cylab.be/s/djQQfs6QCDgBdr6) [568.3 MB]|
+| **Track 3 - Seq 2** | <p align="center">❌</p> | [track_3_s2_swir](https://cloud.cylab.be/s/33rpTt4pbGrirsi) [2.6 GB]| [track_3_s2_lwir](https://cloud.cylab.be/s/obeexpcziiayyKG) [2.0 GB]|
 
 Each folder (.zip) follows the naming convention:
 

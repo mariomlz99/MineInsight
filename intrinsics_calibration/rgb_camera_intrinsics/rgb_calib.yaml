@@ -1,0 +1,22 @@
+%YAML 1.2
+---
+camera_matrix:
+  cols: 3
+  data: [1073.7858181210856, 0, 936.3346852627311, 0, 1073.0469093965526, 541.0409993855149, 0, 0, 1]
+  rows: 3
+camera_name: rgb
+distortion_coefficients:
+  cols: 4
+  data: [-0.03213375526494386, -0.033597845272730145, 0.0521456703601681, -0.021288346415731556]
+  rows: 1
+distortion_model: equidistant
+image_height: 1216
+image_width: 1936
+projection_matrix:
+  cols: 4
+  data: [1073.7858181210856, 0, 936.3346852627311, 0, 0, 1073.0469093965526, 541.0409993855149, 0, 0, 0, 1, 0]
+  rows: 3
+rectification_matrix:
+  cols: 3
+  data: [1, 0, 0, 0, 1, 0, 0, 0, 1]
+  rows: 3

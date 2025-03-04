@@ -69,10 +69,9 @@ For a more detailed understanding of the methodology and experimental design, pl
 ## 🔹 Sensors Overview
 
 <p align="center">
-  <img src="repo_images/experimental_setup.png" alt="Experimental Setup" width="45%" align="left">
+  <img src="repo_images/experimental_setup.png" alt="Experimental Setup" width="35%" align="left">
 </p>
 
-<br>
 
 ### **Platform and Robotic Arm**
 🔹 [Clearpath Husky A200 UGV](https://clearpathrobotics.com/husky/)  
@@ -90,7 +89,7 @@ For a more detailed understanding of the methodology and experimental design, pl
 🔹 [Livox AVIA](https://www.livoxtech.com/avia)  
 
 
-<br><br><br>
+<br>
 
 ## 🔹Sensors setup
 

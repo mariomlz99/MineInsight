@@ -1,0 +1,161 @@
+Track4:
+  - id: 0
+    name: Sequence starter
+    text: "ID 0 - Sequence starter"
+  - id: 33
+    name: PFM-1
+    text: "ID 33 - PFM-1"
+  - id: 11
+    name: Plastic shampoo bottle
+    text: "ID 11 - Plastic shampoo bottle"
+  - id: 32
+    name: PFM-1
+    text: "ID 32 - PFM-1"
+  - id: 3
+    name: Metal tuna can
+    text: "ID 3 - Tuna Can"
+  - id: 34
+    name: PFM-1
+    text: "ID 34 - PFM-1"
+  - id: 1
+    name: Coke Can folded
+    text: "ID 1 - Coke Can"
+  - id: 15
+    name: Plastic water bottle (significantly crumpled)
+    text: "ID 15 - Plastic Bottle"
+  - id: 21
+    name: PMN
+    text: "ID 21 - PMN"
+  - id: 40
+    name: M6
+    text: "ID 40 - M6"
+  - id: 42
+    name: TMA-2
+    text: "ID 42 - TMA-2"
+  - id: 41
+    name: TC-3.6 
+    text: "ID 41 - TC-3.6"
+  - id: 13
+    name: Plastic water bottle (partially crumpled)
+    text: "ID 13 - Plastic Bottle"
+  - id: 43
+    name: PMN
+    text: "ID 43 - PMN"
+  - id: 39
+    name: M6
+    text: "ID 39 - M6"
+  - id: 17
+    name: Metal Pot
+    text: "ID 17 - Metal Pot"
+  - id: 27
+    name: PFM-1
+    text: "ID 27 - PFM-1"
+  - id: 9
+    name: Glass beer bottle
+    text: "ID 9 - Glass Beer Bottle"
+  - id: 29
+    name: PFM-1
+    text: "ID 29 - PFM-1"
+  - id: 5
+    name: Plastic chips bag (significantly crumpled)
+    text: "ID 5 - Chips Bag"
+  - id: 28
+    name: PFM-1
+    text: "ID 28 - PFM-1"
+  - id: 7
+    name: Glass Pepper Dispenser
+    text: "ID 7 - Pepper Dispenser"
+  - id: 24
+    name: PFM-1
+    text: "ID 24 - PFM-1"
+  - id: 23
+    name: PFM-1
+    text: "ID 23 - PFM-1"
+  - id: 19
+    name: Disposable Paper Cup
+    text: "ID 19 - Paper Cup"
+  - id: 22
+    name: PFM-1
+    text: "ID 22 - PFM-1"
+
+Track7:
+  - id: 46
+    name: MON-90
+    text: "ID 46 - MON-90"
+  - id: 47
+    name: Type 72P 
+    text: "ID 47 - Type 72P"
+  - id: 14
+    name: Plastic water bottle (slightly crumpled)
+    text: "ID 14 - Plastic Bottle"
+  - id: 36
+    name: PFM-1
+    text: "ID 36 - PFM-1"
+  - id: 18
+    name: Sponge
+    text: "ID 18 - Sponge"
+  - id: 25
+    name: PFM-1
+    text: "ID 25 - PFM-1"
+  - id: 26
+    name: PFM-1
+    text: "ID 26 - PFM-1"
+  - id: 20
+    name: Plastic Charger
+    text: "ID 20 - Plastic Charger"
+  - id: 35
+    name: PFM-1
+    text: "ID 35 - PFM-1"
+  - id: 2
+    name: Plastic chips bag (slightly crumpled),
+    text: "ID 2 - Chips Bag"
+  - id: 45
+    name: TM-46
+    text: "ID 45 - TM-46"
+  - id: 4
+    name: Glass jar (green cover),
+    text: "ID 4 - Glass Jar"
+  - id: 16
+    name: Soda metal can
+    text: "ID 16 - Soda Can"
+  - id: 31
+    name: PFM-1
+    text: "ID 31 - PFM-1"
+  - id: 30
+    name: PFM-1
+    text: "ID 30 - PFM-1"
+  - id: 6
+    name: Glass jar (grey cover)
+    text: "ID 6 - Glass Jar"
+  - id: 12
+    name: Glass vinegar bottle
+    text: "ID 12 - Vinegar Bottle"
+  - id: 48
+    name: TMM-1
+    text: "ID 48 - TMM-1"
+  - id: 8
+    name: Metal corn tin
+    text: "ID 8 - Corn Tin"
+  - id: 44
+    name: MON-50
+    text: "ID 44 - MON-50"
+  - id: 10
+    name: Plastic Cup
+    text: "ID 10 - Plastic Cup"
+
+Track13:
+  - id: 57
+    name: C-3
+    text: "ID 57 - C-3 Canadian AP"
+  - id: 52
+    name: PROM-1
+    text: "ID 52 - PROM-1"
+  - id: 56
+    name: M-35
+    text: "ID 56 - M-35"
+  - id: 55
+    name: C-3
+    text: "ID 55 - C-3"
+  - id: 53
+    name: VS-50
+    text: "ID 53 - VS-50"

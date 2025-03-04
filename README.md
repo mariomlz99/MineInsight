@@ -160,7 +160,7 @@ If you are downloading a **ROS 2 Bag with Livox Custom Msg**, you will find the 
 | /mid360/livox/lidar | livox_ros_driver2/msg/CustomMsg | Raw point cloud data from Livox Mid-360 LiDAR in custom Livox format |
 
 **Note:**
-These messages include **timestamps** for each point in the point cloud scan.  
+These messages include timestamps for each point in the point cloud scan.  
 To correctly **decode and use** these messages, install the official Livox drivers:  
 
 - **Livox AVIA** (🔗 [livox_ros2_driver](https://github.com/Livox-SDK/livox_ros2_driver))  

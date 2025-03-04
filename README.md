@@ -40,9 +40,14 @@
 <p align="center" style="font-size:10px;">
   📄 <a href="https://your-dataset-site.com">Website</a> | 📜 <a href="https://arxiv.org/abs/xxxxx">Paper</a> | 📂 <a href="https://github.com/your-repo">GitHub</a>
 </p>
+<!-- Cleaning line breakers -->
+<br> 
+<p align="center">---------</p>
+<br> 
+<!-- Cleaning line breakers -->
 
----
 # Motivation
+---
 
 Landmines remain a persistent threat in conflict-affected regions, posing risks to civilians and impeding post-war recovery. Traditional demining methods are often slow, hazardous, and costly, necessitating the development of robotic solutions for safer and more efficient landmine detection. 
 
@@ -61,8 +66,10 @@ MineInsight follows best practices from established robotic datasets and provide
   <img src="repo_images/full_dataset_picture_with_names.png" alt="dataset_presentation_pic" >
 </p>
 
----
+
 # Experimental Setup
+---
+
 This section follows the terminology and conventions outlined in the accompanying paper.  
 For a more detailed understanding of the methodology and experimental design, please refer to the paper.
 
@@ -83,8 +90,10 @@ For a more detailed understanding of the methodology and experimental design, pl
 
  *[Mario] IMAGE WITH TF POSITIONIGN TO BE ADDED :) *
 
----
+
 # Environments and sequences
+---
+
 The dataset was collected across **3 distinct tracks**, each designed to represent a demining scenario with varying terrain and environmental conditions. 
 These tracks contain a diverse set of targets, positioned to challenge algorithms development.
 The figures represents a top-view pointcloud distribution of the targets along the track.
@@ -93,8 +102,8 @@ The figures represents a top-view pointcloud distribution of the targets along t
   <img src="repo_images/tracks_pointcloud_topview.png" alt="dataset_tracks_presentation" >
 </p>
 
----
 # Targets
+---
 
 For each track, a **detailed inventory PDF** is available, providing the full list of targets along with their respective details.  
 You can find them in the **`tracks_inventory`** folder of this repository:
@@ -112,13 +121,15 @@ Each PDF catalogs each item with:
 - **Image:** A visual reference of the object for recognition;  
 - **[CAT-UXO link](https://www.cat-uxo.com/)**: Detailed explanation of the target (available only for landmines).  
 
----
+
 # Calibration
+---
 
 [Mario] aggiungi
 
----
+
 # Data
+---
 
 We release **2 sequences per track**, resulting in a total of **6 sequences**.  
 The data is available in **three different formats**:
@@ -239,9 +250,10 @@ Where:
 - **(ns)** → Sequence number (**1, 2**)  
 - **camera** → Image type (**rgb, swir, or lwir**)  
 
----
+
 
 # Target Location Annotations
+---
 
 Each target location is estimated for each sequence of each track (refer to the paper for this estimation).
 The estimation of the target locations can be found according to the data you are using:
@@ -261,8 +273,63 @@ The generic naming convention for each jpg/txt is:
 track_(nt)_s(ns)_camera_timestampsec_timestampnanosec (.jpg / .txt)
 ```
 
-The **YOLO bounding box format** is used for annotations of the targets position in the .txt files.  
+The **YOLOv5 / YOLOv8 format** is used for annotations of the targets position in the .txt files.  
+
+```
+<class_id> <x_center> <y_center> <width> <height>
+```
 Each ID corresponds to an object, and the **full ID description** can be found in the YAML file here:  
 📄 **[Link to YAML File]** _(to be added later)_
 
-a
+## 🔹Target location using ROS 2 Bags:
+The code stored inside [link to folder] allows you to localize targets in images by reprojecting 3D point cloud data onto image frames.
+It supports RGB, SWIR, and LWIR cameras, automatically handling bounding boxes, timestamps, and target labeling.
+
+### Folder structure:
+
+```
+📂 target_location_ros2_bags/
+│── 📂 param/                 # Configuration YAML files
+│── 📂 target_locations_csv/   # CSV files with target locations
+│── 📂 tracks_targets_list/    # YAML mapping target IDs to labels
+│── ros2_bag_targets_display.py  # Main Python script
+```
+
+
+**Note:** For simplicity, the **`params.yaml`** file repeats the extrinsics and part of the intrinsics of each camera, avoiding dependencies on other configuration files higher in the repository hierarchy.
+
+
+### How to run:
+1) Set up the environment (Ensure ROS 2 and dependencies are installed):
+
+```
+source /opt/ros/foxy/setup.bash
+pip install numpy pandas opencv-python pyyaml scipy
+```
+2) Modify the configuration (Check param/params.yaml for bag path, CSV file, and camera topic you want to process).
+
+3) Run the script to process the bag and display results:
+
+```
+python3 ros2_bag_targets_display.py
+```
+
+# Acknowledgments  
+---
+The authors thank **Alessandra Miuccio** and **Timothée Fréville** for their support in the **hardware and software design**.  
+They also thank **Sanne Van Hees** and **Jorick Van Kwikenborne** for their assistance in **organizing the measurement campaign**.
+
+# Citation
+---
+
+# License
+---
+This work is licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**.  
+You are free to **share** and **adapt** this work **for non-commercial purposes**, as long as you **credit the authors** and **apply the same license** to any derivative works.
+
+For full details, see:  
+[CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+
+# Related Work
+---

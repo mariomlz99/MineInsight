@@ -111,7 +111,7 @@ Each PDF catalogs each item with:
 # Data
 
 We release **2 sequences per track**, resulting in a total of **6 sequences**.  
-The dataset is available in **three different formats**:
+The data is available in **three different formats**:
 
 - 🗄 **ROS 2 Bags**
 - 🗄 **ROS 2 Bags with Livox Custom Msg** 
@@ -181,7 +181,6 @@ You can download the datasets from the links below:
    - 🗂️ [ROS 2 Bag (Standard)](https://cloud.cylab.be/s/bDFSDiEiZiSgEQ8) [75.3 GB] 
    - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/zLj9cAPEtXKHiwm) [77.9 GB]  
 
----
 
 ### **📌 Track 2**
 🔹 **Sequence 1**:  
@@ -192,7 +191,6 @@ You can download the datasets from the links below:
    - 🗂️ [ROS 2 Bag (Standard)](https://cloud.cylab.be/s/yTb7XRPYk2bT958) [68.9 GB]  
    - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/EWXLWWkJH9c3oKX) [71 GB]  
 
----
 
 ### **📌 Track 3**
 🔹 **Sequence 1**:  
@@ -202,3 +200,45 @@ You can download the datasets from the links below:
 🔹 **Sequence 2**:  
    - 🗂️ [ROS 2 Bag (Standard)](https://cloud.cylab.be/s/qoQReDy3RCJBL8c) [24.4 GB]  
    - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/J9G54g52NZXyYW5) [26 GB]  
+
+
+## Images + Target Location Annotations
+
+You can download each folder containing images and target locations from the links below:
+
+| **Track / Sequence** | **RGB** | **SWIR** | **LWIR** |
+|---------------------|-----------|------------|------------|
+| **Track 1 - Sequence 1** | [track_1_s1_rgb](https://cloud.cylab.be/s/z2dRbj8ZAw7nPrQ) [3.8 GB]| [track_1_s1_swir](https://cloud.cylab.be/s/mLd8p9QwixTzbJF) [1.2 GB]| [track_1_s1_lwir](https://cloud.cylab.be/s/5A4sq8Bjn8pmwe8) [671.0 MB]|
+| **Track 1 - Sequence 2** | [track_1_s2_rgb](#) | [track_1_s2_swir](#) | [track_1_s2_lwir](#) |
+| **Track 2 - Sequence 1** | [track_2_s1_rgb](https://cloud.cylab.be/s/ceoNXCjjsjm6GGc) [2.8 GB| [track_2_s1_swir](https://cloud.cylab.be/s/2B2Ny5dHfJtiaAJ) [872.5 MB]| [track_2_s1_lwir](https://cloud.cylab.be/s/EeJk4HZHnZLry2M) [521.3 MB]|
+| **Track 2 - Sequence 2** | [track_2_s2_rgb](#) | [track_2_s2_swir](#) | [track_2_s2_lwir](#) |
+| **Track 3 - Sequence 1** | ❌ | [track_3_s1_swir](https://cloud.cylab.be/s/7ki4axDPAZ9ebWi) [630.3 MB]| [track_3_s1_lwir](https://cloud.cylab.be/s/djQQfs6QCDgBdr6) [568.3 MB]|
+| **Track 3 - Sequence 2** | ❌ | [track_3_s2_swir](#) | [track_3_s2_lwir](#) |
+
+Each folder (.zip) follows the naming convention:
+
+```
+track_(nt)_s(ns)_camera.zip
+```
+Where:  
+- **(nt)** → Track number (**1, 2, 3**)  
+- **(ns)** → Sequence number (**1, 2**)  
+- **camera** → Image type (**rgb, swir, or lwir**)  
+
+Each folder contains:  
+- **📷 Images** → Stored in `.jpg` format  
+- **📝 Annotations** → Corresponding `.txt` files  
+
+The generic naming convention for each jpg/txt is:
+
+```
+track_(nt)_s(ns)_camera_timestampsec_timestampnanosec (.jpg / .txt)
+```
+
+The **YOLO bounding box format** is used for annotations of the targets position in the .txt files.  
+Each ID corresponds to an object, and the **full ID description** can be found in the YAML file here:  
+📄 **[Link to YAML File]** _(to be added later)_
+
+---
+
+# Target Location Annotations

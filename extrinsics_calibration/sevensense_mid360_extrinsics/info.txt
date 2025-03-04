@@ -1,0 +1,1 @@
+Cam 2 is removed, because it is facing the ground and is not reached by any LiDAR beam.

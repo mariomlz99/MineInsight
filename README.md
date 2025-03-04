@@ -43,10 +43,33 @@
 <!-- Cleaning line breakers -->
 <br> 
 <p align="center">---------</p>
+
+# Repository Index
+
+- [1️) Motivation](#1-motivation)
+- [2️) Experimental Setup](#2-experimental-setup)
+  - [🔹 Sensors Overview](#sensors-overview)
+  - [🔹 Sensors Setup](#sensors-setup)
+- [3️) Environments and Sequences](#3-environments-and-sequences)
+- [4️) Targets](#4-targets)
+- [5️) Calibration](#5-calibration)
+  - [🔹 Intrinsic Calibration](#intrinsic-calibration)
+  - [🔹 Extrinsic Calibration](#extrinsic-calibration)
+- [6️) Data](#6-data)
+  - [🔹 ROS 2 Bags Structure](#ros-2-bags-structure)
+  - [🔹 ROS 2 Bags Downloads](#ros-2-bags-downloads)
+  - [🔹 Raw Images](#raw-images)
+- [7️) Target Location Annotations](#7-target-location-annotations)
+  - [🔹 Using Raw Images](#target-location-using-raw-images)
+  - [🔹 Using ROS 2 Bags](#target-location-using-ros-2-bags)
+- [8️) Acknowledgments](#8-acknowledgments)
+- [9️) Citation](#9-citation)
+- [10) License](#10-license)
+- [11) Related Work](#11-related-work)
 <br> 
 <!-- Cleaning line breakers -->
 
-# Motivation
+# [1] Motivation 
 
 Landmines remain a persistent threat in conflict-affected regions, posing risks to civilians and impeding post-war recovery. Traditional demining methods are often slow, hazardous, and costly, necessitating the development of robotic solutions for safer and more efficient landmine detection. 
 
@@ -66,12 +89,12 @@ MineInsight follows best practices from established robotic datasets and provide
 </p>
 
 
-# Experimental Setup
+# [2] Experimental Setup
 
 This section follows the terminology and conventions outlined in the accompanying paper.  
 For a more detailed understanding of the methodology and experimental design, please refer to the paper.
 
-## 🔹 Sensors Overview
+## Sensors Overview
 
 <p align="center"> <img src="repo_images/experimental_setup.png" alt="Experimental Setup" width="50%"> </p>
 
@@ -84,12 +107,12 @@ For a more detailed understanding of the methodology and experimental design, pl
 
 <br>
 
-## 🔹Sensors setup
+## Sensors setup
 
  *[Mario] IMAGE WITH TF POSITIONIGN TO BE ADDED :) *
 
 
-# Environments and sequences
+# [3] Environments and sequences
 
 
 The dataset was collected across **3 distinct tracks**, each designed to represent a demining scenario with varying terrain and environmental conditions. 
@@ -100,8 +123,7 @@ The figures represents a top-view pointcloud distribution of the targets along t
   <img src="repo_images/tracks_pointcloud_topview.png" alt="dataset_tracks_presentation" >
 </p>
 
-# Targets
----
+# [4] Targets
 
 For each track, a **detailed inventory PDF** is available, providing the full list of targets along with their respective details.  
 You can find them in the **`tracks_inventory`** folder of this repository:
@@ -120,13 +142,36 @@ Each PDF catalogs each item with:
 - **[CAT-UXO link](https://www.cat-uxo.com/)**: Detailed explanation of the target (available only for landmines).  
 
 
-# Calibration
+# [5] Calibration
 
+The dataset includes **intrinsic** and **extrinsic** calibration files for all cameras and LiDARs.
 
-[Mario] aggiungi
+## Intrinsic Calibration
 
+**`intrinsics_calibration/`**  
+- `lwir_camera_intrinsics.yaml` → LWIR camera  
+- `rgb_camera_intrinsics.yaml` → RGB camera  
+- `sevensense_cameras_intrinsics.yaml` → Sevensense grayscale cameras  
+- `swir_camera_intrinsics.yaml` → SWIR camera  
 
-# Data
+<!-- Each file contains:  
+- **Camera matrix** (`fx`, `fy`, `cx`, `cy`)  
+- **Distortion coefficients** (and distortion model used)  
+- **Image resolution**  
+- **Projection matrix**   -->
+
+## Extrinsic Calibration
+
+**`extrinsics_calibration/`**  
+- `lwir_avia_extrinsics.yaml` → LWIR ↔ Livox AVIA  
+- `rgb_avia_extrinsics.yaml` → RGB ↔ Livox AVIA  
+- `sevensense_mid360_extrinsics.yaml` → Sevensense ↔ Livox Mid-360  
+- `swir_avia_extrinsics.yaml` → SWIR ↔ Livox AVIA  
+
+**Note:**  
+Intrinsic parameters are also included in the **extrinsics calibration files**, as they were evaluated using **raw camera images**.
+
+# [6] Data
 
 
 We release **2 sequences per track**, resulting in a total of **6 sequences**.  
@@ -137,7 +182,7 @@ The data is available in **three different formats**:
 - 🖼 **Raw Images**  
 
 
-## 🔹ROS 2 Bags Structure
+## ROS 2 Bags Structure
 
 Each **ROS 2 Bag**, includes:
 
@@ -191,7 +236,7 @@ To correctly **decode and use** these messages, install the official Livox drive
 
 For installation instructions, refer to the documentation in the respective repositories.
 
-## 🔹ROS 2 Bags Downloads
+## ROS 2 Bags Downloads
 
 You can download the datasets from the links below:
 
@@ -225,7 +270,7 @@ You can download the datasets from the links below:
    - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://cloud.cylab.be/s/J9G54g52NZXyYW5) [26 GB]  
 
 
-## 🔹Raw Images
+## Raw Images
 
 You can download each folder containing the images from the links below:
 
@@ -250,13 +295,13 @@ Where:
 
 
 
-# Target Location Annotations
+# [7] Target Location Annotations
 
 
 Each target location is estimated for each sequence of each track (refer to the paper for this estimation).
 The estimation of the target locations can be found according to the data you are using:
 
-## 🔹Target location using Raw Images:
+## Target location using Raw Images:
 
 The target locations are already included in the folder downloaded in the previous sections [add hyperlink].
 
@@ -279,7 +324,7 @@ The **YOLOv5 / YOLOv8 format** is used for annotations of the targets position i
 Each ID corresponds to an object, and the **full ID description** can be found in the YAML file:  
 [`targets_list.yaml`](target_location_ros2_bags/tracks_targets_list/targets_list.yaml)
 
-## 🔹Target location using ROS 2 Bags:
+## Target location using ROS 2 Bags:
 The code inside [`target_location_ros2_bags`](target_location_ros2_bags) allows you to localize targets in images by reprojecting 3D point cloud data onto image frames.
 It supports RGB, SWIR, and LWIR cameras, automatically handling bounding boxes, timestamps, and target labeling.
 
@@ -312,15 +357,15 @@ pip install numpy pandas opencv-python pyyaml scipy
 python3 ros2_bag_targets_display.py
 ```
 
-# Acknowledgments  
+# [8] Acknowledgments  
 
 The authors thank **Alessandra Miuccio** and **Timothée Fréville** for their support in the **hardware and software design**.  
 They also thank **Sanne Van Hees** and **Jorick Van Kwikenborne** for their assistance in **organizing the measurement campaign**.
 
-# Citation
+# [9] Citation
 
 
-# License
+# [10] License
 
 This work is licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**.  
 You are free to **share** and **adapt** this work **for non-commercial purposes**, as long as you **credit the authors** and **apply the same license** to any derivative works.
@@ -329,5 +374,5 @@ For full details, see:
 [CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 
-# Related Work
+# [11] Related Work
 

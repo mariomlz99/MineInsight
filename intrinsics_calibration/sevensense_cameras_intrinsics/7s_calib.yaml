@@ -1,0 +1,132 @@
+ncameras:
+- cameras:
+  - T_B_C: 
+      rows: 4
+      cols: 4
+      data: [-0.006005917482234, -0.000572193086792, 0.999981800609525, 0.053042877059431, -0.999932898738814, -0.009902646669597, -0.006011290105377, 0.045332199847445, 0.009905906066104, -0.999950803881875, -0.000512680213161, -0.008429940943664, 0.0, 0.0, 0.0, 1.0]
+    camera:
+      distortion:
+        parameters: 
+          rows: 4
+          cols: 1
+          data: [-0.042216710176716, 0.005009851277113, -0.005933240359391, 0.001468653774408]
+        type: equidistant
+      id: 4f0889b0edd9405ebaf3b9526d713a02
+      image_height: 540
+      image_width: 720
+      intrinsics: 
+        rows: 4
+        cols: 1
+        data: [347.4502609810171, 347.4066790081107, 363.23221600518474, 267.6881906933554]
+      label: /alphasense_driver_ros/cam0/compressed
+      line-delay-nanoseconds: 0
+      type: pinhole
+  - T_B_C: 
+      rows: 4
+      cols: 4
+      data: [-0.006296634882261, 0.003527588320288, 0.999973953915702, 0.052575660583665, 0.999972406630418, 0.003964139351373, 0.006282640923407, -0.061775345189001, -0.003941873530323, 0.99998592076081, -0.003552451720358, -0.008806715161382, 0.0, 0.0, 0.0, 1.0]
+    camera:
+      distortion:
+        parameters: 
+          rows: 4
+          cols: 1
+          data: [-0.039940643904451, -0.001063717052252, 0.000305876409549, -0.000408383110924]
+        type: equidistant
+      id: c42c5f1b2b6b48a2a8c8afc3b3bfd1cc
+      image_height: 540
+      image_width: 720
+      intrinsics: 
+        rows: 4
+        cols: 1
+        data: [346.0199420476595, 345.9377998641226, 356.9891170952776, 270.5244777718209]
+      label: /alphasense_driver_ros/cam1/compressed
+      line-delay-nanoseconds: 0
+      type: pinhole
+  - T_B_C: 
+      rows: 4
+      cols: 4
+      data: [-0.999948057269589, -0.002679011842194, -0.009833903514091, 0.010174082127133, -0.002658546231032, 0.999994274446937, -0.002093610584894, -0.008245738960676, 0.009839456017104, -0.00206735794992, -0.999949454290763, -0.034438968630898, 0.0, 0.0, 0.0, 1.0]
+    camera:
+      distortion:
+        parameters: 
+          rows: 4
+          cols: 1
+          data: [-0.040008979059245, -0.002807279284811, 0.001200786171709, -0.000528255715295]
+        type: equidistant
+      id: ee577967fef14605ac0606dcbc97d1c1
+      image_height: 540
+      image_width: 720
+      intrinsics: 
+        rows: 4
+        cols: 1
+        data: [348.17087922589167, 348.1448411982585, 357.8227694294204, 268.44290388448564]
+      label: /alphasense_driver_ros/cam2/compressed
+      line-delay-nanoseconds: 0
+      type: pinhole
+  - T_B_C: 
+      rows: 4
+      cols: 4
+      data: [0.999978250898711, -0.004673955821693, 0.004653156620023, -0.003930487466119, -0.004653641754746, -9.2925103345e-05, 0.999989167432999, 0.062560333763726, -0.004673472795693, -0.999989072691248, -0.000114673998279, -0.00783315425882, 0.0, 0.0, 0.0, 1.0]
+    camera:
+      distortion:
+        parameters: 
+          rows: 4
+          cols: 1
+          data: [-0.041209389513604, 0.003186866278204, -0.003213861936515, 0.000513546346382]
+        type: equidistant
+      id: 9d97a8dc7b3e4185b9923efc092da281
+      image_height: 540
+      image_width: 720
+      intrinsics: 
+        rows: 4
+        cols: 1
+        data: [348.63682199690544, 348.69636409687024, 357.36431024964844, 267.9705401947896]
+      label: /alphasense_driver_ros/cam3/compressed
+      line-delay-nanoseconds: 0
+      type: pinhole
+  - T_B_C: 
+      rows: 4
+      cols: 4
+      data: [0.999895755366015, 0.012613072873418, 0.007027716109479, -0.00383841163453, 0.007043389952817, -0.0011986753067, -0.999974476592019, -0.078370958945099, -0.01260432699505, 0.999919733563749, -0.001287389141982, -0.0086468737485, 0.0, 0.0, 0.0, 1.0]
+    camera:
+      distortion:
+        parameters: 
+          rows: 4
+          cols: 1
+          data: [-0.040953494138494, 0.001618187814758, -0.002312392170832, 0.000411586294749]
+        type: equidistant
+      id: abc59627f088437aa671b99286818bba
+      image_height: 540
+      image_width: 720
+      intrinsics: 
+        rows: 4
+        cols: 1
+        data: [347.5572884700525, 347.1350954541108, 357.73888568564223, 266.6754656020483]
+      label: /alphasense_driver_ros/cam4/compressed
+      line-delay-nanoseconds: 0
+      type: pinhole
+  id: 5530ea9d0eea414a878764b26f215b7f
+  label: ncamera
+sensors:
+- default_biases:
+    acc_bias: 
+      rows: 3
+      cols: 1
+      data: [0.000528888519558, -0.041008387710355, 0.089977753443372]
+    gyro_bias: 
+      rows: 3
+      cols: 1
+      data: [0.006680172401936, 0.006587741609778, 0.006139478651188]
+  gravity_magnitude_mps2: 9.808083883386614
+  hardware_id: /alphasense_driver_ros/imu
+  id: 4d09fd227e534cf296cb25054546ab51
+  saturation_accel_max_mps2: 150.0
+  saturation_gyro_max_radps: 7.5
+  sensor_type: IMU
+  sigmas:
+    acc_bias_random_walk_noise_density: 0.0043
+    acc_noise_density: 0.019
+    gyro_bias_random_walk_noise_density: 0.000266
+    gyro_noise_density: 0.019
+
+

@@ -1,0 +1,3 @@
+
+THE EXTRINSICS have been calibrated with the original image (SWIR raw) being fed UPSIDE DOWN!!!!
+

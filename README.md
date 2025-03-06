@@ -108,7 +108,7 @@ For a more detailed understanding of the methodology and experimental design, pl
 
 ## Sensors Coordinate Systems
 
-The coordinate systems of all sensors in our platform are illustrated in the figure below.
+The coordinate systems (and their TF name) of all sensors in our platform are illustrated in the figure below.
 
 > **Note:** The positions of the axis systems in the figure are approximate.  
 > This visualization provides insight into the relative orientations between sensors,  
@@ -120,7 +120,7 @@ For the full transformation chain, refer to the following **ROS 2 topics** in th
 
 
 <p align="center">
-  <img src="repo_images/shifted_arrows_sensors_tf.png" alt="tf_sens" width="100%">
+  <img src="repo_images/sensors_references_figure.png" alt="tf_sens" width="100%">
 </p>
 
 # [3] Environments and Sequences

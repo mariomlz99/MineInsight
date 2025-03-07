@@ -7,7 +7,7 @@
   <a href="https://mecatron.rma.ac.be/">
     <img src="repo_images/ras_lab_logo.png" alt="RAS_Logo" height="70">
   </a>
-  <a href="https://rma-4dpl.github.io/">
+  <a href="https://4dpl.rma.ac.be/">
     <img src="repo_images/4dpl_logo_2.jpeg" alt="4DPL_Logo" height="80">
   </a>
 </p>

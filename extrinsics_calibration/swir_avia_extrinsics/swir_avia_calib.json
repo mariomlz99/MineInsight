@@ -1,0 +1,38 @@
+{
+  "camera": {
+    "camera_model": "plumb_bob",
+    "distortion_coeffs": [
+      -0.1723165141550967,
+      1.423355914525777,
+      0.005533321479315532,
+      -0.003328092804687567
+    ],
+    "intrinsics": [
+      3078.043639241139,
+      3083.741728843918,
+      627.1375778600271,
+      578.7346325629533
+    ]
+  },
+  "meta": {
+    "bag_names": [
+      "swir_new_trial_0.db3"
+    ],
+    "camera_info_topic": "",
+    "data_path": "/home/mari0/Desktop/DOVO_DATASET/DOVO_BAGS_RECTIFICATION/swir_new_trial",
+    "image_topic": "/allied_swir/image_raw/compressed",
+    "intensity_channel": "intensity",
+    "points_topic": "/avia/livox/lidar/pointcloud2"
+  },
+  "results": {
+    "init_T_lidar_camera": [
+      0.12619361281394958,
+      -0.050657857209444046,
+      0.06080497056245804,
+      0.5064148977036337,
+      0.488476185290352,
+      0.5135131408691751,
+      0.4911611175230539
+    ]
+  }
+}

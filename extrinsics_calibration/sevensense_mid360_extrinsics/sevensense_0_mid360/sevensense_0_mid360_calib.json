@@ -1,0 +1,38 @@
+{
+  "camera": {
+    "camera_model": "fisheye",
+    "distortion_coeffs": [
+      -0.042216710176716,
+      0.005009851277113,
+      -0.005933240359391,
+      0.001468653774408
+    ],
+    "intrinsics": [
+      347.4502609810171,
+      347.4066790081107,
+      363.23221600518474,
+      267.6881906933554
+    ]
+  },
+  "meta": {
+    "bag_names": [
+      "mid360_alphasense_0.db3"
+    ],
+    "camera_info_topic": "",
+    "data_path": "/home/mari0/Desktop/DATASET_PARAMETERS_CALIBRATION/EXTRINSICS/ALPHASENSE_LIVOX_EXTRINSICS/mid360_alphasense",
+    "image_topic": "/alphasense/cam_0/image_raw/compressed",
+    "intensity_channel": "intensity",
+    "points_topic": "/mid360/livox/lidar/pointcloud2"
+  },
+  "results": {
+    "init_T_lidar_camera": [
+      0.040890809148550034,
+      0.0002690381370484829,
+      0.019245373085141182,
+      -0.004507388095927245,
+      -0.3953183123234458,
+      0.9185306533761183,
+      -0.0021341761779998638
+    ]
+  }
+}

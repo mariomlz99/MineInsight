@@ -1,5 +1,14 @@
 # [IEEE RA-L'25] MineInsight: A Multi-sensor Dataset for Humanitarian Demining Robotics in Off-Road Environments
 
+### 📢 News 
+<div style="height:80px; overflow-y:scroll; border:1px solid #ccc; padding:10px; border-radius:5px; background-color: #f9f9f9;">
+  <ul>
+    <li>🎯 <strong>21 Jan 2026:</strong> We are currently mass revising all of our VIS-SWIR and RGB labels to improve their precision </li>
+    <li>📦 <strong>5 Jun 2025:</strong> Initial dataset release on GitHub.</li>
+  </ul>
+</div>
+
+---
 <p align="center">
   <a href="https://rma.ac.be/en">
     <img src="repo_images/rma_logo.png" height="80" alt="RMA Logo">

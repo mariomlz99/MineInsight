@@ -397,8 +397,8 @@ The figure below shows the **air and soil temperatures** (–5 cm, –10 cm, –
 
 During **Track 3 recordings** (30 October 2024), the **RGB camera experienced a progressive failure**.  
 
-- The **first part of the recording** (starting at 17:28:07 and 17:42:19, see [Climatology section](#climatology)) already shows frames that **would have been very dark**, making it extremely difficult to detect any target or terrain details.  
-- By the **end of the sequences**, the RGB feed **would have been completely black** given the near-nighttime conditions. 
+- The first part of the recording (starting at 17:28:07 and 17:42:19, see [Climatology section](#climatology)) already shows frames that would have been very dark, making it extremely difficult to detect any target or terrain details.  
+- By the end of the sequences, the RGB feed would have been completely black, given the near-nighttime conditions. 
 - This issue affects both **Sequence 1 (3 min 41.5 s)** and **Sequence 2 (13 min 18 s)**.  
 
 We recovered the bag metadata and extracted a short video from the RGB camera illustrating the Track 3 illumination condition at the beginning of the recordings:  

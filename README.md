@@ -313,7 +313,7 @@ The **YOLOv8 format** is used for annotations of the target's position in the .t
 As detailed in the reference paper, direct manual annotation of the thermal dataset was unfeasible due to the faint or indistinct nature of thermal signatures. Consequently, LWIR labels were generated via a reprojection process from visible wavelengths (RGB or VIS-SWIR), followed by human verification. This methodology implies inherent limitations: thermal bounding boxes lack absolute dimension precision and are strictly limited to the Field of View of the source domain. Furthermore, annotations may exhibit temporal instability (jitter) reflecting variances in the original human labeling, and labels may be absent in the thermal dataset if the target was occluded or indistinct in the source RGB/SWIR sequences, even if the thermal signature remained visible.
 **Specific Note on Track 3**: This limitation is significantly reflected in the labels of Track 3. In this sequence, the constant larger FOV of the RGB camera is absent. Consequently, the reconstruction had to be performed using only the limited, narrow FOV of the VIS-SWIR sensor, combined with human-supervised labeling during night conditions.
 
-## 📣 NEW 📣 SAM2 Auto-Generated Masks
+## 📣 SAM2 Auto-Generated Masks
 
 We are releasing a set of automatically generated masks produced via **SAM2**, used both for label refinement and as an initial guess for the model. These were not part of the original paper and are provided "as-is" for the community.
 
@@ -442,7 +442,11 @@ If you are interested in this dataset, you may also be interested in some of the
 * **PFM-1 Landmine Detection in Vegetation Using Thermal Imaging with Limited Training Data.** Malizia, Mario, Ken Hasselmann, Alessandra Miuccio, Rob Haelterman, Nikolaos Tsiogkas, and Eric Demeester. 2025. 
     *Proceedings of the 25th International Conference on Control, Automation and Systems (ICCAS)*, Incheon, South Korea, pp. 1864-1869. [https://doi.org/10.23919/ICCAS66577.2025.11301116](https://doi.org/10.23919/ICCAS66577.2025.11301116)
 * **Multimodal Ensemble with Verification Mechanism for Landmine Detection.** Melnykova, Nataliia, and Anna Vechirska. 2025. 
-  * *Science and Technology Today (Наука і техніка сьогодні)*, No. 9(50), pp. 939-948. [https://doi.org/10.52058/2786-6025-2025-9(50)-939-948](https://doi.org/10.52058/2786-6025-2025-9(50)-939-948)
+   *Science and Technology Today (Наука і техніка сьогодні)*, No. 9(50), pp. 939-948. [https://doi.org/10.52058/2786-6025-2025-9(50)-939-948](https://doi.org/10.52058/2786-6025-2025-9(50)-939-948)
 
 
-![Visitors](https://api.visitorbadge.io/api/visitors?repo_id=mariomlz99/mineinsight)
+
+<br>
+<p align="center">
+  <img src="https://api.visitorbadge.io/api/visitors?path=mariomlz99/mineinsight" alt="Visitors">
+</p>

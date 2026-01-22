@@ -3,7 +3,8 @@
 ### 📢 News 
 <div style="height:80px; overflow-y:scroll; border:1px solid #ccc; padding:10px; border-radius:5px; background-color: #f9f9f9;">
   <ul>
-    <li>🎯 <strong>21 Jan 2026:</strong> We are currently mass revising all of our VIS-SWIR and RGB labels to improve their precision </li>
+    <li>📦 <strong>22 Jan 2026:</strong> Updated VIS-SWIR labels. </li>
+    <li>🎯 <strong>21 Jan 2026:</strong> We are currently mass revising all of our VIS-SWIR and RGB labels to improve their precision. </li>
     <li>📦 <strong>5 Jun 2025:</strong> Initial dataset release on GitHub.</li>
   </ul>
 </div>
@@ -236,7 +237,7 @@ To correctly **decode and use** these messages, install the official Livox drive
 - **Livox AVIA** (🔗 [livox_ros2_driver](https://github.com/Livox-SDK/livox_ros2_driver))  
 - **Livox Mid-360** (🔗 [livox_ros_driver2](https://github.com/Livox-SDK/livox_ros_driver2))  
 
-For installation instructions, refer to the documentation in the respective repositories.
+For installation instructions, please take a look at the documentation in the respective repositories.
 
 ## ROS 2 Bags Downloads
 
@@ -244,44 +245,43 @@ You can download the datasets from the links below:
 
 ### **Track 1**
 🔹 **Sequence 1**:  
-   - 🗂️ [ROS 2 Bag (Standard)](https://is.gd/Q0ELIF) [19.1 GB]
-   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://is.gd/Z34BmK) [19.6 GB]  
+   - 🗂️ [ROS 2 Bag (Standard)](https://mineinsight.short.gy/hvMRPa) [19.1 GB]
+   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://mineinsight.short.gy/nZkpxH) [19.6 GB]  
 
 🔹 **Sequence 2**:  
-   - 🗂️ [ROS 2 Bag (Standard)](https://is.gd/z5ly3C) [75.3 GB] 
-   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://is.gd/d1Jyur) [77.9 GB]  
+   - 🗂️ [ROS 2 Bag (Standard)](https://mineinsight.short.gy/IHmkB6) [75.3 GB] 
+   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://mineinsight.short.gy/LDd1Bx) [77.9 GB]  
 
 
 ### **Track 2**
 🔹 **Sequence 1**:  
-   - 🗂️ [ROS 2 Bag (Standard)](https://is.gd/v0iAaG) [15.1 GB] 
-   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://is.gd/BCYrCN) [15.5 GB]  
+   - 🗂️ [ROS 2 Bag (Standard)](https://mineinsight.short.gy/YY9Swf) [15.1 GB] 
+   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://mineinsight.short.gy/5IAGR4) [15.5 GB]  
 
 🔹 **Sequence 2**:  
-   - 🗂️ [ROS 2 Bag (Standard)](https://is.gd/xxK8QU) [68.9 GB]  
-   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://is.gd/vlfIWP) [71 GB]  
+   - 🗂️ [ROS 2 Bag (Standard)](https://mineinsight.short.gy/pciT5I) [68.9 GB]  
+   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://mineinsight.short.gy/0MfPRY) [71 GB]  
 
 
 ### **Track 3**
 🔹 **Sequence 1**:  
-   - 🗂️ [ROS 2 Bag (Standard)](https://is.gd/OCZkfC) [5.5 GB]  
-   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://is.gd/70HGZI) [5.9 GB]  
+   - 🗂️ [ROS 2 Bag (Standard)](https://mineinsight.short.gy/5qRJQV) [5.5 GB]  
+   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://mineinsight.short.gy/CgLNGg) [5.9 GB]  
 
 🔹 **Sequence 2**:  
-   - 🗂️ [ROS 2 Bag (Standard)](https://is.gd/NG4gpD) [24.4 GB]  
-   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://is.gd/HI7MXt) [26 GB]  
+   - 🗂️ [ROS 2 Bag (Standard)](https://mineinsight.short.gy/vfHjPD) [24.4 GB]  
+   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://mineinsight.short.gy/aAmgvU) [26 GB]  
 
 
 ## Raw Images
 
-Each archive contains **images + 2D bounding box annotations (YOLOv8)**. After unzipping you’ll get:
-
+Each archive contains **images + 2D bounding box annotations (YOLOv8)**. 
 | **Track / Seq** | **RGB** | **VIS-SWIR** | **LWIR** |
 |---------------------|-----------|------------|------------|
-| **Track 1 - Seq 1** | [track_1_s1_rgb](https://is.gd/qlkDbS) [1.5 GB]| [track_1_s1_swir](https://is.gd/NAA6u4) [465.4 MB]| [track_1_s1_lwir](https://is.gd/h2xMcF) [649.7 MB]|
-| **Track 1 - Seq 2** | [track_1_s2_rgb](https://is.gd/eKoe8p) [5 GB]| [track_1_s2_swir](https://is.gd/In0r1y) [1.5 GB]| [track_1_s2_lwir](https://is.gd/J6jJ3d) [2.9 GB]|
-| **Track 2 - Seq 1** | [track_2_s1_rgb](https://is.gd/gdfsJm) [1.1 GB]| [track_2_s1_swir](https://is.gd/2oudon) [332.2 MB]| [track_2_s1_lwir](https://is.gd/6hO5eM) [507.8 MB]|
-| **Track 2 - Seq 2** | [track_2_s2_rgb](https://is.gd/pvDpQ2) [6.1 GB]| [track_2_s2_swir](https://is.gd/p09KcG) [1.1 GB]| [track_2_s2_lwir](https://is.gd/create.php) [2.1 GB]|
+| **Track 1 - Seq 1** | [track_1_s1_rgb](https://is.gd/qlkDbS) [1.5 GB]| [track_1_s1_swir_v2](https://mineinsight.short.gy/K0WHq1) [465.4 MB]| [track_1_s1_lwir](https://is.gd/h2xMcF) [649.7 MB]|
+| **Track 1 - Seq 2** | [track_1_s2_rgb](https://is.gd/eKoe8p) [5 GB]| [track_1_s2_swir_v2](https://mineinsight.short.gy/MY5dbv) [1.5 GB]| [track_1_s2_lwir](https://is.gd/J6jJ3d) [2.9 GB]|
+| **Track 2 - Seq 1** | [track_2_s1_rgb](https://is.gd/gdfsJm) [1.1 GB]| [track_2_s1_swir_v2](https://mineinsight.short.gy/9LYXmz) [332.2 MB]| [track_2_s1_lwir](https://is.gd/6hO5eM) [507.8 MB]|
+| **Track 2 - Seq 2** | [track_2_s2_rgb](https://is.gd/pvDpQ2) [6.1 GB]| [track_2_s2_swir_v2](https://mineinsight.short.gy/FefTor) [1.1 GB]| [track_2_s2_lwir](https://is.gd/create.php) [2.1 GB]|
 | **Track 3 - Seq 1** | <p align="center">❌</p> | [track_3_s1_swir](https://is.gd/ZD4MRM) [182.7 MB]| [track_3_s1_lwir](https://is.gd/78AOnK) [1.1 GB]|
 | **Track 3 - Seq 2** | <p align="center">❌</p> | [track_3_s2_swir](https://is.gd/j7bDNG) [852.1 MB]| [track_3_s2_lwir](https://is.gd/pMr3pH) [1.9 GB]|
 
@@ -301,7 +301,7 @@ The generic naming convention for each jpg/txt is:
 track_(nt)_s(ns)_camera_timestampsec_timestampnanosec (.jpg / .txt)
 ```
 
-The **YOLOv8 format** is used for annotations of the targets position in the .txt files.  
+The **YOLOv8 format** is used for annotations of the target's position in the .txt files.  
 
 ```
 <class_id> <x_center> <y_center> <width> <height>
@@ -312,6 +312,24 @@ The **YOLOv8 format** is used for annotations of the targets position in the .tx
 **⚠️ Note regarding Thermal (LWIR) Annotations:**  
 As detailed in the reference paper, direct manual annotation of the thermal dataset was unfeasible due to the faint or indistinct nature of thermal signatures. Consequently, LWIR labels were generated via a reprojection process from visible wavelengths (RGB or VIS-SWIR), followed by human verification. This methodology implies inherent limitations: thermal bounding boxes lack absolute dimension precision and are strictly limited to the Field of View of the source domain. Furthermore, annotations may exhibit temporal instability (jitter) reflecting variances in the original human labeling, and labels may be absent in the thermal dataset if the target was occluded or indistinct in the source RGB/SWIR sequences, even if the thermal signature remained visible.
 **Specific Note on Track 3**: This limitation is significantly reflected in the labels of Track 3. In this sequence, the constant larger FOV of the RGB camera is absent. Consequently, the reconstruction had to be performed using only the limited, narrow FOV of the VIS-SWIR sensor, combined with human-supervised labeling during night conditions.
+
+## 📣 NEW 📣 SAM2 Auto-Generated Masks
+
+We are releasing a set of automatically generated masks produced via **SAM2**, used both for label refinement and as an initial guess for the model. These were not part of the original paper and are provided "as-is" for the community.
+
+**Disclaimer:** These are **not manually annotated**; they represent the raw output of SAM2 using our annotated bounding boxes as the initial prompt. While some IDs are surprisingly stable (even in vegetated environments), others fluctuate over time or change dimension or include noise like debris, leaves and vegetation.
+
+| **Track / Seq** | **RGB** | **SWIR** |
+| :--- | :--- | :--- |
+| **Track 1 - Seq 1** | [t1_s1_rgb_masks - COMING SOON](#) | [t1_s1_swir_masks]([#](https://mineinsight.short.gy/zbxef4)) |
+| **Track 1 - Seq 2** | [t1_s2_rgb_masks - COMING SOON](#) | [t1_s2_swir_masks]([#](https://mineinsight.short.gy/8mLBb1)) |
+| **Track 2 - Seq 1** | [t2_s1_rgb_masks - COMING SOON](#) | [t2_s1_swir_masks]([#](https://mineinsight.short.gy/t6S5Sy)) |
+| **Track 2 - Seq 2** | [t2_s2_rgb_masks - COMING SOON](#) | [t2_s2_swir_masks]([#](https://mineinsight.short.gy/AHS1OK)) |
+
+**Format:**
+* **Visuals:** Released as white polygons on black masks.
+* **Structure:** Organized in subfolders by object ID (e.g., `/id_1/`, `/id_3/`).
+* **Naming:** `track_(nt)_s(ns)_(camera)_(sec)_(nanosec)_id.png`
 
 ## Climatology  
 
@@ -419,8 +437,12 @@ For full details, see:
 
 
 # [10] Related Work
-If you are interested in this dataset, you may also be interested in our related work:
+If you are interested in this dataset, you may also be interested in some of the related work:
 
 * **PFM-1 Landmine Detection in Vegetation Using Thermal Imaging with Limited Training Data.** Malizia, Mario, Ken Hasselmann, Alessandra Miuccio, Rob Haelterman, Nikolaos Tsiogkas, and Eric Demeester. 2025. 
     *Proceedings of the 25th International Conference on Control, Automation and Systems (ICCAS)*, Incheon, South Korea, pp. 1864-1869. [https://doi.org/10.23919/ICCAS66577.2025.11301116](https://doi.org/10.23919/ICCAS66577.2025.11301116)
+* **Multimodal Ensemble with Verification Mechanism for Landmine Detection.** Melnykova, Nataliia, and Anna Vechirska. 2025. 
+  * *Science and Technology Today (Наука і техніка сьогодні)*, No. 9(50), pp. 939-948. [https://doi.org/10.52058/2786-6025-2025-9(50)-939-948](https://doi.org/10.52058/2786-6025-2025-9(50)-939-948)
 
+
+![Visitors](https://api.visitorbadge.io/api/visitors?repo_id=mariomlz99/mineinsight)

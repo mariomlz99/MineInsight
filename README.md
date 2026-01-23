@@ -278,12 +278,12 @@ You can download the datasets from the links below:
 Each archive contains **images + 2D bounding box annotations (YOLOv8)**. 
 | **Track / Seq** | **RGB** | **VIS-SWIR** | **LWIR** |
 |---------------------|-----------|------------|------------|
-| **Track 1 - Seq 1** | [track_1_s1_rgb_v2](https://mineinsight.short.gy/jIclRQ) [1.5 GB]| [track_1_s1_swir_v2](https://mineinsight.short.gy/K0WHq1) [465.4 MB]| [track_1_s1_lwir](https://is.gd/h2xMcF) [649.7 MB]|
-| **Track 1 - Seq 2** | [track_1_s2_rgb](https://is.gd/eKoe8p) [5 GB]| [track_1_s2_swir_v2](https://mineinsight.short.gy/MY5dbv) [1.5 GB]| [track_1_s2_lwir](https://is.gd/J6jJ3d) [2.9 GB]|
-| **Track 2 - Seq 1** | [track_2_s1_rgb](https://is.gd/gdfsJm) [1.1 GB]| [track_2_s1_swir_v2](https://mineinsight.short.gy/9LYXmz) [332.2 MB]| [track_2_s1_lwir](https://is.gd/6hO5eM) [507.8 MB]|
-| **Track 2 - Seq 2** | [track_2_s2_rgb](https://is.gd/pvDpQ2) [6.1 GB]| [track_2_s2_swir_v2](https://mineinsight.short.gy/FefTor) [1.1 GB]| [track_2_s2_lwir](https://is.gd/create.php) [2.1 GB]|
-| **Track 3 - Seq 1** | <p align="center">❌</p> | [track_3_s1_swir](https://is.gd/ZD4MRM) [182.7 MB]| [track_3_s1_lwir](https://is.gd/78AOnK) [1.1 GB]|
-| **Track 3 - Seq 2** | <p align="center">❌</p> | [track_3_s2_swir](https://is.gd/j7bDNG) [852.1 MB]| [track_3_s2_lwir](https://is.gd/pMr3pH) [1.9 GB]|
+| **Track 1 - Seq 1** | [track_1_s1_rgb_v2](https://mineinsight.short.gy/jIclRQ) [1.5 GB]| [track_1_s1_swir_v2](https://mineinsight.short.gy/K0WHq1) [465.4 MB]| [track_1_s1_lwir_v2](https://mineinsight.short.gy/W4Idj5) [649.7 MB]|
+| **Track 1 - Seq 2** | [track_1_s2_rgb](https://is.gd/eKoe8p) [5 GB]| [track_1_s2_swir_v2](https://mineinsight.short.gy/MY5dbv) [1.5 GB]| [track_1_s2_lwir_v2](https://mineinsight.short.gy/T1H65Z) [2.9 GB]|
+| **Track 2 - Seq 1** | [track_2_s1_rgb](https://is.gd/gdfsJm) [1.1 GB]| [track_2_s1_swir_v2](https://mineinsight.short.gy/9LYXmz) [332.2 MB]| [track_2_s1_lwir_v2](https://mineinsight.short.gy/iBEKFk) [507.8 MB]|
+| **Track 2 - Seq 2** | [track_2_s2_rgb](https://is.gd/pvDpQ2) [6.1 GB]| [track_2_s2_swir_v2](https://mineinsight.short.gy/FefTor) [1.1 GB]| [track_2_s2_lwir_v2](https://mineinsight.short.gy/clWzgL) [2.1 GB]|
+| **Track 3 - Seq 1** | <p align="center">❌</p> | [track_3_s1_swir](https://is.gd/ZD4MRM) [182.7 MB]| [track_3_s1_lwir_v2](https://mineinsight.short.gy/hMUnVJ) [1.1 GB]|
+| **Track 3 - Seq 2** | <p align="center">❌</p> | [track_3_s2_swir](https://is.gd/j7bDNG) [852.1 MB]| [track_3_s2_lwir_v2](https://mineinsight.short.gy/fFFmmt) [1.9 GB]|
 
 Each folder (.zip) follows the naming convention:
 

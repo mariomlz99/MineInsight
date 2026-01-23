@@ -107,12 +107,12 @@ The figures represents a top-view pointcloud distribution of the targets along t
 
 For the sake of reproducibility, and to leave the ground-truth autolabelling and improvement as an open challenge, we also release the raw data from the **3 reference sequences** (the ones containing the AprilTag).  
 
-Please note that these ROS2 bags have not been processed or altered — they are provided exactly as recorded, with no topic remapping applied as in the dataset.
+Please note that these ROS 2 bags have not been processed or altered — they are provided exactly as recorded, with no topic remapping applied as in the dataset.
 
 You can download the bags from here:
-- [TRACK 1 Reference Sequence ROS2 Bag](https://is.gd/fjlrLm)  
-- [TRACK 2 Reference Sequence ROS2 Bag](https://is.gd/wIMDzR)  
-- [TRACK 3 Reference Sequence ROS2 Bag](https://is.gd/eWoYYD)  
+- [TRACK 1 Reference Sequence ROS 2 Bag](https://mineinsight.short.gy/I6o5dc)  
+- [TRACK 2 Reference Sequence ROS 2 Bag](https://mineinsight.short.gy/AQQXTH)  
+- [TRACK 3 Reference Sequence ROS 2 Bag](https://mineinsight.short.gy/8mgVoT)  
 
 In addition, we also provide the output of the ground position of each AprilTag stick in the reference frame map, as described in the paper.  
 These are released as JSON files, allowing users to evaluate the distances between the markers.  
@@ -315,7 +315,7 @@ As detailed in the reference paper, direct manual annotation of the thermal data
 
 ## 📣 SAM2 Auto-Generated Masks
 
-We are releasing a set of automatically generated masks produced via **SAM2**, used both for label refinement and as an initial guess for the model. These were not part of the original paper and are provided "as-is" for the community.
+We are releasing a set of automatically generated masks produced via **SAM2**, used both for label refinement and as an initial guess for the model. These were not part of the original paper and are provided "as-is" for the community. We’re sharing them because we thought they might be useful for additional analyses or downstream uses.
 
 **Disclaimer:** These are **not manually annotated**; they represent the raw output of SAM2 using our annotated bounding boxes as the initial prompt. While some IDs are surprisingly stable (even in vegetated environments), others fluctuate over time or change dimension or include noise like debris, leaves and vegetation.
 

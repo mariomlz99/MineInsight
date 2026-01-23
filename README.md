@@ -321,10 +321,10 @@ We are releasing a set of automatically generated masks produced via **SAM2**, u
 
 | **Track / Seq** | **RGB** | **SWIR** |
 | :--- | :--- | :--- |
-| **Track 1 - Seq 1** | [t1_s1_rgb_masks_beta](https://mineinsight.short.gy/WsrVwa) | [t1_s1_swir_masks_beta](https://mineinsight.short.gy/zbxef4) |
-| **Track 1 - Seq 2** | [t1_s2_rgb_masks - COMING SOON](#) | [t1_s2_swir_masks_beta](https://mineinsight.short.gy/8mLBb1) |
-| **Track 2 - Seq 1** | [t2_s1_rgb_masks - COMING SOON](#) | [t2_s1_swir_masks_beta](https://mineinsight.short.gy/t6S5Sy) |
-| **Track 2 - Seq 2** | [t2_s2_rgb_masks - COMING SOON](#) | [t2_s2_swir_masks_beta](https://mineinsight.short.gy/AHS1OK) |
+| **Track 1 - Seq 1** | [track_1_s1_rgb_masks_beta](https://mineinsight.short.gy/WsrVwa) | [track_1_s1_swir_masks_beta](https://mineinsight.short.gy/zbxef4) |
+| **Track 1 - Seq 2** | [track_1_s2_rgb_masks - COMING SOON](#) | [track_1_s2_swir_masks_beta](https://mineinsight.short.gy/8mLBb1) |
+| **Track 2 - Seq 1** | [track_2_s1_rgb_masks - COMING SOON](#) | [track_2_s1_swir_masks_beta](https://mineinsight.short.gy/t6S5Sy) |
+| **Track 2 - Seq 2** | [track_2_s2_rgb_masks - COMING SOON](#) | [track_2_s2_swir_masks_beta](https://mineinsight.short.gy/AHS1OK) |
 
 **Format:**
 * **Visuals:** Released as white polygons on black masks.

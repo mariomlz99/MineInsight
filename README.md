@@ -3,7 +3,7 @@
 ### 📢 News 
 <div style="height:80px; overflow-y:scroll; border:1px solid #ccc; padding:10px; border-radius:5px; background-color: #f9f9f9;">
   <ul>
-    <li>📦 <strong>22 Jan 2026:</strong> Updated VIS-SWIR labels. </li>
+    <li>📦 <strong>22 Jan 2026:</strong> Updated VIS-SWIR labels and T1S1RGB. </li>
     <li>🎯 <strong>21 Jan 2026:</strong> We are currently mass revising all of our VIS-SWIR and RGB labels to improve their precision. </li>
     <li>📦 <strong>5 Jun 2025:</strong> Initial dataset release on GitHub.</li>
   </ul>
@@ -278,7 +278,7 @@ You can download the datasets from the links below:
 Each archive contains **images + 2D bounding box annotations (YOLOv8)**. 
 | **Track / Seq** | **RGB** | **VIS-SWIR** | **LWIR** |
 |---------------------|-----------|------------|------------|
-| **Track 1 - Seq 1** | [track_1_s1_rgb](https://is.gd/qlkDbS) [1.5 GB]| [track_1_s1_swir_v2](https://mineinsight.short.gy/K0WHq1) [465.4 MB]| [track_1_s1_lwir](https://is.gd/h2xMcF) [649.7 MB]|
+| **Track 1 - Seq 1** | [track_1_s1_rgb_v2](https://mineinsight.short.gy/jIclRQ) [1.5 GB]| [track_1_s1_swir_v2](https://mineinsight.short.gy/K0WHq1) [465.4 MB]| [track_1_s1_lwir](https://is.gd/h2xMcF) [649.7 MB]|
 | **Track 1 - Seq 2** | [track_1_s2_rgb](https://is.gd/eKoe8p) [5 GB]| [track_1_s2_swir_v2](https://mineinsight.short.gy/MY5dbv) [1.5 GB]| [track_1_s2_lwir](https://is.gd/J6jJ3d) [2.9 GB]|
 | **Track 2 - Seq 1** | [track_2_s1_rgb](https://is.gd/gdfsJm) [1.1 GB]| [track_2_s1_swir_v2](https://mineinsight.short.gy/9LYXmz) [332.2 MB]| [track_2_s1_lwir](https://is.gd/6hO5eM) [507.8 MB]|
 | **Track 2 - Seq 2** | [track_2_s2_rgb](https://is.gd/pvDpQ2) [6.1 GB]| [track_2_s2_swir_v2](https://mineinsight.short.gy/FefTor) [1.1 GB]| [track_2_s2_lwir](https://is.gd/create.php) [2.1 GB]|
@@ -321,10 +321,10 @@ We are releasing a set of automatically generated masks produced via **SAM2**, u
 
 | **Track / Seq** | **RGB** | **SWIR** |
 | :--- | :--- | :--- |
-| **Track 1 - Seq 1** | [t1_s1_rgb_masks - COMING SOON](#) | [t1_s1_swir_masks](https://mineinsight.short.gy/zbxef4) |
-| **Track 1 - Seq 2** | [t1_s2_rgb_masks - COMING SOON](#) | [t1_s2_swir_masks](https://mineinsight.short.gy/8mLBb1) |
-| **Track 2 - Seq 1** | [t2_s1_rgb_masks - COMING SOON](#) | [t2_s1_swir_masks](https://mineinsight.short.gy/t6S5Sy) |
-| **Track 2 - Seq 2** | [t2_s2_rgb_masks - COMING SOON](#) | [t2_s2_swir_masks](https://mineinsight.short.gy/AHS1OK) |
+| **Track 1 - Seq 1** | [t1_s1_rgb_masks_beta](https://mineinsight.short.gy/WsrVwa) | [t1_s1_swir_masks_beta](https://mineinsight.short.gy/zbxef4) |
+| **Track 1 - Seq 2** | [t1_s2_rgb_masks - COMING SOON](#) | [t1_s2_swir_masks_beta](https://mineinsight.short.gy/8mLBb1) |
+| **Track 2 - Seq 1** | [t2_s1_rgb_masks - COMING SOON](#) | [t2_s1_swir_masks_beta](https://mineinsight.short.gy/t6S5Sy) |
+| **Track 2 - Seq 2** | [t2_s2_rgb_masks - COMING SOON](#) | [t2_s2_swir_masks_beta](https://mineinsight.short.gy/AHS1OK) |
 
 **Format:**
 * **Visuals:** Released as white polygons on black masks.

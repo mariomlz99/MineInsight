@@ -3,7 +3,7 @@
 ### 📢 News 
 <div style="height:80px; overflow-y:scroll; border:1px solid #ccc; padding:10px; border-radius:5px; background-color: #f9f9f9;">
   <ul>
-    <li>📦 <strong>27 Jan 2026:</strong> Updated so far: (T1S1,T1S2,T2S1,T2S2,T3S1) VIS-SWIR and T1S1RGB labels. </li>
+    <li>📦 <strong>28 Jan 2026:</strong> We have refined all VIS-SWIR sequence labels for the v2 release. This resulted in 14,766 cleaned labels and improved bounding box stability. Work on the RGB labels is ongoing.</li>    
     <li>🎯 <strong>21 Jan 2026:</strong> We are currently mass revising all of our VIS-SWIR and RGB labels to improve their precision. </li>
     <li>📦 <strong>11 Dec 2025:</strong> Published on IEEE RA-L.</li>
     <li>📦 <strong>5 Jun 2025:</strong> Initial dataset release on GitHub.</li>
@@ -279,13 +279,13 @@ You can download the datasets from the links below:
 Each archive contains **images + 2D bounding box annotations (YOLOv8)**. 
 | **Track / Seq** | **RGB** | **VIS-SWIR** | **LWIR** |
 |---------------------|-----------|------------|------------|
-| **Track 1 - Seq 1** | [track_1_s1_rgb_v2](https://mineinsight.short.gy/jIclRQ) [1.5 GB]<br>**Labels:** 6,441| [track_1_s1_swir_v2](https://mineinsight.short.gy/K0WHq1) [465.4 MB]<br>**Labels:** 869| [track_1_s1_lwir_v2](https://mineinsight.short.gy/W4Idj5) [649.7 MB]|
-| **Track 1 - Seq 2** | [track_1_s2_rgb](https://is.gd/eKoe8p) [5 GB]| [track_1_s2_swir_v2](https://mineinsight.short.gy/MY5dbv) [1.5 GB]<br>**Labels:** 5,198| [track_1_s2_lwir_v2](https://mineinsight.short.gy/T1H65Z) [2.9 GB]|
-| **Track 2 - Seq 1** | [track_2_s1_rgb](https://is.gd/gdfsJm) [1.1 GB]| [track_2_s1_swir_v2](https://mineinsight.short.gy/9LYXmz) [332.2 MB]<br>**Labels:** 654| [track_2_s1_lwir_v2](https://mineinsight.short.gy/iBEKFk) [507.8 MB]|
-| **Track 2 - Seq 2** | [track_2_s2_rgb](https://is.gd/pvDpQ2) [6.1 GB]| [track_2_s2_swir_v2](https://mineinsight.short.gy/FefTor) [2.9 GB]<br>**Labels:** 4,482| [track_2_s2_lwir_v2](https://mineinsight.short.gy/clWzgL) [2.1 GB]|
-| **Track 3 - Seq 1** | <p align="center">❌</p> | [track_3_s1_swir_v2](https://mineinsight.short.gy/fMu0Ze) [182.7 MB]<br>**Labels:** 877| [track_3_s1_lwir_v2](https://mineinsight.short.gy/hMUnVJ) [1.1 GB]|
-| **Track 3 - Seq 2** | <p align="center">❌</p> | [track_3_s2_swir](https://mineinsight.short.gy/ob8Stx) [852.1 MB]| [track_3_s2_lwir_v2](https://mineinsight.short.gy/fFFmmt) [1.9 GB]|
-
+| **Track 1 - Seq 1** | [track_1_s1_rgb_v2](https://mineinsight.short.gy/jIclRQ) [1.5 GB]<br>**Labels:** 6,441| [track_1_s1_swir_v2](https://mineinsight.short.gy/K0WHq1) [465.4 MB]<br>**Labels:** 869| [track_1_s1_lwir](https://mineinsight.short.gy/W4Idj5) [649.7 MB]|
+| **Track 1 - Seq 2** | [track_1_s2_rgb](https://is.gd/eKoe8p) [5 GB]| [track_1_s2_swir_v2](https://mineinsight.short.gy/MY5dbv) [1.5 GB]<br>**Labels:** 5,198| [track_1_s2_lwir](https://mineinsight.short.gy/T1H65Z) [2.9 GB]|
+| **Track 2 - Seq 1** | [track_2_s1_rgb](https://is.gd/gdfsJm) [1.1 GB]| [track_2_s1_swir_v2](https://mineinsight.short.gy/9LYXmz) [332.2 MB]<br>**Labels:** 654| [track_2_s1_lwir](https://mineinsight.short.gy/iBEKFk) [507.8 MB]|
+| **Track 2 - Seq 2** | [track_2_s2_rgb](https://is.gd/pvDpQ2) [6.1 GB]| [track_2_s2_swir_v2](https://mineinsight.short.gy/FefTor) [2.9 GB]<br>**Labels:** 4,482| [track_2_s2_lwir](https://mineinsight.short.gy/clWzgL) [2.1 GB]|
+| **Track 3 - Seq 1** | <p align="center">❌</p> | [track_3_s1_swir_v2](https://mineinsight.short.gy/fMu0Ze) [182.7 MB]<br>**Labels:** 877| [track_3_s1_lwir](https://mineinsight.short.gy/hMUnVJ) [1.1 GB]|
+| **Track 3 - Seq 2** | <p align="center">❌</p> | [track_3_s2_swir_v2](https://mineinsight.short.gy/ob8Stx) [852.1 MB]<br>**Labels:** 2,686| [track_3_s2_lwir](https://mineinsight.short.gy/fFFmmt) [1.9 GB]|
+| **Total Refined Labels (v2)** | **in progress** | **14,766** | **in progress** |
 Each folder (.zip) follows the naming convention:
 
 ```

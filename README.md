@@ -287,8 +287,9 @@ Each archive contains **images + 2D bounding box annotations (YOLOv8)**.
 | **Track 3 - Seq 1** | <p align="center">❌</p> | [track_3_s1_swir_v2](https://mineinsight.short.gy/fMu0Ze) [182.7 MB]<br>**Labels:** 877| [track_3_s1_lwir](https://mineinsight.short.gy/hMUnVJ) [1.1 GB]|
 | **Track 3 - Seq 2** | <p align="center">❌</p> | [track_3_s2_swir_v2](https://mineinsight.short.gy/ob8Stx) [852.1 MB]<br>**Labels:** 2,686| [track_3_s2_lwir](https://mineinsight.short.gy/fFFmmt) [1.9 GB]|
 | **Total Refined Labels (v2)** | **in progress** | **14,766** | **in progress** |
-Each folder (.zip) follows the naming convention:
 
+
+Each folder (.zip) follows the naming convention:
 ```
 track_(nt)_s(ns)_camera.zip
 ```

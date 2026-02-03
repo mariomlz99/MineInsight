@@ -145,7 +145,7 @@ For each track, a **detailed inventory PDF** is available, providing the full li
 <p align="center">
   <img src="repo_images/target_pictures.png" alt="dataset_target_pictures" >
 </p>
-You can find them in the **`tracks_inventory`** folder of this repository:
+You can find them in the **tracks inventory** folder of this repository:
 
 <p align="center">
   📄 <a href="tracks_inventory/track_1_targets.pdf">Track 1 Inventory</a> &nbsp;|&nbsp; 
@@ -196,9 +196,9 @@ Intrinsic parameters are also included in the **extrinsics calibration files**, 
 We release **2 sequences per track**, resulting in a total of **6 sequences**.  
 The data is available in **three different formats**:
 
-- 🗄 **ROS 2 Bags**
-- 🗄 **ROS 2 Bags with Livox Custom Msg** 
-- 🖼 **Raw Images**  
+- 🗄️ **ROS 2 Bags**
+- 🗄️ **ROS 2 Bags with Livox Custom Msg** 
+- 📷 **Raw Images**  
 
 
 ## ROS 2 Bags Structure
@@ -210,8 +210,10 @@ Each **ROS 2 Bag**, includes:
 
 | Topic | Message Type | Description |
 |-------------------------------|-----------------------------------|-----------------------------------------------------------|
-| /allied_swir/image_raw/compressed | sensor_msgs/msg/CompressedImage | SWIR camera raw image |
-| /allied_swir/image_raw/rectified/compressed | sensor_msgs/msg/CompressedImage | SWIR camera rectified image |
+| /allied_swir/image_raw/compressed | sensor_msgs/msg/CompressedImage | VIS-SWIR camera raw image |
+| /allied_swir/image_raw/rectified/compressed | sensor_msgs/msg/CompressedImage | VIS-SWIR camera rectified image |
+| /allied_rgb/image_raw/compressed | sensor_msgs/msg/CompressedImage | RGB camera raw image |
+| /allied_rgb/image_raw/rectified/compressed | sensor_msgs/msg/CompressedImage | RGB camera rectified image |
 | /alphasense/cam_0/image_raw/compressed | sensor_msgs/msg/CompressedImage | Sevensense Core Greyscale camera 0 raw image |
 | /alphasense/cam_0/image_raw/rectified/compressed | sensor_msgs/msg/CompressedImage | Sevensense Core Greyscale camera 0 rectified image |
 | /alphasense/cam_1/image_raw/compressed | sensor_msgs/msg/CompressedImage | Sevensense Core Greyscale camera 1 raw image |

@@ -259,36 +259,16 @@ For installation instructions, please take a look at the documentation in the re
 
 ## ROS 2 Bags Downloads
 
-You can download the datasets from the links below:
+We provide the raw data in two formats. **Standard** bags use standard ROS 2 message type (PointCloud2), while **Livox Custom Msg** bags include the raw driver data for users who need the raw polar coordinate data.
 
-### **Track 1**
-🔹 **Sequence 1**:  
-   - 🗂️ [ROS 2 Bag (Standard)](https://mineinsight.short.gy/hvMRPa) [19.1 GB]
-   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://mineinsight.short.gy/nZkpxH) [19.6 GB]  
-
-🔹 **Sequence 2**:  
-   - 🗂️ [ROS 2 Bag (Standard)](https://mineinsight.short.gy/IHmkB6) [75.3 GB] 
-   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://mineinsight.short.gy/LDd1Bx) [77.9 GB]  
-
-
-### **Track 2**
-🔹 **Sequence 1**:  
-   - 🗂️ [ROS 2 Bag (Standard)](https://mineinsight.short.gy/YY9Swf) [15.1 GB] 
-   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://mineinsight.short.gy/5IAGR4) [15.5 GB]  
-
-🔹 **Sequence 2**:  
-   - 🗂️ [ROS 2 Bag (Standard)](https://mineinsight.short.gy/pciT5I) [68.9 GB]  
-   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://mineinsight.short.gy/0MfPRY) [71 GB]  
-
-
-### **Track 3**
-🔹 **Sequence 1**:  
-   - 🗂️ [ROS 2 Bag (Standard)](https://mineinsight.short.gy/5qRJQV) [5.5 GB]  
-   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://mineinsight.short.gy/CgLNGg) [5.9 GB]  
-
-🔹 **Sequence 2**:  
-   - 🗂️ [ROS 2 Bag (Standard)](https://mineinsight.short.gy/vfHjPD) [24.4 GB]  
-   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://mineinsight.short.gy/aAmgvU) [26 GB]  
+| **Track / Seq** | **Standard ROS 2 Bag** | **Livox Custom Msg Bag** |
+|:---|:---|:---|
+| **Track 1 - Seq 1** | [Download](https://mineinsight.short.gy/hvMRPa) [19.1 GB] | [Download](https://mineinsight.short.gy/nZkpxH) [19.6 GB] |
+| **Track 1 - Seq 2** | [Download](https://mineinsight.short.gy/IHmkB6) [75.3 GB] | [Download](https://mineinsight.short.gy/LDd1Bx) [77.9 GB] |
+| **Track 2 - Seq 1** | [Download](https://mineinsight.short.gy/YY9Swf) [15.1 GB] | [Download](https://mineinsight.short.gy/5IAGR4) [15.5 GB] |
+| **Track 2 - Seq 2** | [Download](https://mineinsight.short.gy/pciT5I) [68.9 GB] | [Download](https://mineinsight.short.gy/0MfPRY) [71.0 GB] |
+| **Track 3 - Seq 1** | [Download](https://mineinsight.short.gy/5qRJQV) [5.5 GB] | [Download](https://mineinsight.short.gy/CgLNGg) [5.9 GB] |
+| **Track 3 - Seq 2** | [Download](https://mineinsight.short.gy/vfHjPD) [24.4 GB] | [Download](https://mineinsight.short.gy/aAmgvU) [26.0 GB] |
 
 
 ## Raw Images

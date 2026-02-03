@@ -69,7 +69,7 @@ For a more detailed understanding of the methodology and experimental design, pl
 
 ## Sensors Overview
 
-<p align="center"> <img src="repo_images/anon_experimental_setup.png" alt="Experimental Setup" width="80%"> </p>
+<p align="center"> <img src="repo_images/sensors_setup_picture.jpg" alt="Experimental Setup" width="80%"> </p>
 
 
 | **Platform and Robotic Arm** | **Platform Sensor Suite** | **Robotic Arm Sensor Suite** |

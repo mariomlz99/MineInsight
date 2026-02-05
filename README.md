@@ -263,73 +263,58 @@ We provide the raw data in two formats. **Standard** bags use standard ROS 2 mes
 
 | **Track / Seq** | **Standard ROS 2 Bag** | **Livox Custom Msg Bag** |
 |:---|:---|:---|
-| **Track 1 - Seq 1** | [Download](https://mineinsight.short.gy/hvMRPa) [19.1 GB] | [Download](https://mineinsight.short.gy/nZkpxH) [19.6 GB] |
-| **Track 1 - Seq 2** | [Download](https://mineinsight.short.gy/IHmkB6) [75.3 GB] | [Download](https://mineinsight.short.gy/LDd1Bx) [77.9 GB] |
-| **Track 2 - Seq 1** | [Download](https://mineinsight.short.gy/YY9Swf) [15.1 GB] | [Download](https://mineinsight.short.gy/5IAGR4) [15.5 GB] |
-| **Track 2 - Seq 2** | [Download](https://mineinsight.short.gy/pciT5I) [68.9 GB] | [Download](https://mineinsight.short.gy/0MfPRY) [71.0 GB] |
-| **Track 3 - Seq 1** | [Download](https://mineinsight.short.gy/5qRJQV) [5.5 GB] | [Download](https://mineinsight.short.gy/CgLNGg) [5.9 GB] |
-| **Track 3 - Seq 2** | [Download](https://mineinsight.short.gy/vfHjPD) [24.4 GB] | [Download](https://mineinsight.short.gy/aAmgvU) [26.0 GB] |
+| **Track 1 - Seq 1** | [Download](https://mineinsight.short.gy/hvMRPa) `19.1 GB` | [Download](https://mineinsight.short.gy/nZkpxH) `19.6 GB` |
+| **Track 1 - Seq 2** | [Download](https://mineinsight.short.gy/IHmkB6) `75.3 GB` | [Download](https://mineinsight.short.gy/LDd1Bx) `77.9 GB` |
+| **Track 2 - Seq 1** | [Download](https://mineinsight.short.gy/YY9Swf) `15.1 GB` | [Download](https://mineinsight.short.gy/5IAGR4) `15.5 GB` |
+| **Track 2 - Seq 2** | [Download](https://mineinsight.short.gy/pciT5I) `68.9 GB` | [Download](https://mineinsight.short.gy/0MfPRY) `71.0 GB` |
+| **Track 3 - Seq 1** | [Download](https://mineinsight.short.gy/5qRJQV) `5.5 GB` | [Download](https://mineinsight.short.gy/CgLNGg) `5.9 GB` |
+| **Track 3 - Seq 2** | [Download](https://mineinsight.short.gy/vfHjPD) `24.4 GB` | [Download](https://mineinsight.short.gy/aAmgvU) `26.0 GB` |
 
 
-## Raw Images
+## Raw Images and Labels
 
-Each archive contains **images + 2D bounding box annotations (YOLOv8)**. 
-| **Track / Seq** | **RGB** | **VIS-SWIR** | **LWIR** |
-|---------------------|-----------|------------|------------|
-| **Track 1 - Seq 1** | [track_1_s1_rgb_v2](https://mineinsight.short.gy/jIclRQ) [1.5 GB]<br>**Labels:** 6,441| [track_1_s1_swir_v2](https://mineinsight.short.gy/K0WHq1) [465.4 MB]<br>**Labels:** 869| [track_1_s1_lwir_v2](https://mineinsight.short.gy/W4Idj5) [649.7 MB]<br>**Labels:** 9,903|
-| **Track 1 - Seq 2** | [track_1_s2_rgb](https://is.gd/eKoe8p) [5 GB]| [track_1_s2_swir_v2](https://mineinsight.short.gy/MY5dbv) [1.5 GB]<br>**Labels:** 5,198| [track_1_s2_lwir](https://mineinsight.short.gy/T1H65Z) [2.9 GB]|
-| **Track 2 - Seq 1** | [track_2_s1_rgb_v2](https://mineinsight.short.gy/9SHCJE) [1.1 GB]<br>**Labels:** 6,295| [track_2_s1_swir_v2](https://mineinsight.short.gy/9LYXmz) [332.2 MB]<br>**Labels:** 654| [track_2_s1_lwir_v2](https://mineinsight.short.gy/iBEKFk) [507.8 MB]<br>**Labels:** 9,880|
-| **Track 2 - Seq 2** | [track_2_s2_rgb](https://is.gd/pvDpQ2) [6.1 GB]| [track_2_s2_swir_v2](https://mineinsight.short.gy/FefTor) [2.9 GB]<br>**Labels:** 4,482| [track_2_s2_lwir](https://mineinsight.short.gy/clWzgL) [2.1 GB]|
-| **Track 3 - Seq 1** | <p align="center">❌</p> | [track_3_s1_swir_v2](https://mineinsight.short.gy/fMu0Ze) [182.7 MB]<br>**Labels:** 877| [track_3_s1_lwir](https://mineinsight.short.gy/hMUnVJ) [1.1 GB]|
-| **Track 3 - Seq 2** | <p align="center">❌</p> | [track_3_s2_swir_v2](https://mineinsight.short.gy/ob8Stx) [852.1 MB]<br>**Labels:** 2,686| [track_3_s2_lwir](https://mineinsight.short.gy/fFFmmt) [1.9 GB]|
-| **Total Refined Labels (v2)** | **in progress** | **14,766** | **in progress** |
+| **Track / Seq** | **RGB Data** | **VIS-SWIR Data** | **LWIR Data** |
+| :--- | :--- | :--- | :--- |
+| **Track 1 - Seq 1** | 🖼️ **[Images](https://mineinsight.short.gy/6Mvbjx)** `3.8 GB`<br>🏷️ **[Labels (v2)](YOUR_LINK_HERE)** `sizeof`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/WsrVwa)** `4.8 MB`| 🖼️ **[Images](https://mineinsight.short.gy/bYB63R)** `465 MB` <br>🏷️ **[Labels (v2)](YOUR_LINK_HERE)**`sizeof`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/zbxef4)** `1.2 MB`| 🖼️ **[Images](https://mineinsight.short.gy/LV5XZ1)** `669 MB` <br>🏷️ **[Reproj. Labels](https://mineinsight.short.gy/W4Idj5)**`sizeof`<br>🏷️ **[Auto Labels](YOUR_LINK_HERE)** `sizeof`|
+| **Track 1 - Seq 2** | 🖼️ **[Images](https://mineinsight.short.gy/RBRY3I)** `12.0 GB` <br>🏷️ **[Labels](YOUR_LINK_HERE)**`sizeof`<br>🎭 *Masks Coming Soon* | 🖼️ **[Images](https://mineinsight.short.gy/rB9si6)** `4.2 GB` <br>🏷️ **[Labels (v2)](YOUR_LINK_HERE)**`sizeof`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/8mLBb1)** `7.5 MB`| 🖼️ **[Images](https://mineinsight.short.gy/PYfYwf)** `3.0 GB` <br>🏷️ **[Reproj. Labels](YOUR_LINK_HERE)** `sizeof`<br>🏷️ **[Auto Labels](YOUR_LINK_HERE)** `sizeof`|
+| **Track 2 - Seq 1** | 🖼️ **[Images](https://mineinsight.short.gy/OKXGyT)** `2.8 GB` <br>🏷️ **[Labels (v2)](YOUR_LINK_HERE)** `sizeof`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/T1FSPQ)** | 🖼️ **[Images](https://mineinsight.short.gy/ZoJg2h)** `872 MB` <br>🏷️ **[Labels (v2)](YOUR_LINK_HERE)** `sizeof`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/t6S5Sy)** `1 MB`| 🖼️ **[Images](https://mineinsight.short.gy/Tkb2ra)** `520 MB` <br>🏷️ **[Reproj. Labels](null)** `sizeof`<br>🏷️ **[Auto Labels](null)** `sizeof`|
+| **Track 2 - Seq 2** | 🖼️ **[Images](https://mineinsight.short.gy/mZSLV8)** `15.8 GB` <br>🏷️ **[Labels](YOUR_LINK_HERE)**<br>🎭 *Masks Coming Soon* | 🖼️ **[Images](https://mineinsight.short.gy/DIObFu)** `2.9 GB` <br>🏷️ **[Labels (v2)](YOUR_LINK_HERE)** `sizeof`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/AHS1OK)** `6 MB`| 🖼️ **[Images](https://mineinsight.short.gy/CuoFOX)** `2.3 GB` <br>🏷️ **[Reproj. Labels](YOUR_LINK_HERE)** `sizeof`<br>🏷️ **[Auto Labels](YOUR_LINK_HERE)** `sizeof`|
+| **Track 3 - Seq 1** | <br><p align="center">❌<br>*(Not Available)*</p> | 🖼️ **[Images](https://mineinsight.short.gy/aX73E)** `630 MB` <br>🏷️ **[Labels](YOUR_LINK_HERE)** `sizeof` <br>🎭 *Masks N/A* | 🖼️ **[Images](https://mineinsight.short.gy/UoD78c)** `566 MB GB` <br>🏷️ **[Reproj. Labels](YOUR_LINK_HERE)** `sizeof`<br>🏷️ **[Auto Labels](YOUR_LINK_HERE)** `sizeof` |
+| **Track 3 - Seq 2** | <br><p align="center">❌<br>*(Not Available)*</p> | 🖼️ **[Images](https://mineinsight.short.gy/ewHM2o)** `2.6 GB` <br>🏷️ **[Labels](YOUR_LINK_HERE)** `sizeof`<br>🎭 *Masks N/A* | 🖼️ **[Images](https://mineinsight.short.gy/1XFhHc)** `2.0 GB` <br>🏷️ **[Reproj. Labels](YOUR_LINK_HERE)** `sizeof`<br>🏷️ **[Auto Labels](YOUR_LINK_HERE)** `sizeof` |
+
+> **Key:** 🖼️: Images | 🏷️: Annotations | 🎭 Segmentation (SAM2)
+
+### 📝 Data Format & Notes
+
+#### **1. Directory Structure**
+Each archive (`.zip`) follows the naming convention: `track_(nt)_s(ns)_camera_(type).zip`.
+* **(nt)** → Track number (`1, 2, 3`)
+* **(ns)** → Sequence number (`1, 2`)
+* **camera** → Sensor (`rgb, swir, lwir`)
+* **type** → Type of resource (`images, labels`) and only for LWIR (`labels_reproj, labels_auto`)
 
 
-Each folder (.zip) follows the naming convention:
-```
-track_(nt)_s(ns)_camera.zip
-```
-Where:  
-- **(nt)** → Track number (**1, 2, 3**)  
-- **(ns)** → Sequence number (**1, 2**)  
-- **camera** → Image type (**rgb, swir, or lwir**)  
+Inside, files are named: `track_(nt)_s(ns)_camera_timestampsec_timestampnanosec (.jpg / .txt)`
 
-The generic naming convention for each jpg/txt is:
+#### **2. Annotation Formats**
+* **Bounding Boxes (YOLOv8):**
+    Target positions are provided in `.txt` files:
+    ```
+    <class_id> <x_center> <y_center> <width> <height>
+    ```
+    **Classes list:** [tracks_inventory/targets_list.yaml](tracks_inventory/targets_list.yaml)
 
-```
-track_(nt)_s(ns)_camera_timestampsec_timestampnanosec (.jpg / .txt)
-```
+* **SAM2 Masks (Segmentation):**
+    * **Visuals:** White polygons on black backgrounds (`.png`).
+    * **Structure:** Subfolders by object ID (e.g., `/id_1/`).
+    * **Disclaimer:** These are **raw auto-generated masks** used as initial guesses. They are not manually corrected and may contain noise (debris, vegetation) or temporal jitter.
 
-The **YOLOv8 format** is used for annotations of the target's position in the .txt files.  
+#### **⚠️ Note on Thermal (LWIR) Labels**
+Thermal annotations come in two variants:
+1.  **Reprojected (Manual Verification):** Generated by projecting manual RGB/SWIR labels onto the thermal view. Limitations include lack of absolute precision and dependency on the source sensor's FOV.
+2.  **Automatic:** Generated via algorithmic detection.
 
-```
-<class_id> <x_center> <y_center> <width> <height>
-```
-
-**Classes list:** [`tracks_inventory/targets_list.yaml`](tracks_inventory/targets_list.yaml)
-
-**⚠️ Note regarding Thermal (LWIR) Annotations:**  
-As detailed in the reference paper, direct manual annotation of the thermal dataset was unfeasible due to the faint or indistinct nature of thermal signatures. Consequently, LWIR labels were generated via a reprojection process from visible wavelengths (RGB or VIS-SWIR), followed by human verification. This methodology implies inherent limitations: thermal bounding boxes lack absolute dimension precision and are strictly limited to the Field of View of the source domain. Furthermore, annotations may exhibit temporal instability (jitter) reflecting variances in the original human labeling, and labels may be absent in the thermal dataset if the target was occluded or indistinct in the source RGB/SWIR sequences, even if the thermal signature remained visible.
-**Specific Note on Track 3**: This limitation is significantly reflected in the labels of Track 3. In this sequence, the constant larger FOV of the RGB camera is absent. Consequently, the reconstruction had to be performed using only the limited, narrow FOV of the VIS-SWIR sensor, combined with human-supervised labeling during night conditions.
-
-## 📣 SAM2 Auto-Generated Masks
-
-We are releasing a set of automatically generated masks produced via **SAM2**, used both for label refinement and as an initial guess for the model. These were not part of the original paper and are provided "as-is" for the community. We’re sharing them because we thought they might be useful for additional analyses or downstream uses.
-
-**Disclaimer:** These are **not manually annotated**; they represent the raw output of SAM2 using our annotated bounding boxes as the initial prompt. While some IDs are surprisingly stable (even in vegetated environments), others fluctuate over time or change dimension or include noise like debris, leaves and vegetation.
-Due to the night conditions on Track 3, the labels are released only for T1,T2 S1,S2 of the RGB and VIS-SWIR cameras
-
-| **Track / Seq** | **RGB** | **VIS-SWIR** |
-| :--- | :--- | :--- |
-| **Track 1 - Seq 1** | [track_1_s1_rgb_masks_beta](https://mineinsight.short.gy/WsrVwa) | [track_1_s1_swir_masks_beta](https://mineinsight.short.gy/zbxef4) |
-| **Track 1 - Seq 2** | [track_1_s2_rgb_masks - COMING SOON]() | [track_1_s2_swir_masks_beta](https://mineinsight.short.gy/8mLBb1) |
-| **Track 2 - Seq 1** | [track_2_s1_rgb_masks_beta](https://mineinsight.short.gy/T1FSPQ) | [track_2_s1_swir_masks_beta](https://mineinsight.short.gy/t6S5Sy) |
-| **Track 2 - Seq 2** | [track_2_s2_rgb_masks - COMING SOON](#) | [track_2_s2_swir_masks_beta](https://mineinsight.short.gy/AHS1OK) |
-
-**Format:**
-* **Visuals:** Released as white polygons on black masks.
-* **Structure:** Organized in subfolders by object ID (e.g., `/id_1/`, `/id_3/`).
-* **Naming:** `track_(nt)_s(ns)_(camera)_(sec)_(nanosec)_id.png`
+* **Track 3 Limitation:** Due to the absence of RGB, Track 3 reconstruction relied on the narrow FOV of the VIS-SWIR sensor under night conditions.
 
 ## Climatology  
 

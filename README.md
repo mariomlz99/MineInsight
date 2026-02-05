@@ -3,11 +3,11 @@
 ### 📢 News 
 <div style="height:80px; overflow-y:scroll; border:1px solid #ccc; padding:10px; border-radius:5px; background-color: #f9f9f9;">
   <ul>
-    <li>📦 <strong>31 Jan 2026:</strong> The T2S1 RGB labels have been refined, resulting in 6,295 finalized labels and resolving inconsistencies in bounding box sizes caused by differences among labelers. This refinement process is ongoing for the remaining RGB sequences.</li>  
-    <li>📦 <strong>28 Jan 2026:</strong> We have refined all VIS-SWIR sequence labels for the v2 release. This resulted in 14,766 cleaned labels and improved bounding box stability. Work on the RGB labels is ongoing.</li>    
-    <li>🎯 <strong>21 Jan 2026:</strong> We are currently mass revising all of our VIS-SWIR and RGB labels to improve their precision. </li>
-    <li>📦 <strong>11 Dec 2025:</strong> Published on IEEE RA-L.</li>
-    <li>📦 <strong>5 Jun 2025:</strong> Initial dataset release on GitHub.</li>
+    <li>📦 <strong>5 Feb 2026:</strong> The <strong>Data Section</strong> has been restructured in view of the upcoming <strong>v2 update</strong>, decoupling Images, Labels, and Masks for easier access and restoring images to their original quality. Refinement of the <strong>S2 RGB</strong> labels is nearing completion.</li> </li>
+    <li>📦 <strong>31 Jan 2026:</strong> Refinement completed for <strong>T1-S1</strong> and <strong>T2-S1</strong> (RGB and LWIR Reprojection), resolving bounding box inconsistencies across annotators. Work on the remaining sequences is ongoing.</li>  
+    <li>🚀 <strong>31 Jan 2026:</strong> MineInsight has been accepted for presentation at <strong>ICRA 2026</strong> in Vienna!</li>
+    <li>🏆 <strong>11 Dec 2025:</strong> Published on IEEE RA-L.</li>
+    <li>📦 <strong>5 Jun 2025:</strong> Initial dataset release on GitHub (v1).</li>
   </ul>
 </div>
 
@@ -65,7 +65,10 @@ With over <b>38,000 RGB frames</b>, <b>53,000 VIS-SWIR frames</b>, and <b>108,00
 
 # [2] Experimental Setup
 
-This section follows the terminology and conventions outlined in the accompanying paper.  
+
+
+
+ion follows the terminology and conventions outlined in the accompanying paper.  
 For a more detailed understanding of the methodology and experimental design, please refer to the paper.
 
 ## Sensors Overview
@@ -278,12 +281,12 @@ Detailed explanations of file formats, directory structures, and specific annota
 
 | **Track / Seq** | **RGB Data** | **VIS-SWIR Data** | **LWIR Data** |
 | :--- | :--- | :--- | :--- |
-| **Track 1 - Seq 1** | 🖼️ **[Images](https://mineinsight.short.gy/6Mvbjx)** `3.8 GB`<br>🏷️ **[Labels (v2)](YOUR_LINK_HERE)** `sizeof`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/WsrVwa)** `4.8 MB`| 🖼️ **[Images](https://mineinsight.short.gy/bYB63R)** `465 MB` <br>🏷️ **[Labels (v2)](YOUR_LINK_HERE)**`sizeof`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/zbxef4)** `1.2 MB`| 🖼️ **[Images](https://mineinsight.short.gy/LV5XZ1)** `669 MB` <br>🏷️ **[Reproj. Labels](https://mineinsight.short.gy/W4Idj5)**`sizeof`<br>🏷️ **[Auto Labels](YOUR_LINK_HERE)** `sizeof`|
-| **Track 1 - Seq 2** | 🖼️ **[Images](https://mineinsight.short.gy/RBRY3I)** `12.0 GB` <br>🏷️ **[Labels](YOUR_LINK_HERE)**`sizeof`<br>🎭 *Masks Coming Soon* | 🖼️ **[Images](https://mineinsight.short.gy/rB9si6)** `4.2 GB` <br>🏷️ **[Labels (v2)](YOUR_LINK_HERE)**`sizeof`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/8mLBb1)** `7.5 MB`| 🖼️ **[Images](https://mineinsight.short.gy/PYfYwf)** `3.0 GB` <br>🏷️ **[Reproj. Labels](YOUR_LINK_HERE)** `sizeof`<br>🏷️ **[Auto Labels](YOUR_LINK_HERE)** `sizeof`|
-| **Track 2 - Seq 1** | 🖼️ **[Images](https://mineinsight.short.gy/OKXGyT)** `2.8 GB` <br>🏷️ **[Labels (v2)](YOUR_LINK_HERE)** `sizeof`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/T1FSPQ)** | 🖼️ **[Images](https://mineinsight.short.gy/ZoJg2h)** `872 MB` <br>🏷️ **[Labels (v2)](YOUR_LINK_HERE)** `sizeof`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/t6S5Sy)** `1 MB`| 🖼️ **[Images](https://mineinsight.short.gy/Tkb2ra)** `520 MB` <br>🏷️ **[Reproj. Labels](null)** `sizeof`<br>🏷️ **[Auto Labels](null)** `sizeof`|
-| **Track 2 - Seq 2** | 🖼️ **[Images](https://mineinsight.short.gy/mZSLV8)** `15.8 GB` <br>🏷️ **[Labels](YOUR_LINK_HERE)**<br>🎭 *Masks Coming Soon* | 🖼️ **[Images](https://mineinsight.short.gy/DIObFu)** `2.9 GB` <br>🏷️ **[Labels (v2)](YOUR_LINK_HERE)** `sizeof`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/AHS1OK)** `6 MB`| 🖼️ **[Images](https://mineinsight.short.gy/CuoFOX)** `2.3 GB` <br>🏷️ **[Reproj. Labels](YOUR_LINK_HERE)** `sizeof`<br>🏷️ **[Auto Labels](YOUR_LINK_HERE)** `sizeof`|
-| **Track 3 - Seq 1** | <br><p align="center">❌<br>*(Not Available)*</p> | 🖼️ **[Images](https://mineinsight.short.gy/aX73E)** `630 MB` <br>🏷️ **[Labels](YOUR_LINK_HERE)** `sizeof` <br>🎭 *Masks N/A* | 🖼️ **[Images](https://mineinsight.short.gy/UoD78c)** `566 MB GB` <br>🏷️ **[Reproj. Labels](YOUR_LINK_HERE)** `sizeof`<br>🏷️ **[Auto Labels](YOUR_LINK_HERE)** `sizeof` |
-| **Track 3 - Seq 2** | <br><p align="center">❌<br>*(Not Available)*</p> | 🖼️ **[Images](https://mineinsight.short.gy/ewHM2o)** `2.6 GB` <br>🏷️ **[Labels](YOUR_LINK_HERE)** `sizeof`<br>🎭 *Masks N/A* | 🖼️ **[Images](https://mineinsight.short.gy/1XFhHc)** `2.0 GB` <br>🏷️ **[Reproj. Labels](YOUR_LINK_HERE)** `sizeof`<br>🏷️ **[Auto Labels](YOUR_LINK_HERE)** `sizeof` |
+| **Track 1 - Seq 1** | 🖼️ **[Images](https://mineinsight.short.gy/6Mvbjx)** `3.8 GB`<br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/Cy5OeN)** `1.2 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/WsrVwa)** `4.8 MB`| 🖼️ **[Images](https://mineinsight.short.gy/bYB63R)** `465 MB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/dZTjg4)** `1 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/zbxef4)** `1.2 MB`| 🖼️ **[Images](https://mineinsight.short.gy/LV5XZ1)** `669 MB` <br>🏷️ **[Reproj. Labels (v2)](https://mineinsight.short.gy/Z8fqcY)** `2.5 MB`<br>🏷️ **[Auto Labels](YOUR_LINK_HERE)** `sizeof`|
+| **Track 1 - Seq 2** | 🖼️ **[Images](https://mineinsight.short.gy/RBRY3I)** `12.0 GB` <br>🏷️ **[Labels (OLD)](https://mineinsight.short.gy/ncoHYs)**`6.5 MB`<br>🎭 *Masks Coming Soon* | 🖼️ **[Images](https://mineinsight.short.gy/rB9si6)** `4.2 GB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/xXIsWH)**`5.1 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/8mLBb1)** `7.5 MB`| 🖼️ **[Images](https://mineinsight.short.gy/PYfYwf)** `3.0 GB` <br>🏷️ **[Reproj. Labels](YOUR_LINK_HERE)** `sizeof`<br>🏷️ **[Auto Labels](YOUR_LINK_HERE)** `sizeof`|
+| **Track 2 - Seq 1** | 🖼️ **[Images](https://mineinsight.short.gy/OKXGyT)** `2.8 GB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/yJ4vKD)** `1.2 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/T1FSPQ)** `4.7 MB`| 🖼️ **[Images](https://mineinsight.short.gy/ZoJg2h)** `872 MB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/RVLjN6)** `1 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/t6S5Sy)** `1 MB`| 🖼️ **[Images](https://mineinsight.short.gy/Tkb2ra)** `520 MB` <br>🏷️ **[Reproj. Labels](https://mineinsight.short.gy/00s2Te)** `2.3 MB`<br>🏷️ **[Auto Labels](null)** `sizeof`|
+| **Track 2 - Seq 2** | 🖼️ **[Images](https://mineinsight.short.gy/mZSLV8)** `15.8 GB` <br>🏷️ **[Labels (OLD)](https://mineinsight.short.gy/5ZEVE9)** `8.7 MB`<br>🎭 *Masks Coming Soon* | 🖼️ **[Images](https://mineinsight.short.gy/DIObFu)** `2.9 GB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/tH7Dn7)** `4 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/AHS1OK)** `6 MB`| 🖼️ **[Images](https://mineinsight.short.gy/CuoFOX)** `2.3 GB` <br>🏷️ **[Reproj. Labels](YOUR_LINK_HERE)** `sizeof`<br>🏷️ **[Auto Labels](YOUR_LINK_HERE)** `sizeof`|
+| **Track 3 - Seq 1** | <br><p align="center">❌<br>*(Not Available)*</p> | 🖼️ **[Images](https://mineinsight.short.gy/aX73E)** `630 MB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/RoYk36)** `1 MB` <br>🎭 *Masks N/A* | 🖼️ **[Images](https://mineinsight.short.gy/UoD78c)** `566 MB` <br>🏷️ **[Reproj. Labels (v2)](https://mineinsight.short.gy/caHk6F)** `2 MB`<br>🏷️ **[Auto Labels (v2)](https://mineinsight.short.gy/KmOdtn)** `2.3 MB` |
+| **Track 3 - Seq 2** | <br><p align="center">❌<br>*(Not Available)*</p> | 🖼️ **[Images](https://mineinsight.short.gy/ewHM2o)** `2.6 GB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/2kcgCx)** `3.5 MB`<br>🎭 *Masks N/A* | 🖼️ **[Images](https://mineinsight.short.gy/1XFhHc)** `2.0 GB` <br>🏷️ **[Reproj. Labels (v2)](https://mineinsight.short.gy/aT8QZL)** `7.3 MB`<br>🏷️ **[Auto Labels (v2)](https://mineinsight.short.gy/LIJ0WV)** `8 MB` |
 
 > **Key:** 🖼️: Images | 🏷️: Annotations | 🎭: Mask (SAM2)
 

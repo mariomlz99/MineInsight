@@ -1,13 +1,14 @@
-# [IEEE RA-L'25] MineInsight: A Multi-sensor Dataset for Humanitarian Demining Robotics in Off-Road Environments
+# [IEEE RA-L '25 + ICRA '26] 
+# MineInsight: A Multi-sensor Dataset for Humanitarian Demining Robotics in Off-Road Environments
 
 ### 📢 News 
 <div style="height:80px; overflow-y:scroll; border:1px solid #ccc; padding:10px; border-radius:5px; background-color: #f9f9f9;">
   <ul>
-    <li>📦 <strong>31 Jan 2026:</strong> The T2S1 RGB labels have been refined, resulting in 6,295 finalized labels and resolving inconsistencies in bounding box sizes caused by differences among labelers. This refinement process is ongoing for the remaining RGB sequences.</li>  
-    <li>📦 <strong>28 Jan 2026:</strong> We have refined all VIS-SWIR sequence labels for the v2 release. This resulted in 14,766 cleaned labels and improved bounding box stability. Work on the RGB labels is ongoing.</li>    
-    <li>🎯 <strong>21 Jan 2026:</strong> We are currently mass revising all of our VIS-SWIR and RGB labels to improve their precision. </li>
-    <li>📦 <strong>11 Dec 2025:</strong> Published on IEEE RA-L.</li>
-    <li>📦 <strong>5 Jun 2025:</strong> Initial dataset release on GitHub.</li>
+    <li>📦 <strong>5 Feb 2026:</strong> The <strong>Data Section</strong> has been restructured in view of the upcoming <strong>v2 update</strong>, decoupling Images, Labels, and Masks for easier access and restoring images to their original quality. Refinement of the <strong>S2 RGB</strong> labels is nearing completion.</li> </li>
+    <li>📦 <strong>31 Jan 2026:</strong> Refinement completed for <strong>T1-S1</strong> and <strong>T2-S1</strong> (RGB and LWIR Reprojection), resolving bounding box inconsistencies across annotators. Work on the remaining sequences is ongoing.</li>  
+    <li>🚀 <strong>31 Jan 2026:</strong> MineInsight has been accepted for presentation at <strong>ICRA 2026</strong> in Vienna!</li>
+    <li>🏆 <strong>11 Dec 2025:</strong> Published on IEEE RA-L.</li>
+    <li>📦 <strong>5 Jun 2025:</strong> Initial dataset release on GitHub (v1).</li>
   </ul>
 </div>
 
@@ -29,6 +30,7 @@
   - [Sensors Overview](#sensors-overview)
   - [Sensors Coordinate Systems](#sensors-coordinate-systems)
 - **[3]** [Environments and Sequences](#3-environments-and-sequences)
+  - [Supplementary Material: Reference Data & Ground Truth](#31-supplementary-material-reference-data--ground-truth)
 - **[4]** [Targets](#4-targets)
 - **[5]** [Calibration](#5-calibration)
   - [Intrinsic Calibration](#intrinsic-calibration)
@@ -36,7 +38,7 @@
 - **[6]** [Data](#6-data)
   - [ROS 2 Bags Structure](#ros-2-bags-structure)
   - [ROS 2 Bags Downloads](#ros-2-bags-downloads)
-  - [Raw Images](#raw-images)
+  - [Raw Images and Labels](#raw-images-and-labels)
   - [Climatology](#climatology)
   - [Track 3 RGB Camera Failure](#track-3-rgb-camera-failure)
 - **[7]** [Acknowledgments](#7-acknowledgments)
@@ -64,7 +66,10 @@ With over <b>38,000 RGB frames</b>, <b>53,000 VIS-SWIR frames</b>, and <b>108,00
 
 # [2] Experimental Setup
 
-This section follows the terminology and conventions outlined in the accompanying paper.  
+
+
+
+ion follows the terminology and conventions outlined in the accompanying paper.  
 For a more detailed understanding of the methodology and experimental design, please refer to the paper.
 
 ## Sensors Overview
@@ -263,73 +268,96 @@ We provide the raw data in two formats. **Standard** bags use standard ROS 2 mes
 
 | **Track / Seq** | **Standard ROS 2 Bag** | **Livox Custom Msg Bag** |
 |:---|:---|:---|
-| **Track 1 - Seq 1** | [Download](https://mineinsight.short.gy/hvMRPa) [19.1 GB] | [Download](https://mineinsight.short.gy/nZkpxH) [19.6 GB] |
-| **Track 1 - Seq 2** | [Download](https://mineinsight.short.gy/IHmkB6) [75.3 GB] | [Download](https://mineinsight.short.gy/LDd1Bx) [77.9 GB] |
-| **Track 2 - Seq 1** | [Download](https://mineinsight.short.gy/YY9Swf) [15.1 GB] | [Download](https://mineinsight.short.gy/5IAGR4) [15.5 GB] |
-| **Track 2 - Seq 2** | [Download](https://mineinsight.short.gy/pciT5I) [68.9 GB] | [Download](https://mineinsight.short.gy/0MfPRY) [71.0 GB] |
-| **Track 3 - Seq 1** | [Download](https://mineinsight.short.gy/5qRJQV) [5.5 GB] | [Download](https://mineinsight.short.gy/CgLNGg) [5.9 GB] |
-| **Track 3 - Seq 2** | [Download](https://mineinsight.short.gy/vfHjPD) [24.4 GB] | [Download](https://mineinsight.short.gy/aAmgvU) [26.0 GB] |
+| **Track 1 - Seq 1** | [Download](https://mineinsight.short.gy/hvMRPa) `19.1 GB` | [Download](https://mineinsight.short.gy/nZkpxH) `19.6 GB` |
+| **Track 1 - Seq 2** | [Download](https://mineinsight.short.gy/IHmkB6) `75.3 GB` | [Download](https://mineinsight.short.gy/LDd1Bx) `77.9 GB` |
+| **Track 2 - Seq 1** | [Download](https://mineinsight.short.gy/YY9Swf) `15.1 GB` | [Download](https://mineinsight.short.gy/5IAGR4) `15.5 GB` |
+| **Track 2 - Seq 2** | [Download](https://mineinsight.short.gy/pciT5I) `68.9 GB` | [Download](https://mineinsight.short.gy/0MfPRY) `71.0 GB` |
+| **Track 3 - Seq 1** | [Download](https://mineinsight.short.gy/5qRJQV) `5.5 GB` | [Download](https://mineinsight.short.gy/CgLNGg) `5.9 GB` |
+| **Track 3 - Seq 2** | [Download](https://mineinsight.short.gy/vfHjPD) `24.4 GB` | [Download](https://mineinsight.short.gy/aAmgvU) `26.0 GB` |
 
 
-## Raw Images
+## Raw Images and Labels
 
-Each archive contains **images + 2D bounding box annotations (YOLOv8)**. 
-| **Track / Seq** | **RGB** | **VIS-SWIR** | **LWIR** |
-|---------------------|-----------|------------|------------|
-| **Track 1 - Seq 1** | [track_1_s1_rgb_v2](https://mineinsight.short.gy/jIclRQ) [1.5 GB]<br>**Labels:** 6,441| [track_1_s1_swir_v2](https://mineinsight.short.gy/K0WHq1) [465.4 MB]<br>**Labels:** 869| [track_1_s1_lwir_v2](https://mineinsight.short.gy/W4Idj5) [649.7 MB]<br>**Labels:** 9,903|
-| **Track 1 - Seq 2** | [track_1_s2_rgb](https://cloud.cylab.be/s/yaTbJZzKiLXxoQa/download) [5 GB]| [track_1_s2_swir_v2](https://mineinsight.short.gy/MY5dbv) [1.5 GB]<br>**Labels:** 5,198| [track_1_s2_lwir](https://mineinsight.short.gy/T1H65Z) [2.9 GB]|
-| **Track 2 - Seq 1** | [track_2_s1_rgb_v2](https://mineinsight.short.gy/9SHCJE) [1.1 GB]<br>**Labels:** 6,295| [track_2_s1_swir_v2](https://mineinsight.short.gy/9LYXmz) [332.2 MB]<br>**Labels:** 654| [track_2_s1_lwir_v2](https://mineinsight.short.gy/iBEKFk) [507.8 MB]<br>**Labels:** 9,880|
-| **Track 2 - Seq 2** | [track_2_s2_rgb](https://cloud.cylab.be/s/zy6CcJEkiPJftgE/download) [6.1 GB]| [track_2_s2_swir_v2](https://mineinsight.short.gy/FefTor) [2.9 GB]<br>**Labels:** 4,482| [track_2_s2_lwir](https://mineinsight.short.gy/clWzgL) [2.1 GB]|
-| **Track 3 - Seq 1** | <p align="center">❌</p> | [track_3_s1_swir_v2](https://mineinsight.short.gy/fMu0Ze) [182.7 MB]<br>**Labels:** 877| [track_3_s1_lwir](https://mineinsight.short.gy/hMUnVJ) [1.1 GB]|
-| **Track 3 - Seq 2** | <p align="center">❌</p> | [track_3_s2_swir_v2](https://mineinsight.short.gy/ob8Stx) [852.1 MB]<br>**Labels:** 2,686| [track_3_s2_lwir](https://mineinsight.short.gy/fFFmmt) [1.9 GB]|
-| **Total Refined Labels (v2)** | **in progress** | **14,766** | **in progress** |
+Detailed explanations of file formats, directory structures, and specific annotation details (including SAM2 masks and LWIR labels) can be found in the **[Data Format & Notes](#data-format--notes)** section immediately following this table.
+
+| **Track / Seq** | **RGB Data** | **VIS-SWIR Data** | **LWIR Data** |
+| :--- | :--- | :--- | :--- |
+| **Track 1 - Seq 1** | 🖼️ **[Images](https://mineinsight.short.gy/6Mvbjx)** `3.8 GB`<br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/Cy5OeN)** `1.2 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/WsrVwa)** `4.8 MB`| 🖼️ **[Images](https://mineinsight.short.gy/bYB63R)** `465 MB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/dZTjg4)** `1 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/zbxef4)** `1.2 MB`| 🖼️ **[Images](https://mineinsight.short.gy/LV5XZ1)** `669 MB` <br>🏷️ **[Reproj. Labels (v2)](https://mineinsight.short.gy/Z8fqcY)** `2.5 MB`<br>🏷️ **[Auto Labels (v2)](https://mineinsight.short.gy/ZpZt6R)** `2.2 MB`|
+| **Track 1 - Seq 2** | 🖼️ **[Images](https://mineinsight.short.gy/RBRY3I)** `12.0 GB` <br>🏷️ **[Labels (OLD)](https://mineinsight.short.gy/ncoHYs)**`6.5 MB`<br>🎭 *Masks Coming Soon* | 🖼️ **[Images](https://mineinsight.short.gy/rB9si6)** `4.2 GB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/xXIsWH)**`5.1 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/8mLBb1)** `7.5 MB`| 🖼️ **[Images](https://mineinsight.short.gy/PYfYwf)** `3.0 GB` <br>🏷️ **[Reproj. Labels (OLD)](https://mineinsight.short.gy/bYpES1)** `12.2 MB`<br>🏷️ **[Auto Labels (OLD)](https://mineinsight.short.gy/7yI5TN)** `12.2 MB`|
+| **Track 2 - Seq 1** | 🖼️ **[Images](https://mineinsight.short.gy/OKXGyT)** `2.8 GB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/yJ4vKD)** `1.2 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/T1FSPQ)** `4.7 MB`| 🖼️ **[Images](https://mineinsight.short.gy/ZoJg2h)** `872 MB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/RVLjN6)** `1 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/t6S5Sy)** `1 MB`| 🖼️ **[Images](https://mineinsight.short.gy/Tkb2ra)** `520 MB` <br>🏷️ **[Reproj. Labels](https://mineinsight.short.gy/00s2Te)** `2.3 MB`<br>🏷️ **[Auto Labels](https://mineinsight.short.gy/dAKwfC)** `2.3 MB`|
+| **Track 2 - Seq 2** | 🖼️ **[Images](https://mineinsight.short.gy/mZSLV8)** `15.8 GB` <br>🏷️ **[Labels (OLD)](https://mineinsight.short.gy/5ZEVE9)** `8.7 MB`<br>🎭 *Masks Coming Soon* | 🖼️ **[Images](https://mineinsight.short.gy/DIObFu)** `2.9 GB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/tH7Dn7)** `4 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/AHS1OK)** `6 MB`| 🖼️ **[Images](https://mineinsight.short.gy/CuoFOX)** `2.3 GB` <br>🏷️ **[Reproj. Labels (OLD)](https://mineinsight.short.gy/uvLeoo)** `9 MB`<br>🏷️ **[Auto Labels (OLD)](https://mineinsight.short.gy/D0vIEC)** `9.2 MB`|
+| **Track 3 - Seq 1** | <br><p align="center">❌<br>*(Not Available)*</p> | 🖼️ **[Images](https://mineinsight.short.gy/aX73E)** `630 MB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/RoYk36)** `1 MB` <br>🎭 *Masks N/A* | 🖼️ **[Images](https://mineinsight.short.gy/UoD78c)** `566 MB` <br>🏷️ **[Reproj. Labels (v2)](https://mineinsight.short.gy/caHk6F)** `2 MB`<br>🏷️ **[Auto Labels (v2)](https://mineinsight.short.gy/KmOdtn)** `2.3 MB` |
+| **Track 3 - Seq 2** | <br><p align="center">❌<br>*(Not Available)*</p> | 🖼️ **[Images](https://mineinsight.short.gy/ewHM2o)** `2.6 GB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/2kcgCx)** `3.5 MB`<br>🎭 *Masks N/A* | 🖼️ **[Images](https://mineinsight.short.gy/1XFhHc)** `2.0 GB` <br>🏷️ **[Reproj. Labels (v2)](https://mineinsight.short.gy/aT8QZL)** `7.3 MB`<br>🏷️ **[Auto Labels (v2)](https://mineinsight.short.gy/LIJ0WV)** `8 MB` |
+
+> **Key:** 🖼️: Images | 🏷️: Annotations | 🎭: Mask (SAM2)
+
+### 📝 Data Format & Notes
+
+#### **1. Directory Structure**
+Each archive (`.zip`) follows the naming convention: `track_(nt)_s(ns)_camera_(type).zip`.
+* **(nt)** → Track number (`1, 2, 3`)
+* **(ns)** → Sequence number (`1, 2`)
+* **camera** → Sensor (`rgb, swir, lwir`)
+* **type** → Type of resource (`images, labels, masks`) and only for LWIR (`labels_reproj, labels_auto`)
 
 
-Each folder (.zip) follows the naming convention:
-```
-track_(nt)_s(ns)_camera.zip
-```
-Where:  
-- **(nt)** → Track number (**1, 2, 3**)  
-- **(ns)** → Sequence number (**1, 2**)  
-- **camera** → Image type (**rgb, swir, or lwir**)  
+Inside, files are named: `track_(nt)_s(ns)_camera_timestampsec_timestampnanosec (.jpg / .txt)`
 
-The generic naming convention for each jpg/txt is:
+#### **2. Annotation Formats**
+* **Bounding Boxes (YOLOv8):**
+    Target positions are provided in `.txt` files:
+    ```
+    <class_id> <x_center> <y_center> <width> <height>
+    ```
+    **Classes list:** [tracks_inventory/targets_list.yaml](tracks_inventory/targets_list.yaml)
+<br>
 
-```
-track_(nt)_s(ns)_camera_timestampsec_timestampnanosec (.jpg / .txt)
-```
+* 📢 **SAM2 Masks (Segmentation)**
+We provide binary segmentation masks generated via SAM2 to assist with pixel-level analysis.
+<br>
 
-The **YOLOv8 format** is used for annotations of the target's position in the .txt files.  
+  **⚠️ Disclaimer:** These masks are **raw, auto-generated outputs** produced by **SAM2**. They were initialized using our ground-truth bounding boxes as prompts and propagated temporally across the target's lifecycle.
+  These masks have **not** been human-verified or corrected.
+  While many object IDs exhibit high stability (even in vegetated terrain), others may show temporal fluctuation, dimensional instability, or include background noise such as debris and leaves. **Availability:** Due to the low-light conditions on Track 3, masks are currently released **only for Track 1 & 2 (RGB and VIS-SWIR, S1 and S2).**
+  <br>
+  * **Format:** Binary `.png` images.
+      * **How to Read:** The files are single-channel grayscale.
+          * **Value 255 (White):** Target Object.
+          * **Value 0 (Black):** Background.
+          * *Tip: When loading (e.g., OpenCV, PIL), simply threshold > 0 to get the binary mask.*
+<br>
+  * **Directory Structure & Naming:**
+      Masks are organized into subfolders by **Object ID**. Inside each ID folder, the mask filename corresponds to the original image timestamp, ending with the object ID.
 
-```
-<class_id> <x_center> <y_center> <width> <height>
-```
+      ```text
+      track_2_s2_swir_masks/
+      ├── id_2/
+      │   ├── track_2_s2_swir_1730300015_687251662_id2.png
+      │   ├── track_2_s2_swir_1730300015_753865168_id2.png
+      │   └── ...
+      ├── id_4/
+      │   ├── track_2_s2_swir_1730300015_687251662_id4.png
+      │   └── ...
+      └── ...
+      ```
 
-**Classes list:** [`tracks_inventory/targets_list.yaml`](tracks_inventory/targets_list.yaml)
+  * **Naming Key:** `track_(nt)_s(ns)_(camera)_(sec)_(nanosec)_id(X).png`
 
-**⚠️ Note regarding Thermal (LWIR) Annotations:**  
-As detailed in the reference paper, direct manual annotation of the thermal dataset was unfeasible due to the faint or indistinct nature of thermal signatures. Consequently, LWIR labels were generated via a reprojection process from visible wavelengths (RGB or VIS-SWIR), followed by human verification. This methodology implies inherent limitations: thermal bounding boxes lack absolute dimension precision and are strictly limited to the Field of View of the source domain. Furthermore, annotations may exhibit temporal instability (jitter) reflecting variances in the original human labeling, and labels may be absent in the thermal dataset if the target was occluded or indistinct in the source RGB/SWIR sequences, even if the thermal signature remained visible.
-**Specific Note on Track 3**: This limitation is significantly reflected in the labels of Track 3. In this sequence, the constant larger FOV of the RGB camera is absent. Consequently, the reconstruction had to be performed using only the limited, narrow FOV of the VIS-SWIR sensor, combined with human-supervised labeling during night conditions.
+ <br>
 
-## 📣 SAM2 Auto-Generated Masks
+#### **⚠️ Note on Thermal (LWIR) Annotations**
+Due to faint thermal signatures, direct manual annotation was unfeasible. As mentioned in the reference paper, we proceeded with reprojection with added human input. We provide **two label variants**:
 
-We are releasing a set of automatically generated masks produced via **SAM2**, used both for label refinement and as an initial guess for the model. These were not part of the original paper and are provided "as-is" for the community. We’re sharing them because we thought they might be useful for additional analyses or downstream uses.
+**1. Reprojected Labels (`labels_reproj`)**
+* **Methodology:** Manual RGB labels are reprojected into the LWIR frame using LiDAR depth. To reduce errors from sparse LiDAR or vegetation, we apply depth-gating logic to reject implausible depth jumps.
+* **Pros/Cons:** High geometric consistency but dependent on the source camera's FOV. Labels may be missing if reprojection fails (ex: occlusions, depth rejection) or if the target exits the source FOV.
 
-**Disclaimer:** These are **not manually annotated**; they represent the raw output of SAM2 using our annotated bounding boxes as the initial prompt. While some IDs are surprisingly stable (even in vegetated environments), others fluctuate over time or change dimension or include noise like debris, leaves and vegetation.
-Due to the night conditions on Track 3, the labels are released only for T1,T2 S1,S2 of the RGB and VIS-SWIR cameras
+**2. Automatic Labels (`labels_auto`)**
+* **Methodology:** Generated from the **[Automatic Labels](#3-automatic-labels-pre-refinement)** (see Section 3.1), correcting their trajectories using the locations of the manual reprojections.
+* **Purpose:** Provides denser temporal coverage to fill gaps where reprojection fails. These, however, provide **larger bounding boxes** designed to indicate the general area of the target (like a ROI), rather than a tight fit.
 
-| **Track / Seq** | **RGB** | **VIS-SWIR** |
-| :--- | :--- | :--- |
-| **Track 1 - Seq 1** | [track_1_s1_rgb_masks_beta](https://mineinsight.short.gy/WsrVwa) | [track_1_s1_swir_masks_beta](https://mineinsight.short.gy/zbxef4) |
-| **Track 1 - Seq 2** | [track_1_s2_rgb_masks - COMING SOON]() | [track_1_s2_swir_masks_beta](https://mineinsight.short.gy/8mLBb1) |
-| **Track 2 - Seq 1** | [track_2_s1_rgb_masks_beta](https://mineinsight.short.gy/T1FSPQ) | [track_2_s1_swir_masks_beta](https://mineinsight.short.gy/t6S5Sy) |
-| **Track 2 - Seq 2** | [track_2_s2_rgb_masks - COMING SOON](#) | [track_2_s2_swir_masks_beta](https://mineinsight.short.gy/AHS1OK) |
-
-**Format:**
-* **Visuals:** Released as white polygons on black masks.
-* **Structure:** Organized in subfolders by object ID (e.g., `/id_1/`, `/id_3/`).
-* **Naming:** `track_(nt)_s(ns)_(camera)_(sec)_(nanosec)_id.png`
+**🛑 Track 3 Constraint:**
+Since Track 3 lacks RGB data, reprojection relies solely on the **VIS-SWIR** sensor. Because the VIS-SWIR FOV is **narrower** than the Thermal FOV, you will observe more "missing labels" in Track 3 LWIR reprojections whenever targets are outside the VIS-SWIR view.
 
 ## Climatology  
 

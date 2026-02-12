@@ -4,8 +4,8 @@
 ### 📢 News 
 <div style="height:80px; overflow-y:scroll; border:1px solid #ccc; padding:10px; border-radius:5px; background-color: #f9f9f9;">
   <ul>
+    <li>📦 <strong>12 Feb 2026:</strong> Refinement of <strong>T2-S2 RGB</strong> is complete, updating 53,286 labels to resolve inconsistencies among annotators and adding auto-masks and LWIR reprojections. Work is ongoing to port <strong>T1-S2 RGB</strong> to v2 with similar enhancements. The updated labels will be available by the end of the upcoming week.</li>
     <li>📦 <strong>5 Feb 2026:</strong> The <strong>Data Section</strong> has been restructured in view of the upcoming <strong>v2 update</strong>, decoupling Images, Labels, and Masks for easier access and restoring images to their original quality. Refinement of the <strong>S2 RGB</strong> labels is nearing completion.</li> </li>
-    <li>📦 <strong>31 Jan 2026:</strong> Refinement completed for <strong>T1-S1</strong> and <strong>T2-S1</strong> (RGB and LWIR Reprojection), resolving bounding box inconsistencies across annotators. Work on the remaining sequences is ongoing.</li>  
     <li>🚀 <strong>31 Jan 2026:</strong> MineInsight has been accepted for presentation at <strong>ICRA 2026</strong> in Vienna!</li>
     <li>🏆 <strong>11 Dec 2025:</strong> Published on IEEE RA-L.</li>
     <li>📦 <strong>5 Jun 2025:</strong> Initial dataset release on GitHub (v1).</li>
@@ -285,7 +285,7 @@ Detailed explanations of file formats, directory structures, and specific annota
 | **Track 1 - Seq 1** | 🖼️ **[Images](https://mineinsight.short.gy/6Mvbjx)** `3.8 GB`<br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/Cy5OeN)** `1.2 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/WsrVwa)** `4.8 MB`| 🖼️ **[Images](https://mineinsight.short.gy/bYB63R)** `465 MB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/dZTjg4)** `1 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/zbxef4)** `1.2 MB`| 🖼️ **[Images](https://mineinsight.short.gy/LV5XZ1)** `669 MB` <br>🏷️ **[Reproj. Labels (v2)](https://mineinsight.short.gy/Z8fqcY)** `2.5 MB`<br>🏷️ **[Auto Labels (v2)](https://mineinsight.short.gy/ZpZt6R)** `2.2 MB`|
 | **Track 1 - Seq 2** | 🖼️ **[Images](https://mineinsight.short.gy/RBRY3I)** `12.0 GB` <br>🏷️ **[Labels (OLD)](https://mineinsight.short.gy/ncoHYs)**`6.5 MB`<br>🎭 *Masks Coming Soon* | 🖼️ **[Images](https://mineinsight.short.gy/rB9si6)** `4.2 GB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/xXIsWH)**`5.1 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/8mLBb1)** `7.5 MB`| 🖼️ **[Images](https://mineinsight.short.gy/PYfYwf)** `3.0 GB` <br>🏷️ **[Reproj. Labels (OLD)](https://mineinsight.short.gy/bYpES1)** `12.2 MB`<br>🏷️ **[Auto Labels (OLD)](https://mineinsight.short.gy/7yI5TN)** `12.2 MB`|
 | **Track 2 - Seq 1** | 🖼️ **[Images](https://mineinsight.short.gy/OKXGyT)** `2.8 GB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/yJ4vKD)** `1.2 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/T1FSPQ)** `4.7 MB`| 🖼️ **[Images](https://mineinsight.short.gy/ZoJg2h)** `872 MB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/RVLjN6)** `1 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/t6S5Sy)** `1 MB`| 🖼️ **[Images](https://mineinsight.short.gy/Tkb2ra)** `520 MB` <br>🏷️ **[Reproj. Labels (v2)](https://mineinsight.short.gy/00s2Te)** `2.3 MB`<br>🏷️ **[Auto Labels (v2)](https://mineinsight.short.gy/dAKwfC)** `2.3 MB`|
-| **Track 2 - Seq 2** | 🖼️ **[Images](https://mineinsight.short.gy/mZSLV8)** `15.8 GB` <br>🏷️ **[Labels (OLD)](https://mineinsight.short.gy/5ZEVE9)** `8.7 MB`<br>🎭 *Masks Coming Soon* | 🖼️ **[Images](https://mineinsight.short.gy/DIObFu)** `2.9 GB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/tH7Dn7)** `4 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/AHS1OK)** `6 MB`| 🖼️ **[Images](https://mineinsight.short.gy/CuoFOX)** `2.3 GB` <br>🏷️ **[Reproj. Labels (OLD)](https://mineinsight.short.gy/uvLeoo)** `9 MB`<br>🏷️ **[Auto Labels (OLD)](https://mineinsight.short.gy/D0vIEC)** `9.2 MB`|
+| **Track 2 - Seq 2** | 🖼️ **[Images](https://mineinsight.short.gy/mZSLV8)** `15.8 GB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/5ZEVE9)** `8.7 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/kjBs2N)** `42 MB` | 🖼️ **[Images](https://mineinsight.short.gy/DIObFu)** `2.9 GB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/tH7Dn7)** `4 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/AHS1OK)** `6 MB`| 🖼️ **[Images](https://mineinsight.short.gy/CuoFOX)** `2.3 GB` <br>🏷️ **[Reproj. Labels (v2)](https://mineinsight.short.gy/uvLeoo)** `8.9 MB`<br>🏷️ **[Auto Labels (v2)](https://mineinsight.short.gy/D0vIEC)** `9.3 MB`|
 | **Track 3 - Seq 1** | <br><p align="center">❌<br>*(Not Available)*</p> | 🖼️ **[Images](https://mineinsight.short.gy/aX73E)** `630 MB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/RoYk36)** `1 MB` <br>🎭 *Masks N/A* | 🖼️ **[Images](https://mineinsight.short.gy/UoD78c)** `566 MB` <br>🏷️ **[Reproj. Labels (v2)](https://mineinsight.short.gy/caHk6F)** `2 MB`<br>🏷️ **[Auto Labels (v2)](https://mineinsight.short.gy/KmOdtn)** `2.3 MB` |
 | **Track 3 - Seq 2** | <br><p align="center">❌<br>*(Not Available)*</p> | 🖼️ **[Images](https://mineinsight.short.gy/ewHM2o)** `2.6 GB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/2kcgCx)** `3.5 MB`<br>🎭 *Masks N/A* | 🖼️ **[Images](https://mineinsight.short.gy/1XFhHc)** `2.0 GB` <br>🏷️ **[Reproj. Labels (v2)](https://mineinsight.short.gy/aT8QZL)** `7.3 MB`<br>🏷️ **[Auto Labels (v2)](https://mineinsight.short.gy/LIJ0WV)** `8 MB` |
 
@@ -313,35 +313,31 @@ Inside, files are named: `track_(nt)_s(ns)_camera_timestampsec_timestampnanosec 
 <br>
 
 * 📢 **SAM2 Masks (Segmentation)**
-We provide binary segmentation masks generated via SAM2 to assist with pixel-level analysis.
-<br>
+  We provide binary segmentation masks generated via SAM2 to assist with pixel-level analysis.
 
-  **⚠️ Disclaimer:** These masks are **raw, auto-generated outputs** produced by **SAM2**. They were initialized using our ground-truth bounding boxes as prompts and propagated temporally across the target's lifecycle.
-  These masks have **not** been human-verified or corrected.
-  While many object IDs exhibit high stability (even in vegetated terrain), others may show temporal fluctuation, dimensional instability, or include background noise such as debris and leaves. **Availability:** Due to the low-light conditions on Track 3, masks are currently released **only for Track 1 & 2 (RGB and VIS-SWIR, S1 and S2).**
-  <br>
+  > **⚠️ Disclaimer:** These masks are **raw, auto-generated outputs** produced by **SAM2**. They were initialized using our ground-truth bounding boxes as prompts and propagated temporally across the target's lifecycle. These masks have **not** been human-verified or corrected. While many object IDs exhibit high stability (even in vegetated terrain), others may show temporal fluctuation, dimensional instability, or include background noise such as debris and leaves. **Availability:** Due to the low-light conditions on Track 3, masks are currently released **only for Track 1 & 2 (RGB and VIS-SWIR, S1 and S2).**
+
   * **Format:** Binary `.png` images.
-      * **How to Read:** The files are single-channel grayscale.
-          * **Value 255 (White):** Target Object.
-          * **Value 0 (Black):** Background.
-          * *Tip: When loading (e.g., OpenCV, PIL), simply threshold > 0 to get the binary mask.*
-<br>
+    * **How to Read:** The files are single-channel grayscale.
+      * **Value 255 (White):** Target Object.
+      * **Value 0 (Black):** Background.
+  <br>
   * **Directory Structure & Naming:**
-      Masks are organized into subfolders by **Object ID**. Inside each ID folder, the mask filename corresponds to the original image timestamp, ending with the object ID.
+    Masks are organized into subfolders by **Object ID**. Inside each ID folder, the mask filename corresponds to the original image timestamp, ending with the object ID.
 
-      ```text
-      track_2_s2_swir_masks/
-      ├── id_2/
-      │   ├── track_2_s2_swir_1730300015_687251662_id2.png
-      │   ├── track_2_s2_swir_1730300015_753865168_id2.png
-      │   └── ...
-      ├── id_4/
-      │   ├── track_2_s2_swir_1730300015_687251662_id4.png
-      │   └── ...
-      └── ...
-      ```
+    ```text
+    track_2_s2_swir_masks/
+    ├── id_2/
+    │   ├── track_2_s2_swir_1730300015_687251662_id2.png
+    │   ├── track_2_s2_swir_1730300015_753865168_id2.png
+    │   └── ...
+    ├── id_4/
+    │   ├── track_2_s2_swir_1730300015_687251662_id4.png
+    │   └── ...
+    └── ...
+    ```
 
-  * **Naming Key:** `track_(nt)_s(ns)_(camera)_(sec)_(nanosec)_id(X).png`
+  * **Naming Key:** `track_(nt)_s(ns)_(camera)_(sec)_(nanosec)_id(N).png`
 
  <br>
 

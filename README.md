@@ -1,5 +1,17 @@
-# [IEEE RA-L'25] MineInsight: A Multi-sensor Dataset for Humanitarian Demining Robotics in Off-Road Environments
+# [IEEE RA-L '25 + ICRA '26] 
+# MineInsight: A Multi-sensor Dataset for Humanitarian Demining Robotics in Off-Road Environments
 
+### 📢 News 
+<div style="height:80px; overflow-y:scroll; border:1px solid #ccc; padding:10px; border-radius:5px; background-color: #f9f9f9;">
+  <ul>
+    <li>📦 <strong>19 Feb 2026:</strong> Release of MineInsight v2.</li>
+    <li>🚀 <strong>31 Jan 2026:</strong> MineInsight has been accepted for presentation at <strong>ICRA 2026</strong> in Vienna!</li>
+    <li>🏆 <strong>11 Dec 2025:</strong> Published on IEEE RA-L.</li>
+    <li>📦 <strong>5 Jun 2025:</strong> Initial dataset release on GitHub (v1).</li>
+  </ul>
+</div>
+
+---
 <p align="center">
   <a href="https://rma.ac.be/en">
     <img src="repo_images/rma_logo.png" height="80" alt="RMA Logo">
@@ -17,6 +29,7 @@
   - [Sensors Overview](#sensors-overview)
   - [Sensors Coordinate Systems](#sensors-coordinate-systems)
 - **[3]** [Environments and Sequences](#3-environments-and-sequences)
+  - [Supplementary Material: Reference Data & Ground Truth](#31-supplementary-material-reference-data--ground-truth)
 - **[4]** [Targets](#4-targets)
 - **[5]** [Calibration](#5-calibration)
   - [Intrinsic Calibration](#intrinsic-calibration)
@@ -24,7 +37,7 @@
 - **[6]** [Data](#6-data)
   - [ROS 2 Bags Structure](#ros-2-bags-structure)
   - [ROS 2 Bags Downloads](#ros-2-bags-downloads)
-  - [Raw Images](#raw-images)
+  - [Raw Images and Labels](#raw-images-and-labels)
   - [Climatology](#climatology)
   - [Track 3 RGB Camera Failure](#track-3-rgb-camera-failure)
 - **[7]** [Acknowledgments](#7-acknowledgments)
@@ -52,12 +65,15 @@ With over <b>38,000 RGB frames</b>, <b>53,000 VIS-SWIR frames</b>, and <b>108,00
 
 # [2] Experimental Setup
 
-This section follows the terminology and conventions outlined in the accompanying paper.  
+
+
+
+ion follows the terminology and conventions outlined in the accompanying paper.  
 For a more detailed understanding of the methodology and experimental design, please refer to the paper.
 
 ## Sensors Overview
 
-<p align="center"> <img src="repo_images/anon_experimental_setup.png" alt="Experimental Setup" width="80%"> </p>
+<p align="center"> <img src="repo_images/sensors_setup_picture.jpg" alt="Experimental Setup" width="80%"> </p>
 
 
 | **Platform and Robotic Arm** | **Platform Sensor Suite** | **Robotic Arm Sensor Suite** |
@@ -84,34 +100,48 @@ For the full transformation chain, refer to the following **ROS 2 topics** in th
   <img src="repo_images/sensors_references_figure.png" alt="tf_sens" width="100%">
 </p>
 
+
 # [3] Environments and Sequences
 
-
 The dataset was collected across **3 distinct tracks**, each designed to represent a demining scenario with varying terrain and environmental conditions. 
-These tracks contain a diverse set of targets, positioned to challenge algorithms development.
-The figures represents a top-view pointcloud distribution of the targets along the track.
+These tracks contain a diverse set of targets, positioned to challenge algorithm development. 
+The figure below represents a top-view pointcloud distribution of the targets along the tracks.
 
 <p align="center">
   <img src="repo_images/tracks_pointcloud_topview.png" alt="dataset_tracks_presentation" >
 </p>
 
-For the sake of reproducibility, and to leave the ground-truth autolabelling and improvement as an open challenge, we also release the raw data from the **3 reference sequences** (the ones containing the AprilTag).  
+## 3.1 Supplementary Material: Reference Data & Ground Truth
 
-Please note that these ROS2 bags have not been processed or altered — they are provided exactly as recorded, with no topic remapping applied as in the dataset.
+To support reproducibility and research into auto-labeling pipelines, we release the intermediate data used to generate our ground truth. This allows the community to study the "Reference Data Generation" process described in **Section IV.D** of our paper.
 
-You can download the bags from here:
-- [TRACK 1 Reference Sequence ROS2 Bag](https://is.gd/fjlrLm)  
-- [TRACK 2 Reference Sequence ROS2 Bag](https://is.gd/wIMDzR)  
-- [TRACK 3 Reference Sequence ROS2 Bag](https://is.gd/eWoYYD)  
+### 1. Reference Sequences (Raw Data)
+We release the raw ROS 2 bags for the **3 Reference Sequences**. These sequences were recorded with AprilTags placed at every target location to facilitate precise pose estimation.
 
-In addition, we also provide the output of the ground position of each AprilTag stick in the reference frame map, as described in the paper.  
-These are released as JSON files, allowing users to evaluate the distances between the markers.  
+* **Note:** These bags are provided exactly as recorded (raw data) and have not been processed or topic-remapped like the main dataset sequences.
 
-You can find them here: [reference_sequences/](reference_sequences/)
+**Download:**
+* [TRACK 1 Reference Sequence ROS 2 Bag](https://mineinsight.short.gy/I6o5dc)
+* [TRACK 2 Reference Sequence ROS 2 Bag](https://mineinsight.short.gy/AQQXTH)
+* [TRACK 3 Reference Sequence ROS 2 Bag](https://mineinsight.short.gy/8mgVoT)
 
-- [TRACK_1_REF.json](reference_sequences/TRACK_1_REF.json)  
-- [TRACK_2_REF.json](reference_sequences/TRACK_2_REF.json)  
-- [TRACK_3_REF.json](reference_sequences/TRACK_3_REF.json)
+### 2. AprilTag Ground Positions
+We provide the ground truth position of each AprilTag stick relative to the reference frame map. These are released as JSON files. 
+
+For details on how these were derived, please refer to **Section IV.D ("Reference data generation")** in the paper.
+
+* [TRACK_1_REF.json](reference_sequences/TRACK_1_REF.json)
+* [TRACK_2_REF.json](reference_sequences/TRACK_2_REF.json)
+* [TRACK_3_REF.json](reference_sequences/TRACK_3_REF.json)
+
+### 3. Automatic Labels (Pre-Refinement)
+We also provide the **automatic label ground truth** generated by our pipeline before human supervision or further refinements. 
+
+These labels were created by detecting AprilTags in the reference sequences, calculating their 3D pose via SLAM + ICP, and projecting them into the evaluation sequences (see **Section IV.D** of the paper for the full methodology).
+
+Released as TXT files in a single folder for all tracks, these labels follow the naming convention detailed in **Section 6** of this repository to ensure temporal synchronization with the images.
+
+* [Download AUTOMATIC LABELS](https://mineinsight.short.gy/l6T62i)
 
 # [4] Targets
 
@@ -119,7 +149,7 @@ For each track, a **detailed inventory PDF** is available, providing the full li
 <p align="center">
   <img src="repo_images/target_pictures.png" alt="dataset_target_pictures" >
 </p>
-You can find them in the **`tracks_inventory`** folder of this repository:
+You can find them in the **tracks inventory** folder of this repository:
 
 <p align="center">
   📄 <a href="tracks_inventory/track_1_targets.pdf">Track 1 Inventory</a> &nbsp;|&nbsp; 
@@ -170,9 +200,9 @@ Intrinsic parameters are also included in the **extrinsics calibration files**, 
 We release **2 sequences per track**, resulting in a total of **6 sequences**.  
 The data is available in **three different formats**:
 
-- 🗄 **ROS 2 Bags**
-- 🗄 **ROS 2 Bags with Livox Custom Msg** 
-- 🖼 **Raw Images**  
+- 🗄️ **ROS 2 Bags**
+- 🗄️ **ROS 2 Bags with Livox Custom Msg** 
+- 📷 **Raw Images**  
 
 
 ## ROS 2 Bags Structure
@@ -184,8 +214,10 @@ Each **ROS 2 Bag**, includes:
 
 | Topic | Message Type | Description |
 |-------------------------------|-----------------------------------|-----------------------------------------------------------|
-| /allied_swir/image_raw/compressed | sensor_msgs/msg/CompressedImage | SWIR camera raw image |
-| /allied_swir/image_raw/rectified/compressed | sensor_msgs/msg/CompressedImage | SWIR camera rectified image |
+| /allied_swir/image_raw/compressed | sensor_msgs/msg/CompressedImage | VIS-SWIR camera raw image |
+| /allied_swir/image_raw/rectified/compressed | sensor_msgs/msg/CompressedImage | VIS-SWIR camera rectified image |
+| /allied_rgb/image_raw/compressed | sensor_msgs/msg/CompressedImage | RGB camera raw image |
+| /allied_rgb/image_raw/rectified/compressed | sensor_msgs/msg/CompressedImage | RGB camera rectified image |
 | /alphasense/cam_0/image_raw/compressed | sensor_msgs/msg/CompressedImage | Sevensense Core Greyscale camera 0 raw image |
 | /alphasense/cam_0/image_raw/rectified/compressed | sensor_msgs/msg/CompressedImage | Sevensense Core Greyscale camera 0 rectified image |
 | /alphasense/cam_1/image_raw/compressed | sensor_msgs/msg/CompressedImage | Sevensense Core Greyscale camera 1 raw image |
@@ -227,82 +259,100 @@ To correctly **decode and use** these messages, install the official Livox drive
 - **Livox AVIA** (🔗 [livox_ros2_driver](https://github.com/Livox-SDK/livox_ros2_driver))  
 - **Livox Mid-360** (🔗 [livox_ros_driver2](https://github.com/Livox-SDK/livox_ros_driver2))  
 
-For installation instructions, refer to the documentation in the respective repositories.
+For installation instructions, please take a look at the documentation in the respective repositories.
 
 ## ROS 2 Bags Downloads
 
-You can download the datasets from the links below:
+We provide the raw data in two formats. **Standard** bags use standard ROS 2 message type (PointCloud2), while **Livox Custom Msg** bags include the raw driver data for users who need the raw polar coordinate data.
 
-### **Track 1**
-🔹 **Sequence 1**:  
-   - 🗂️ [ROS 2 Bag (Standard)](https://is.gd/Q0ELIF) [19.1 GB]
-   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://is.gd/Z34BmK) [19.6 GB]  
-
-🔹 **Sequence 2**:  
-   - 🗂️ [ROS 2 Bag (Standard)](https://is.gd/z5ly3C) [75.3 GB] 
-   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://is.gd/d1Jyur) [77.9 GB]  
-
-
-### **Track 2**
-🔹 **Sequence 1**:  
-   - 🗂️ [ROS 2 Bag (Standard)](https://is.gd/v0iAaG) [15.1 GB] 
-   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://is.gd/BCYrCN) [15.5 GB]  
-
-🔹 **Sequence 2**:  
-   - 🗂️ [ROS 2 Bag (Standard)](https://is.gd/xxK8QU) [68.9 GB]  
-   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://is.gd/vlfIWP) [71 GB]  
+| **Track / Seq** | **Standard ROS 2 Bag** | **Livox Custom Msg Bag** |
+|:---|:---|:---|
+| **Track 1 - Seq 1** | [Download](https://mineinsight.short.gy/hvMRPa) `19.1 GB` | [Download](https://mineinsight.short.gy/nZkpxH) `19.6 GB` |
+| **Track 1 - Seq 2** | [Download](https://mineinsight.short.gy/IHmkB6) `75.3 GB` | [Download](https://mineinsight.short.gy/LDd1Bx) `77.9 GB` |
+| **Track 2 - Seq 1** | [Download](https://mineinsight.short.gy/YY9Swf) `15.1 GB` | [Download](https://mineinsight.short.gy/5IAGR4) `15.5 GB` |
+| **Track 2 - Seq 2** | [Download](https://mineinsight.short.gy/pciT5I) `68.9 GB` | [Download](https://mineinsight.short.gy/0MfPRY) `71.0 GB` |
+| **Track 3 - Seq 1** | [Download](https://mineinsight.short.gy/5qRJQV) `5.5 GB` | [Download](https://mineinsight.short.gy/CgLNGg) `5.9 GB` |
+| **Track 3 - Seq 2** | [Download](https://mineinsight.short.gy/vfHjPD) `24.4 GB` | [Download](https://mineinsight.short.gy/aAmgvU) `26.0 GB` |
 
 
-### **Track 3**
-🔹 **Sequence 1**:  
-   - 🗂️ [ROS 2 Bag (Standard)](https://is.gd/OCZkfC) [5.5 GB]  
-   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://is.gd/70HGZI) [5.9 GB]  
+## Raw Images and Labels
 
-🔹 **Sequence 2**:  
-   - 🗂️ [ROS 2 Bag (Standard)](https://is.gd/NG4gpD) [24.4 GB]  
-   - 🗂️ [ROS 2 Bag (with Livox Custom Msg)](https://is.gd/HI7MXt) [26 GB]  
+Detailed explanations of file formats, directory structures, and specific annotation details (including SAM2 masks and LWIR labels) can be found in the **[Data Format & Notes](#data-format--notes)** section immediately following this table.
+
+| **Track / Seq** | **RGB Data** | **VIS-SWIR Data** | **LWIR Data** |
+| :--- | :--- | :--- | :--- |
+| **Track 1 - Seq 1** | 🖼️ **[Images](https://mineinsight.short.gy/6Mvbjx)** `3.8 GB`<br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/Cy5OeN)** `1.2 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/WsrVwa)** `4.8 MB`| 🖼️ **[Images](https://mineinsight.short.gy/bYB63R)** `465 MB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/dZTjg4)** `1 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/zbxef4)** `1.2 MB`| 🖼️ **[Images](https://mineinsight.short.gy/LV5XZ1)** `669 MB` <br>🏷️ **[Reproj. Labels (v2)](https://mineinsight.short.gy/Z8fqcY)** `2.5 MB`<br>🏷️ **[Auto Labels (v2)](https://mineinsight.short.gy/ZpZt6R)** `2.2 MB`|
+| **Track 1 - Seq 2** | 🖼️ **[Images](https://mineinsight.short.gy/RBRY3I)** `12.0 GB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/ncoHYs)** `6.5 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/3gyaZh)** `27.2 MB`| 🖼️ **[Images](https://mineinsight.short.gy/rB9si6)** `4.2 GB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/xXIsWH)** `5.1 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/8mLBb1)** `7.5 MB`| 🖼️ **[Images](https://mineinsight.short.gy/PYfYwf)** `3.0 GB` <br>🏷️ **[Reproj. Labels (v2)](https://mineinsight.short.gy/bYpES1)** `12.2 MB`<br>🏷️ **[Auto Labels (v2)](https://mineinsight.short.gy/7yI5TN)** `12.2 MB`|
+| **Track 2 - Seq 1** | 🖼️ **[Images](https://mineinsight.short.gy/OKXGyT)** `2.8 GB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/yJ4vKD)** `1.2 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/T1FSPQ)** `4.7 MB`| 🖼️ **[Images](https://mineinsight.short.gy/ZoJg2h)** `872 MB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/RVLjN6)** `1 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/t6S5Sy)** `1 MB`| 🖼️ **[Images](https://mineinsight.short.gy/Tkb2ra)** `520 MB` <br>🏷️ **[Reproj. Labels (v2)](https://mineinsight.short.gy/00s2Te)** `2.3 MB`<br>🏷️ **[Auto Labels (v2)](https://mineinsight.short.gy/dAKwfC)** `2.3 MB`|
+| **Track 2 - Seq 2** | 🖼️ **[Images](https://mineinsight.short.gy/mZSLV8)** `15.8 GB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/5ZEVE9)** `8.7 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/kjBs2N)** `42 MB` | 🖼️ **[Images](https://mineinsight.short.gy/DIObFu)** `2.9 GB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/tH7Dn7)** `4 MB`<br>🎭 **[Masks (auto)](https://mineinsight.short.gy/AHS1OK)** `6 MB`| 🖼️ **[Images](https://mineinsight.short.gy/CuoFOX)** `2.3 GB` <br>🏷️ **[Reproj. Labels (v2)](https://mineinsight.short.gy/uvLeoo)** `12.2 MB`<br>🏷️ **[Auto Labels (v2)](https://mineinsight.short.gy/D0vIEC)** `12.4 MB`|
+| **Track 3 - Seq 1** | <br><p align="center">❌<br>*(Not Available)*</p> | 🖼️ **[Images](https://mineinsight.short.gy/aX73E)** `630 MB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/RoYk36)** `1 MB` <br>🎭 *Masks N/A* | 🖼️ **[Images](https://mineinsight.short.gy/UoD78c)** `566 MB` <br>🏷️ **[Reproj. Labels (v2)](https://mineinsight.short.gy/caHk6F)** `2 MB`<br>🏷️ **[Auto Labels (v2)](https://mineinsight.short.gy/KmOdtn)** `2.3 MB` |
+| **Track 3 - Seq 2** | <br><p align="center">❌<br>*(Not Available)*</p> | 🖼️ **[Images](https://mineinsight.short.gy/ewHM2o)** `2.6 GB` <br>🏷️ **[Labels (v2)](https://mineinsight.short.gy/2kcgCx)** `3.5 MB`<br>🎭 *Masks N/A* | 🖼️ **[Images](https://mineinsight.short.gy/1XFhHc)** `2.0 GB` <br>🏷️ **[Reproj. Labels (v2)](https://mineinsight.short.gy/aT8QZL)** `7.3 MB`<br>🏷️ **[Auto Labels (v2)](https://mineinsight.short.gy/LIJ0WV)** `8 MB` |
+
+> **Key:** 🖼️: Images | 🏷️: Annotations | 🎭: Mask (SAM2)
+
+### 📝 Data Format & Notes
+
+#### **1. Directory Structure**
+Each archive (`.zip`) follows the naming convention: `track_(nt)_s(ns)_camera_(type).zip`.
+* **(nt)** → Track number (`1, 2, 3`)
+* **(ns)** → Sequence number (`1, 2`)
+* **camera** → Sensor (`rgb, swir, lwir`)
+* **type** → Type of resource (`images, labels, masks`) and only for LWIR (`labels_reproj, labels_auto`)
 
 
-## Raw Images
+Inside, files are named: `track_(nt)_s(ns)_camera_timestampsec_timestampnanosec (.jpg / .txt)`
 
-Each archive contains **images + 2D bounding box annotations (YOLOv8)**. After unzipping you’ll get:
+#### **2. Annotation Formats**
+* **Bounding Boxes (YOLOv8):**
+    Target positions are provided in `.txt` files:
+    ```
+    <class_id> <x_center> <y_center> <width> <height>
+    ```
+    **Classes list:** [tracks_inventory/targets_list.yaml](tracks_inventory/targets_list.yaml)
+<br>
 
-| **Track / Seq** | **RGB** | **VIS-SWIR** | **LWIR** |
-|---------------------|-----------|------------|------------|
-| **Track 1 - Seq 1** | [track_1_s1_rgb](https://is.gd/qlkDbS) [1.5 GB]| [track_1_s1_swir](https://is.gd/NAA6u4) [465.4 MB]| [track_1_s1_lwir](https://is.gd/h2xMcF) [649.7 MB]|
-| **Track 1 - Seq 2** | [track_1_s2_rgb](https://is.gd/eKoe8p) [5 GB]| [track_1_s2_swir](https://is.gd/In0r1y) [1.5 GB]| [track_1_s2_lwir](https://is.gd/J6jJ3d) [2.9 GB]|
-| **Track 2 - Seq 1** | [track_2_s1_rgb](https://is.gd/gdfsJm) [1.1 GB]| [track_2_s1_swir](https://is.gd/2oudon) [332.2 MB]| [track_2_s1_lwir](https://is.gd/6hO5eM) [507.8 MB]|
-| **Track 2 - Seq 2** | [track_2_s2_rgb](https://is.gd/pvDpQ2) [6.1 GB]| [track_2_s2_swir](https://is.gd/p09KcG) [1.1 GB]| [track_2_s2_lwir](https://is.gd/create.php) [2.1 GB]|
-| **Track 3 - Seq 1** | <p align="center">❌</p> | [track_3_s1_swir](https://is.gd/ZD4MRM) [182.7 MB]| [track_3_s1_lwir](https://is.gd/78AOnK) [1.1 GB]|
-| **Track 3 - Seq 2** | <p align="center">❌</p> | [track_3_s2_swir](https://is.gd/j7bDNG) [852.1 MB]| [track_3_s2_lwir](https://is.gd/pMr3pH) [1.9 GB]|
+* 📢 **SAM2 Masks (Segmentation)**
+  We provide binary segmentation masks generated via SAM2 to assist with pixel-level analysis.
 
-Each folder (.zip) follows the naming convention:
+  > **⚠️ Disclaimer:** These masks are **raw, auto-generated outputs** produced by **SAM2**. They were initialized using our ground-truth bounding boxes as prompts and propagated temporally across the target's lifecycle. These masks have **not** been human-verified or corrected. While many object IDs exhibit high stability (even in vegetated terrain), others may show temporal fluctuation, dimensional instability, or include background noise such as debris and leaves. **Availability:** Due to the low-light conditions on Track 3, masks are currently released **only for Track 1 & 2 (RGB and VIS-SWIR, S1 and S2).**
 
-```
-track_(nt)_s(ns)_camera.zip
-```
-Where:  
-- **(nt)** → Track number (**1, 2, 3**)  
-- **(ns)** → Sequence number (**1, 2**)  
-- **camera** → Image type (**rgb, swir, or lwir**)  
+  * **Format:** Binary `.png` images.
+    * **How to Read:** The files are single-channel grayscale.
+      * **Value 255 (White):** Target Object.
+      * **Value 0 (Black):** Background.
+  <br>
+  * **Directory Structure & Naming:**
+    Masks are organized into subfolders by **Object ID**. Inside each ID folder, the mask filename corresponds to the original image timestamp, ending with the object ID.
 
-The generic naming convention for each jpg/txt is:
+    ```text
+    track_2_s2_swir_masks/
+    ├── id_2/
+    │   ├── track_2_s2_swir_1730300015_687251662_id2.png
+    │   ├── track_2_s2_swir_1730300015_753865168_id2.png
+    │   └── ...
+    ├── id_4/
+    │   ├── track_2_s2_swir_1730300015_687251662_id4.png
+    │   └── ...
+    └── ...
+    ```
 
-```
-track_(nt)_s(ns)_camera_timestampsec_timestampnanosec (.jpg / .txt)
-```
+  * **Naming Key:** `track_(nt)_s(ns)_(camera)_(sec)_(nanosec)_id(N).png`
 
-The **YOLOv8 format** is used for annotations of the targets position in the .txt files.  
+ <br>
 
-```
-<class_id> <x_center> <y_center> <width> <height>
-```
+#### **⚠️ Note on Thermal (LWIR) Annotations**
+Due to faint thermal signatures, direct manual annotation was unfeasible. As mentioned in the reference paper, we proceeded with reprojection with added human input. We provide **two label variants**:
 
-**Classes list:** [`tracks_inventory/targets_list.yaml`](tracks_inventory/targets_list.yaml)
+**1. Reprojected Labels (`labels_reproj`)**
+* **Methodology:** Manual RGB labels are reprojected into the LWIR frame using LiDAR depth. To reduce errors from sparse LiDAR or vegetation, we apply depth-gating logic to reject implausible depth jumps.
+* **Pros/Cons:** High geometric consistency but dependent on the source camera's FOV. Labels may be missing if reprojection fails (ex: occlusions, depth rejection) or if the target exits the source FOV.
 
-**⚠️ Note regarding Thermal (LWIR) Annotations:**  
-As detailed in the reference paper, direct manual annotation of the thermal dataset was unfeasible due to the faint or indistinct nature of thermal signatures. Consequently, LWIR labels were generated via a reprojection process from visible wavelengths (RGB or VIS-SWIR), followed by human verification. This methodology implies inherent limitations: thermal bounding boxes lack absolute dimension precision and are strictly limited to the Field of View of the source domain. Furthermore, annotations may exhibit temporal instability (jitter) reflecting variances in the original human labeling, and labels may be absent in the thermal dataset if the target was occluded or indistinct in the source RGB/SWIR sequences, even if the thermal signature remained visible.
-**Specific Note on Track 3**: This limitation is significantly reflected in the labels of Track 3. In this sequence, the constant larger FOV of the RGB camera is absent. Consequently, the reconstruction had to be performed using only the limited, narrow FOV of the VIS-SWIR sensor, combined with human-supervised labeling during night conditions.
+**2. Automatic Labels (`labels_auto`)**
+* **Methodology:** Generated from the **[Automatic Labels](#3-automatic-labels-pre-refinement)** (see Section 3.1), correcting their trajectories using the locations of the manual reprojections.
+* **Purpose:** Provides denser temporal coverage to fill gaps where reprojection fails. These, however, provide **larger bounding boxes** designed to indicate the general area of the target (like a ROI), rather than a tight fit.
+
+**🛑 Track 3 Constraint:**
+Since Track 3 lacks RGB data, reprojection relies solely on the **VIS-SWIR** sensor. Because the VIS-SWIR FOV is **narrower** than the Thermal FOV, you will observe more "missing labels" in Track 3 LWIR reprojections whenever targets are outside the VIS-SWIR view.
 
 ## Climatology  
 
@@ -370,8 +420,8 @@ The figure below shows the **air and soil temperatures** (–5 cm, –10 cm, –
 
 During **Track 3 recordings** (30 October 2024), the **RGB camera experienced a progressive failure**.  
 
-- The **first part of the recording** (starting at 17:28:07 and 17:42:19, see [Climatology section](#climatology)) already shows frames that **would have been very dark**, making it extremely difficult to detect any target or terrain details.  
-- By the **end of the sequences**, the RGB feed **would have been completely black** given the near-nighttime conditions. 
+- The first part of the recording (starting at 17:28:07 and 17:42:19, see [Climatology section](#climatology)) already shows frames that would have been very dark, making it extremely difficult to detect any target or terrain details.  
+- By the end of the sequences, the RGB feed would have been completely black, given the near-nighttime conditions. 
 - This issue affects both **Sequence 1 (3 min 41.5 s)** and **Sequence 2 (13 min 18 s)**.  
 
 We recovered the bag metadata and extracted a short video from the RGB camera illustrating the Track 3 illumination condition at the beginning of the recordings:  
@@ -402,16 +452,23 @@ If you use MineInsight in your own work, please cite the accompanying paper:
 ```
 # [9] License
 
-This work is licensed under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**.  
-You are free to **share** and **adapt** this work **for non-commercial purposes**, as long as you **credit the authors** and **apply the same license** to any derivative works.
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).
 
 For full details, see:  
 [CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 
 # [10] Related Work
-If you are interested in this dataset, you may also be interested in our related work:
+If you are interested in this dataset, you may also be interested in some of the related work:
 
 * **PFM-1 Landmine Detection in Vegetation Using Thermal Imaging with Limited Training Data.** Malizia, Mario, Ken Hasselmann, Alessandra Miuccio, Rob Haelterman, Nikolaos Tsiogkas, and Eric Demeester. 2025. 
     *Proceedings of the 25th International Conference on Control, Automation and Systems (ICCAS)*, Incheon, South Korea, pp. 1864-1869. [https://doi.org/10.23919/ICCAS66577.2025.11301116](https://doi.org/10.23919/ICCAS66577.2025.11301116)
+* **Multimodal Ensemble with Verification Mechanism for Landmine Detection.** Melnykova, Nataliia, and Anna Vechirska. 2025. 
+   *Science and Technology Today (Наука і техніка сьогодні)*, No. 9(50), pp. 939-948. [https://doi.org/10.52058/2786-6025-2025-9(50)-939-948](https://doi.org/10.52058/2786-6025-2025-9(50)-939-948)
 
+
+
+<br>
+<p align="center">
+  <img src="https://api.visitorbadge.io/api/visitors?path=mariomlz99/mineinsight" alt="Visitors">
+</p>
